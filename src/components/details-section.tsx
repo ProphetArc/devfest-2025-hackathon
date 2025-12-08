@@ -95,7 +95,7 @@ export function DetailsSection({ item, onBack, aiConversation, onAiQuery, aiInpu
                       <div key={index} className={cn("flex items-start gap-3 animate-in fade-in-0", msg.role === 'user' && "justify-end")}>
                           {msg.role === 'ai' && <Avatar className="h-8 w-8 border"><AvatarFallback className="bg-transparent"><Bot className="text-accent"/></AvatarFallback></Avatar>}
                           <div className={cn("max-w-[85%] rounded-lg p-3 text-sm shadow-sm", msg.role === 'user' ? "bg-primary text-primary-foreground" : "bg-card")}>
-                              <p className="whitespace-pre-wrap">{msg.content}</p>
+                              <div className="whitespace-pre-wrap">{msg.content}</div>
                           </div>
                           {msg.role === 'user' && <Avatar className="h-8 w-8 border"><AvatarFallback className="bg-transparent"><User /></AvatarFallback></Avatar>}
                       </div>
