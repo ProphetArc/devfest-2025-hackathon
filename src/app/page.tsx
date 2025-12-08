@@ -133,6 +133,10 @@ export default function Home() {
     }
   }
 
+  const showSearch = !selectedItem;
+  const showResults = showSearch && (results.length > 0 || (querySubmitted && !isSearching));
+  const centerSearch = showSearch && !showResults;
+
   return (
     <div className="flex min-h-screen flex-col bg-background text-foreground font-body">
       <header className="sticky top-0 z-10 w-full border-b bg-background/80 backdrop-blur-sm">
@@ -152,7 +156,7 @@ export default function Home() {
       </header>
 
       <main className="container mx-auto flex-1 px-4 py-8 md:px-6 md:py-12">
-        <div className="mx-auto max-w-3xl">
+        <div className={`mx-auto max-w-3xl ${centerSearch ? 'flex h-full flex-col justify-center' : ''}`}>
           {selectedItem ? (
             <DetailsSection
               item={selectedItem}
@@ -165,10 +169,10 @@ export default function Home() {
               lang={lang}
             />
           ) : (
-            <>
+            <div className={`${centerSearch ? 'pb-24' : ''}`}>
               <SearchSection onSearch={handleSearch} query={query} setQuery={setQuery} isSearching={isSearching} lang={lang} />
               <ResultsSection results={results} onSelect={handleSelectResult} isSearching={isSearching} querySubmitted={querySubmitted} lang={lang} />
-            </>
+            </div>
           )}
         </div>
       </main>
