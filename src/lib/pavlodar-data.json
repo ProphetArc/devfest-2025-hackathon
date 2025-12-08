@@ -22,7 +22,7 @@
           "ru": "Оживленная городская улица.",
           "en": "A bustling city street."
         },
-        "imageUrl": "images/satpaeva-street-1.jpg",
+        "imageUrl": "images/Satpaev_Street/Satpaev_Street_1.jpg",
         "imageHint": "city street"
       },
       {
@@ -31,7 +31,7 @@
           "ru": "Современная архитектура в городе.",
           "en": "Modern architecture in a city."
         },
-        "imageUrl": "images/satpaeva-street-2.jpg",
+        "imageUrl": "images/Satpaev_Street/Satpaev_Street_2.jpg",
         "imageHint": "modern architecture"
       },
       {
@@ -40,7 +40,7 @@
           "ru": "Городская улица ночью.",
           "en": "City street at night."
         },
-        "imageUrl": "images/satpaeva-street-3.jpg",
+        "imageUrl": "images/Satpaev_Street/Satpaev_Street_3.jpg",
         "imageHint": "city night"
       }
     ]
