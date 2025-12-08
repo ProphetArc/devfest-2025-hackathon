@@ -17,19 +17,19 @@
       {
         "id": "satpaeva-street-1",
         "description": "A bustling city street.",
-        "imageUrl": "/images/satpaeva-1.jpg",
+        "imageUrl": "https://picsum.photos/seed/satpaeva1/800/600",
         "imageHint": "city street"
       },
       {
         "id": "satpaeva-street-2",
         "description": "Modern architecture in a city.",
-        "imageUrl": "https://images.unsplash.com/photo-1519923834699-ef0b78f83259?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzY1MjkyMjE5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/satpaeva2/800/600",
         "imageHint": "modern architecture"
       },
       {
         "id": "satpaeva-street-3",
         "description": "City street at night.",
-        "imageUrl": "https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaXR5JTIwc3RyZWV0JTIwbmlnaHR8ZW58MHx8fHwxNzY1MjkyMjE5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/satpaeva3/800/600",
         "imageHint": "city night"
       }
     ]
@@ -51,19 +51,19 @@
       {
         "id": "lenina-street-1",
         "description": "An old historic city street.",
-        "imageUrl": "https://images.unsplash.com/photo-1635398714045-37368c7ba2d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoaXN0b3JpYyUyMHN0cmVldHxlbnwwfHx8fDE3NjUxMTAwMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/lenina1/800/600",
         "imageHint": "historic street"
       },
       {
         "id": "lenina-street-2",
         "description": "Facade of an old historic building.",
-        "imageUrl": "https://images.unsplash.com/photo-1542875158-163c43544155?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoaXN0b3JpYyUyMGJ1aWxkaW5nfGVufDB8fHx8MTc2NTI5MjI5Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/lenina2/800/600",
         "imageHint": "historic building"
       },
       {
         "id": "lenina-street-3",
         "description": "A quiet european style street.",
-        "imageUrl": "https://images.unsplash.com/photo-1523731407969-14c636842838?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxldXJvcGVhbiUyMHN0cmVldHxlbnwwfHx8fDE3NjUyOTIyOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/lenina3/800/600",
         "imageHint": "european street"
       }
     ]
@@ -85,19 +85,19 @@
       {
         "id": "pavel-vasilyev-1",
         "description": "Portrait of Pavel Vasilyev",
-        "imageUrl": "https://images.unsplash.com/photo-1636377985931-898218afd306?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjUwOTc0OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/vasilyev1/800/600",
         "imageHint": "man portrait"
       },
       {
         "id": "pavel-vasilyev-2",
         "description": "Old book of poems",
-        "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvbGQlMjBib29rfGVufDB8fHx8MTc2NTI5MjAwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/vasilyev2/800/600",
         "imageHint": "old book"
       },
       {
         "id": "pavel-vasilyev-3",
         "description": "Writer at his desk",
-        "imageUrl": "https://images.unsplash.com/photo-1455390582262-044cdead277a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3cml0ZXJ8ZW58MHx8fHwxNzY1MjkyMDA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/vasilyev3/800/600",
         "imageHint": "writer desk"
       }
     ]
@@ -119,19 +119,19 @@
       {
         "id": "isa-baizakov-1",
         "description": "Portrait of Isa Baizakov",
-        "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjUwOTc0OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/baizakov1/800/600",
         "imageHint": "man portrait"
       },
       {
         "id": "isa-baizakov-2",
         "description": "Kazakh musical instrument dombra",
-        "imageUrl": "https://images.unsplash.com/photo-1620976298568-a2d7d2a84976?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkb21icmF8ZW58MHx8fHwxNzY1MjkyMTE5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/baizakov2/800/600",
         "imageHint": "dombra instrument"
       },
       {
         "id": "isa-baizakov-3",
         "description": "Man singing on stage",
-        "imageUrl": "https://images.unsplash.com/photo-1524230659928-06901645a850?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzaW5nZXIlMjBzdGFnZXxlbnwwfHx8fDE3NjUyOTIxMTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/baizakov3/800/600",
         "imageHint": "singer stage"
       }
     ]
@@ -153,19 +153,19 @@
       {
         "id": "pavlodar-irtyish-1",
         "description": "A wide river flowing through a plain.",
-        "imageUrl": "https://images.unsplash.com/photo-1695188605801-37454176b1a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxyaXZlciUyMHBsYWlufGVufDB8fHx8MTc2NTE4NDczOHww&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/irtyish1/800/600",
         "imageHint": "river plain"
       },
       {
         "id": "pavlodar-irtyish-2",
         "description": "Forest along the river bank.",
-        "imageUrl": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyaXZlciUyMGJhbmt8ZW58MHx8fHwxNzY1MjkyMzU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/irtyish2/800/600",
         "imageHint": "river bank"
       },
       {
         "id": "pavlodar-irtyish-3",
         "description": "Sunset over the Irtysh river.",
-        "imageUrl": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cfb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdW5zZXQlMjByaXZlcnxlbnwwfHx8fDE3NjUyOTIzNTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/irtyish3/800/600",
         "imageHint": "sunset river"
       }
     ]
@@ -187,19 +187,19 @@
       {
         "id": "ekibastuz-coal-1",
         "description": "An open-pit coal mine.",
-        "imageUrl": "https://images.unsplash.com/photo-1680463990599-9d318aaecf71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb2FsJTIwbWluZXxlbnwwfHx8fDE3NjUxODQ3Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/ekibastuz1/800/600",
         "imageHint": "coal mine"
       },
       {
         "id": "ekibastuz-coal-2",
         "description": "Heavy machinery in a coal mine.",
-        "imageUrl": "https://images.unsplash.com/photo-1627812034371-d650a31b8a5b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwbWFjaGluZXJ5fGVufDB8fHx8MTc2NTI5MjQxNnww&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/ekibastuz2/800/600",
         "imageHint": "industrial machinery"
       },
       {
         "id": "ekibastuz-coal-3",
         "description": "Power plant with smoking chimneys.",
-        "imageUrl": "https://images.unsplash.com/photo-1543634209-4c194a2b2a6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3dlciUyMHBsYW50fGVufDB8fHx8MTc2NTI5MjQxNnww&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/ekibastuz3/800/600",
         "imageHint": "power plant"
       }
     ]
@@ -221,19 +221,19 @@
       {
         "id": "mashkhur-zhusup-mosque-1",
         "description": "The grand Mashkhur Zhusup Mosque",
-        "imageUrl": "https://images.unsplash.com/photo-1610212855215-5556209c13e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3NxdWV8ZW58MHx8fHwxNzY1MzAwMjE5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/mosque1/800/600",
         "imageHint": "grand mosque"
       },
       {
         "id": "mashkhur-zhusup-mosque-2",
         "description": "Intricate interior of a mosque",
-        "imageUrl": "https://images.unsplash.com/photo-1562762332-155b41ea313f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3NxdWUlMjBpbnRlcmlvcnxlbnwwfHx8fDE3NjUzMDAyMTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/mosque2/800/600",
         "imageHint": "mosque interior"
       },
       {
         "id": "mashkhur-zhusup-mosque-3",
         "description": "Close-up of a minaret",
-        "imageUrl": "https://images.unsplash.com/photo-1588868472853-3dc4232c7b4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtaW5hcmV0fGVufDB8fHx8MTc2NTMwMDIxOXww&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/mosque3/800/600",
         "imageHint": "minaret closeup"
       }
     ]
@@ -255,19 +255,19 @@
       {
         "id": "annunciation-cathedral-1",
         "description": "The Annunciation Cathedral with golden domes",
-        "imageUrl": "https://images.unsplash.com/photo-1579810344169-02949c869595?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvcnRob2RveCUyMGNhdGhlZHJhbHxlbnwwfHx8fDE3NjUzMDAzMzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/cathedral1/800/600",
         "imageHint": "orthodox cathedral"
       },
       {
         "id": "annunciation-cathedral-2",
         "description": "Interior of a cathedral with frescoes",
-        "imageUrl": "https://images.unsplash.com/photo-1582138943997-889410972333?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaHVyY2glMjBpbnRlcmlvcnxlbnwwfHx8fDE3NjUzMDAzMzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/cathedral2/800/600",
         "imageHint": "church interior"
       },
       {
         "id": "annunciation-cathedral-3",
         "description": "Golden domes against the sky",
-        "imageUrl": "https://images.unsplash.com/photo-1615529182903-12c8b0b83b8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnb2xkZW4lMjBkb21lc3xlbnwwfHx8fDE3NjUzMDAzMzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/cathedral3/800/600",
         "imageHint": "golden domes"
       }
     ]
@@ -289,19 +289,19 @@
       {
         "id": "bukhar-zhyrau-museum-1",
         "description": "An old merchant's house, now a museum",
-        "imageUrl": "https://images.unsplash.com/photo-1583594420835-95f03a62886c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvbGQlMjBtZXJjaGFudCUyMGhvdXNlfGVufDB8fHx8MTc2NTMwMDQyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/museum1/800/600",
         "imageHint": "old house"
       },
       {
         "id": "bukhar-zhyrau-museum-2",
         "description": "A museum exhibit with old manuscripts",
-        "imageUrl": "https://images.unsplash.com/photo-1618335914800-7cf1a82b92a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtdXNldW0lMjBleGhpYml0fGVufDB8fHx8MTc2NTMwMDQyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/museum2/800/600",
         "imageHint": "museum exhibit"
       },
       {
         "id": "bukhar-zhyrau-museum-3",
         "description": "A bust of a famous writer in a library",
-        "imageUrl": "https://images.unsplash.com/photo-1629986348123-e5557df63952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3cml0ZXIlMjBidXN0fGVufDB8fHx8MTc2NTMwMDQyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/museum3/800/600",
         "imageHint": "writer bust"
       }
     ]
@@ -323,19 +323,19 @@
       {
         "id": "dmitry-bagayev-1",
         "description": "Vintage photograph of a city",
-        "imageUrl": "https://images.unsplash.com/photo-1517546059244-a324b8e6224d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx2aW50YWdlJTIwcGhvdG9ncmFwaHxlbnwwfHx8fDE3NjUzMDA1MDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/bagayev1/800/600",
         "imageHint": "vintage photograph"
       },
       {
         "id": "dmitry-bagayev-2",
         "description": "An old-fashioned camera",
-        "imageUrl": "https://images.unsplash.com/photo-1510127034890-ba27088e25b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx2aW50YWdlJTIwY2FtZXJhfGVufDB8fHx8MTc2NTMwMDUwNXww&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/bagayev2/800/600",
         "imageHint": "vintage camera"
       },
       {
         "id": "dmitry-bagayev-3",
         "description": "A museum dedicated to photography",
-        "imageUrl": "https://images.unsplash.com/photo-1520338250084-6019391d3c33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwaG90b2dyYXBoeSUyMG11c2V1bXxlbnwwfHx8fDE3NjUzMDA1MDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/bagayev3/800/600",
         "imageHint": "photography museum"
       }
     ]
@@ -357,23 +357,21 @@
       {
         "id": "slavic-center-1",
         "description": "People in traditional slavic costumes",
-        "imageUrl": "https://images.unsplash.com/photo-1620405106720-4175314643b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxz%2BdHJhZGl0aW9uYWwlMjBzbGF2aWMlMjBjb3N0dW1lfGVufDB8fHx8MTc2NTMwMDY0OHww&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/slavic1/800/600",
         "imageHint": "traditional costume"
       },
       {
         "id": "slavic-center-2",
         "description": "Folk dance performance",
-        "imageUrl": "https://images.unsplash.com/photo-1594998993043-f145520e4e5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb2xrJTIwZGFuY2V8ZW58MHx8fHwxNzY1MzAwNjQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/slavic2/800/600",
         "imageHint": "folk dance"
       },
       {
         "id": "slavic-center-3",
         "description": "A cultural center building",
-        "imageUrl": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjdWx0dXJhbCUyMGNlbnRlcnxlbnwwfHx8fDE3NjUzMDA2NDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "https://picsum.photos/seed/slavic3/800/600",
         "imageHint": "cultural center"
       }
     ]
   }
 ]
-
-    
