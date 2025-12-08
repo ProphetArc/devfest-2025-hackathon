@@ -85,19 +85,19 @@
       {
         "id": "pavel-vasilyev-1",
         "description": "Portrait of Pavel Vasilyev",
-        "imageUrl": "/images/pavel-vasilyev-1.jpg",
+        "imageUrl": "/images/Pavel_Vasilyev/Pavel_Vasilyev_1.jpg",
         "imageHint": "man portrait"
       },
       {
         "id": "pavel-vasilyev-2",
         "description": "Old book of poems",
-        "imageUrl": "/images/pavel-vasilyev-2.jpg",
+        "imageUrl": "/images/Pavel_Vasilyev/Pavel_Vasilyev_2.jpg",
         "imageHint": "old book"
       },
       {
         "id": "pavel-vasilyev-3",
         "description": "Writer at his desk",
-        "imageUrl": "/images/pavel-vasilyev-3.jpg",
+        "imageUrl": "/images/Pavel_Vasilyev/Pavel_Vasilyev_3.webp",
         "imageHint": "writer desk"
       }
     ]
