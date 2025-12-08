@@ -6,7 +6,7 @@
     "dev": "next dev --turbopack -p 9002",
     "genkit:dev": "genkit start -- tsx src/ai/dev.ts",
     "genkit:watch": "genkit start -- tsx --watch src/ai/dev.ts",
-    "build": "genkit flow:run dev.ts/next-build-flow && NODE_ENV=production next build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit"
@@ -52,9 +52,7 @@
     "recharts": "^2.15.1",
     "tailwind-merge": "^3.0.1",
     "tailwindcss-animate": "^1.0.7",
-    "zod": "^3.24.2",
-    "@genkit-ai/dotprompt": "1.20.0",
-    "@genkit-ai/evaluator": "1.20.0"
+    "zod": "^3.24.2"
   },
   "devDependencies": {
     "@types/node": "^20",

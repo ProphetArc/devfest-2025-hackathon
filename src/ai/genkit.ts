@@ -1,7 +1,5 @@
 import {genkit, Plugin} from 'genkit';
 import {googleAI} from '@genkit-ai/google-genai';
-import {genkitEval, GenkitMetric} from '@genkit-ai/evaluator';
-import {dotprompt} from '@genkit-ai/dotprompt';
 import {next} from '@genkit-ai/next';
 
 const MockPlugin = (name: string): Plugin<any> => {
@@ -19,12 +17,6 @@ export const ai = genkit({
     next({
       // @ts-ignore
       development: process.env.NODE_ENV === 'development',
-    }),
-    dotprompt(),
-    genkitEval({
-      judge: 'googleai/gemini-2.5-flash',
-      metrics: [GenkitMetric.ANSWER_RELEVANCY, GenkitMetric.MALICIOUSNESS],
-      embedder: 'googleai/embedding-001',
     }),
   ],
   model: 'googleai/gemini-2.5-flash',
