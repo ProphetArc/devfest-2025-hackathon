@@ -1,0 +1,15 @@
+diff --git a/node_modules/next-themes/package.json b/node_modules/next-themes/package.json
+index 5a3a393..95e5461 100644
+--- a/node_modules/next-themes/package-lock.json
++++ b/node_modules/next-themes/package-lock.json
+@@ -29,7 +29,7 @@
+     "eslint-plugin-react-hooks": "^4.6.0"
+   },
+   "peerDependencies": {
+-    "react": "^16.8 || ^17 || ^18",
+-    "react-dom": "^16.8 || ^17 || ^18"
++    "react": "^16.8 || ^17 || ^18 || ^19",
++    "react-dom": "^16.8 || ^17 || ^18 || ^19"
+   }
+ }
+%

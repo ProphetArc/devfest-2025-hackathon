@@ -12,6 +12,7 @@ import { Compass, Globe } from 'lucide-react';
 import { uiTexts, type Language } from '@/lib/i18n';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
+import { ThemeToggle } from '@/components/theme-toggle';
 
 export default function Home() {
   const [query, setQuery] = useState('');
@@ -148,6 +149,7 @@ export default function Home() {
           </Link>
           <div className="flex items-center gap-2">
             <p className="hidden text-sm text-muted-foreground sm:block">{texts.appSubtitle}</p>
+            <ThemeToggle />
             <Button variant="ghost" className="h-auto rounded-full px-3 py-1.5" onClick={toggleLanguage} aria-label="Switch language">
                 <Globe className="h-5 w-5"/>
                 <span className="ml-2 font-semibold">{lang.toUpperCase()}</span>
