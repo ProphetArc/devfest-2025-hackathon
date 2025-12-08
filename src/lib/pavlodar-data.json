@@ -37,11 +37,11 @@
       {
         "id": "satpaeva-street-3",
         "description": {
-          "ru": "Городская улица ночью.",
+          "ru": "Улица сатпаева.",
           "en": "City street at night."
         },
         "imageUrl": "images/Satpaev_Street/Satpaev_Street_3.jpg",
-        "imageHint": "city night"
+        "imageHint": "satpaev street"
       }
     ]
   },
