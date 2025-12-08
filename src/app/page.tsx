@@ -7,6 +7,9 @@ import type { DataItem } from '@/lib/data';
 import { SearchSection } from '@/components/search-section';
 import { ResultsSection } from '@/components/results-section';
 import { DetailsSection } from '@/components/details-section';
+import { Button } from '@/components/ui/button';
+import { Globe } from 'lucide-react';
+import { uiTexts, type Language } from '@/lib/i18n';
 
 export default function Home() {
   const [query, setQuery] = useState('');
@@ -15,11 +18,13 @@ export default function Home() {
   const [aiConversation, setAiConversation] = useState<{ role: 'user' | 'ai'; content: string }[]>([]);
   const [aiInput, setAiInput] = useState('');
   const [querySubmitted, setQuerySubmitted] = useState(false);
-  
+  const [lang, setLang] = useState<Language>('ru');
+
   const [isSearching, startSearchTransition] = useTransition();
   const [isThinking, startAiTransition] = useTransition();
 
   const { toast } = useToast();
+  const texts = uiTexts[lang];
 
   const handleSearch = useCallback((e: FormEvent<HTMLFormElement>, suggestionQuery?: string) => {
     e.preventDefault();
@@ -30,10 +35,10 @@ export default function Home() {
     setResults([]);
     setQuerySubmitted(true);
     startSearchTransition(async () => {
-      const searchResults = await searchAction(currentQuery);
+      const searchResults = await searchAction(currentQuery, lang);
       setResults(searchResults);
     });
-  }, [query]);
+  }, [query, lang]);
 
   const handleSelectResult = (item: DataItem) => {
     setSelectedItem(item);
@@ -52,30 +57,46 @@ export default function Home() {
     if (!aiInput.trim() || !selectedItem) return;
     
     const userInput = aiInput;
+    const currentLangItem = selectedItem[lang];
+
     setAiConversation(prev => [...prev, { role: 'user' as const, content: userInput }]);
     setAiInput('');
 
     startAiTransition(async () => {
         try {
-            const aiResponse = await expandAction(selectedItem, userInput);
+            const aiResponse = await expandAction(currentLangItem, userInput, lang);
             setAiConversation(prev => [...prev, { role: 'ai' as const, content: aiResponse }]);
         } catch (error) {
             toast({
               variant: "destructive",
-              title: "Ошибка ИИ",
-              description: "Не удалось получить ответ. Пожалуйста, попробуйте еще раз.",
+              title: texts.aiErrorTitle,
+              description: texts.aiErrorDescription,
             });
             setAiConversation(prev => prev.slice(0, -1));
         }
     });
   };
 
+  const toggleLanguage = () => {
+    setLang(currentLang => currentLang === 'ru' ? 'en' : 'ru');
+    setResults([]);
+    setSelectedItem(null);
+    setQuerySubmitted(false);
+    setQuery('');
+  }
+
   return (
     <div className="flex min-h-screen flex-col bg-background text-foreground font-body">
       <header className="sticky top-0 z-10 w-full border-b bg-background/80 backdrop-blur-sm">
         <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
           <h1 className="font-headline text-2xl font-bold text-primary sm:text-3xl">Вектор</h1>
-          <p className="hidden text-sm text-muted-foreground sm:block">Культурный гид по Павлодару</p>
+          <div className="flex items-center gap-4">
+            <p className="hidden text-sm text-muted-foreground sm:block">{texts.appSubtitle}</p>
+            <Button variant="ghost" size="icon" onClick={toggleLanguage} aria-label="Switch language">
+                <Globe className="h-5 w-5"/>
+                <span className="ml-2 font-semibold">{lang.toUpperCase()}</span>
+            </Button>
+          </div>
         </div>
       </header>
 
@@ -90,11 +111,12 @@ export default function Home() {
               aiInput={aiInput}
               setAiInput={setAiInput}
               isThinking={isThinking}
+              lang={lang}
             />
           ) : (
             <>
-              <SearchSection onSearch={handleSearch} query={query} setQuery={setQuery} isSearching={isSearching} />
-              <ResultsSection results={results} onSelect={handleSelectResult} isSearching={isSearching} querySubmitted={querySubmitted} />
+              <SearchSection onSearch={handleSearch} query={query} setQuery={setQuery} isSearching={isSearching} lang={lang} />
+              <ResultsSection results={results} onSelect={handleSelectResult} isSearching={isSearching} querySubmitted={querySubmitted} lang={lang} />
             </>
           )}
         </div>
@@ -102,7 +124,7 @@ export default function Home() {
 
       <footer className="w-full border-t bg-card">
         <div className="container mx-auto px-4 py-4 text-center text-sm text-muted-foreground md:px-6">
-          © {new Date().getFullYear()} Vector. Создано с любовью к Павлодару.
+          {texts.footerText.replace('{year}', new Date().getFullYear().toString())}
         </div>
       </footer>
     </div>

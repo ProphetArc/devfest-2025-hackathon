@@ -3,21 +3,20 @@ import { Loader2, Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
+import { type Language, uiTexts } from '@/lib/i18n';
 
 type SearchSectionProps = {
   onSearch: (e: FormEvent<HTMLFormElement>, query?: string) => void;
   query: string;
   setQuery: (q: string) => void;
   isSearching: boolean;
+  lang: Language;
 };
 
-const suggestions = [
-  'Павел Васильев',
-  'Улица Сатпаева',
-  'Экибастуз'
-];
 
-export function SearchSection({ onSearch, query, setQuery, isSearching }: SearchSectionProps) {
+export function SearchSection({ onSearch, query, setQuery, isSearching, lang }: SearchSectionProps) {
+  const texts = uiTexts[lang];
+  const suggestions = texts.suggestions;
   
   const handleSuggestionClick = (suggestion: string) => {
     setQuery(suggestion);
@@ -26,12 +25,12 @@ export function SearchSection({ onSearch, query, setQuery, isSearching }: Search
   
   return (
     <section className="mb-12 text-center animate-in fade-in-0 duration-500">
-      <h2 className="mb-2 font-headline text-4xl font-bold tracking-tight md:text-5xl">Откройте для себя Павлодар</h2>
-      <p className="mb-8 text-lg text-muted-foreground">Улицы, личности, история и культура.</p>
+      <h2 className="mb-2 font-headline text-4xl font-bold tracking-tight md:text-5xl">{texts.discoverTitle}</h2>
+      <p className="mb-8 text-lg text-muted-foreground">{texts.discoverSubtitle}</p>
       <form onSubmit={(e) => onSearch(e)} className="relative mx-auto max-w-lg">
         <Input
           type="search"
-          placeholder="Например, 'Улица Сатпаева' или 'Павел Васильев'..."
+          placeholder={texts.searchInputPlaceholder}
           className="h-12 w-full rounded-full bg-card pr-14 text-base"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
@@ -39,11 +38,11 @@ export function SearchSection({ onSearch, query, setQuery, isSearching }: Search
         />
         <Button type="submit" size="icon" className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full" disabled={isSearching || !query.trim()}>
           {isSearching ? <Loader2 className="animate-spin" /> : <Search />}
-          <span className="sr-only">Поиск</span>
+          <span className="sr-only">{texts.searchButtonLabel}</span>
         </Button>
       </form>
       <div className="mt-4 flex flex-wrap justify-center gap-2">
-        <span className="text-sm text-muted-foreground">Или попробуйте:</span>
+        <span className="text-sm text-muted-foreground">{texts.suggestionsLabel}</span>
         {suggestions.map(suggestion => (
           <Badge 
             key={suggestion} 

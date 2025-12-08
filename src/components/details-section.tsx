@@ -9,7 +9,7 @@ import type { DataItem } from '@/lib/data';
 import { cn } from '@/lib/utils';
 import { IconForItemType, translateType } from '@/components/icons';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { Separator } from './ui/separator';
+import { type Language, uiTexts } from '@/lib/i18n';
 
 type DetailsSectionProps = {
   item: DataItem;
@@ -19,17 +19,20 @@ type DetailsSectionProps = {
   aiInput: string;
   setAiInput: (s: string) => void;
   isThinking: boolean;
+  lang: Language;
 };
 
-export function DetailsSection({ item, onBack, aiConversation, onAiQuery, aiInput, setAiInput, isThinking }: DetailsSectionProps) {
+export function DetailsSection({ item, onBack, aiConversation, onAiQuery, aiInput, setAiInput, isThinking, lang }: DetailsSectionProps) {
   const heroImage = item.images && item.images.length > 0 ? item.images[0] : null;
   const galleryImages = item.images && item.images.length > 1 ? item.images.slice(0) : [];
+  const currentLangItem = item[lang];
+  const texts = uiTexts[lang];
 
   return (
     <div className="animate-in fade-in-0 duration-500">
       <Button variant="ghost" onClick={onBack} className="mb-4">
         <ArrowLeft className="mr-2 h-4 w-4" />
-        Назад к результатам
+        {texts.backToResults}
       </Button>
       <Card className="overflow-hidden">
         {heroImage && (
@@ -43,17 +46,17 @@ export function DetailsSection({ item, onBack, aiConversation, onAiQuery, aiInpu
               <IconForItemType type={item.type} className="h-6 w-6 text-secondary-foreground" />
             </div>
             <div>
-              <CardTitle className="font-headline text-3xl">{item.name}</CardTitle>
-              <p className="text-sm capitalize text-muted-foreground">{translateType(item.type)}</p>
+              <CardTitle className="font-headline text-3xl">{currentLangItem.name}</CardTitle>
+              <p className="text-sm capitalize text-muted-foreground">{translateType(item.type, lang)}</p>
             </div>
           </div>
         </CardHeader>
         <CardContent>
-          <p className="whitespace-pre-wrap text-base leading-relaxed">{item.description}</p>
+          <p className="whitespace-pre-wrap text-base leading-relaxed">{currentLangItem.description}</p>
           
           {galleryImages.length > 0 && (
             <div className="mt-8">
-                <h4 className="font-headline text-xl font-semibold mb-4">Галерея</h4>
+                <h4 className="font-headline text-xl font-semibold mb-4">{texts.galleryTitle}</h4>
                 <Carousel className="w-full">
                     <CarouselContent>
                     {galleryImages.map((image, index) => (
@@ -77,7 +80,7 @@ export function DetailsSection({ item, onBack, aiConversation, onAiQuery, aiInpu
           <div className="mt-8 pt-8 border-t">
               <h4 className="flex items-center font-headline text-2xl font-semibold mb-4">
                   <Sparkle className="mr-3 h-6 w-6 text-accent"/>
-                  Узнать больше с ИИ
+                  {texts.aiTitle}
               </h4>
               <div className="space-y-4 rounded-lg border bg-muted/20 p-4 min-h-[8rem]">
                   {aiConversation.map((msg, index) => (
@@ -103,14 +106,14 @@ export function DetailsSection({ item, onBack, aiConversation, onAiQuery, aiInpu
                   )}
                   {aiConversation.length === 0 && !isThinking && (
                     <div className="flex items-center justify-center h-full text-muted-foreground text-sm">
-                        Задайте вопрос об этом объекте.
+                        {texts.aiAskAbout}
                     </div>
                   )}
               </div>
 
               <form onSubmit={onAiQuery} className="relative mt-4">
                   <Textarea 
-                      placeholder={`Спросите что-нибудь про "${item.name}"...`}
+                      placeholder={texts.aiPlaceholder.replace('{itemName}', currentLangItem.name)}
                       value={aiInput}
                       onChange={(e) => setAiInput(e.target.value)}
                       className="pr-14 resize-none"
@@ -124,7 +127,7 @@ export function DetailsSection({ item, onBack, aiConversation, onAiQuery, aiInpu
                   />
                   <Button type="submit" variant="ghost" size="icon" className="absolute bottom-2 right-2 text-accent hover:text-accent" disabled={isThinking || !aiInput.trim()}>
                       {isThinking ? <Loader2 className="animate-spin" /> : <Send />}
-                      <span className="sr-only">Отправить</span>
+                      <span className="sr-only">{texts.aiSend}</span>
                   </Button>
               </form>
           </div>

@@ -1,11 +1,16 @@
 import { PlaceHolderImages, type ImagePlaceholder } from './placeholder-images';
 
-export type DataItem = {
-  id: string;
-  type: 'street' | 'figure' | 'phenomenon';
+export type LocalizedContent = {
   name: string;
   tags: string[];
   description: string;
+};
+
+export type DataItem = {
+  id: string;
+  type: 'street' | 'figure' | 'phenomenon';
+  ru: LocalizedContent;
+  en: LocalizedContent;
   images: ImagePlaceholder[];
 };
 
@@ -13,49 +18,91 @@ export const pavlodarData: DataItem[] = [
   {
     id: 'satpaeva-street',
     type: 'street',
-    name: 'Улица Сатпаева',
-    tags: ['улица', 'сатпаев', 'сатпаева'],
-    description: 'Одна из центральных и самых протяженных улиц Павлодара, названная в честь выдающегося казахского ученого-геолога, первого президента Академии наук Казахской ССР Каныша Имантаевича Сатпаева. Улица проходит через исторический и современный центр города, на ней расположены важные административные здания, такие как областной акимат, культурные объекты (драматический театр им. А.П. Чехова), торговые центры и жилые дома. Является ключевой транспортной артерией, связывающей разные части города.',
+    ru: {
+      name: 'Улица Сатпаева',
+      tags: ['улица', 'сатпаев', 'сатпаева'],
+      description: 'Одна из центральных и самых протяженных улиц Павлодара, названная в честь выдающегося казахского ученого-геолога, первого президента Академии наук Казахской ССР Каныша Имантаевича Сатпаева. Улица проходит через исторический и современный центр города, на ней расположены важные административные здания, такие как областной акимат, культурные объекты (драматический театр им. А.П. Чехова), торговые центры и жилые дома. Является ключевой транспортной артерией, связывающей разные части города.',
+    },
+    en: {
+      name: 'Satpayev Street',
+      tags: ['street', 'satpayev'],
+      description: 'One of the central and longest streets in Pavlodar, named after the outstanding Kazakh geologist, the first president of the Academy of Sciences of the Kazakh SSR, Kanysh Imantayevich Satpayev. The street passes through the historical and modern center of the city, hosting important administrative buildings such as the regional akimat, cultural sites (Chekhov Drama Theater), shopping centers, and residential buildings. It is a key transport artery connecting different parts of the city.',
+    },
     images: PlaceHolderImages.filter(img => img.id.startsWith('satpaeva-street'))
   },
   {
     id: 'lenina-street',
     type: 'street',
-    name: 'Улица Астана (бывш. Ленина)',
-    tags: ['улица', 'ленина', 'астана', 'центральная'],
-    description: 'Исторически одна из главных улиц города, ранее носившая имя Ленина, а ныне — Астана. Эта улица — живая история Павлодара. Вдоль неё сохранились купеческие дома конца XIX - начала XX веков, являющиеся памятниками архитектуры. Они соседствуют с современными бизнес-центрами и магазинами, создавая уникальный архитектурный контраст. Улица всегда была центром общественной и торговой жизни города.',
+    ru: {
+      name: 'Улица Астана (бывш. Ленина)',
+      tags: ['улица', 'ленина', 'астана', 'центральная'],
+      description: 'Исторически одна из главных улиц города, ранее носившая имя Ленина, а ныне — Астана. Эта улица — живая история Павлодара. Вдоль неё сохранились купеческие дома конца XIX - начала XX веков, являющиеся памятниками архитектуры. Они соседствуют с современными бизнес-центрами и магазинами, создавая уникальный архитектурный контраст. Улица всегда была центром общественной и торговой жизни города.',
+    },
+    en: {
+      name: 'Astana Street (formerly Lenin)',
+      tags: ['street', 'lenin', 'astana', 'central'],
+      description: 'Historically one of the main streets of the city, formerly named after Lenin, and now Astana. This street is the living history of Pavlodar. Along it, merchant houses from the late 19th and early 20th centuries, which are architectural monuments, have been preserved. They coexist with modern business centers and shops, creating a unique architectural contrast. The street has always been the center of public and commercial life of the city.',
+    },
     images: PlaceHolderImages.filter(img => img.id.startsWith('lenina-street'))
   },
   {
     id: 'pavel-vasilyev',
     type: 'figure',
-    name: 'Павел Васильев',
-    tags: ['поэт', 'васильев', 'литература', 'знаменитость'],
-    description: 'Выдающийся русский поэт XX века, родившийся в Зайсане, но тесно связанный с Павлодаром, который он считал своей духовной родиной и "поэтическим материком". Его яркая, бунтарская поэзия пронизана мотивами казахской степи, истории казачества и быта. Творчество Васильева отличается эпическим размахом и самобытным языком. В Павлодаре существует дом-музей Павла Васильева, бережно хранящий память о жизни и творчестве поэта.',
+    ru: {
+      name: 'Павел Васильев',
+      tags: ['поэт', 'васильев', 'литература', 'знаменитость'],
+      description: 'Выдающийся русский поэт XX века, родившийся в Зайсане, но тесно связанный с Павлодаром, который он считал своей духовной родиной и "поэтическим материком". Его яркая, бунтарская поэзия пронизана мотивами казахской степи, истории казачества и быта. Творчество Васильева отличается эпическим размахом и самобытным языком. В Павлодаре существует дом-музей Павла Васильева, бережно хранящий память о жизни и творчестве поэта.',
+    },
+    en: {
+      name: 'Pavel Vasilyev',
+      tags: ['poet', 'vasilyev', 'literature', 'celebrity'],
+      description: 'An outstanding Russian poet of the 20th century, born in Zaysan, but closely associated with Pavlodar, which he considered his spiritual homeland and "poetic mainland." His bright, rebellious poetry is imbued with motifs of the Kazakh steppe, the history of the Cossacks, and daily life. Vasilyev\'s work is distinguished by its epic scope and original language. In Pavlodar, there is a house-museum of Pavel Vasilyev, carefully preserving the memory of the poet\'s life and work.',
+    },
     images: PlaceHolderImages.filter(img => img.id.startsWith('pavel-vasilyev'))
   },
   {
     id: 'isa-baizakov',
     type: 'figure',
-    name: 'Иса Байзаков',
-    tags: ['акын', 'композитор', 'байзаков', 'музыка', 'знаменитость'],
-    description: 'Казахский советский акын, певец-импровизатор, композитор и актер. Родился в Иртышском районе Павлодарской области. Иса Байзаков является одним из основоположников казахского профессионального театрального искусства и эстрады. Его песни и поэмы, такие как "Куралай Сулу", глубоко укоренились в народной культуре и пользуются любовью по сей день. Его имя с гордостью носит Павлодарская областная филармония.',
+    ru: {
+      name: 'Иса Байзаков',
+      tags: ['акын', 'композитор', 'байзаков', 'музыка', 'знаменитость'],
+      description: 'Казахский советский акын, певец-импровизатор, композитор и актер. Родился в Иртышском районе Павлодарской области. Иса Байзаков является одним из основоположников казахского профессионального театрального искусства и эстрады. Его песни и поэмы, такие как "Куралай Сулу", глубоко укоренились в народной культуре и пользуются любовью по сей день. Его имя с гордостью носит Павлодарская областная филармония.',
+    },
+    en: {
+      name: 'Isa Baizakov',
+      tags: ['akyn', 'composer', 'baizakov', 'music', 'celebrity'],
+      description: 'A Kazakh Soviet akyn, improvisational singer, composer, and actor. Born in the Irtysh district of the Pavlodar region. Isa Baizakov is one of the founders of Kazakh professional theatrical art and pop music. His songs and poems, such as "Kuralai Sulu," are deeply rooted in folk culture and are still loved today. The Pavlodar Regional Philharmonic is proudly named after him.',
+    },
     images: PlaceHolderImages.filter(img => img.id.startsWith('isa-baizakov'))
   },
   {
     id: 'pavlodar-irtyish',
     type: 'phenomenon',
-    name: 'Павлодарское Прииртышье',
-    tags: ['феномен', 'прииртышье', 'география', 'культура'],
-    description: 'Культурно-географический регион, расположенный вдоль могучей реки Иртыш на территории Павлодарской области. Этот регион имеет богатейшую историю, связанную с древними кочевыми культурами, освоением Сибири Российской империей, и бурной индустриализацией XX века. Уникальная природа Прииртышья, с ее знаменитыми ленточными борами и обширными пойменными лугами, является не только природным феноменом, но и неиссякаемым источником вдохновения для многих деятелей искусства и культуры.',
+    ru: {
+      name: 'Павлодарское Прииртышье',
+      tags: ['феномен', 'прииртышье', 'география', 'культура'],
+      description: 'Культурно-географический регион, расположенный вдоль могучей реки Иртыш на территории Павлодарской области. Этот регион имеет богатейшую историю, связанную с древними кочевыми культурами, освоением Сибири Российской империей, и бурной индустриализацией XX века. Уникальная природа Прииртышья, с ее знаменитыми ленточными борами и обширными пойменными лугами, является не только природным феноменом, но и неиссякаемым источником вдохновения для многих деятелей искусства и культуры.',
+    },
+    en: {
+      name: 'Pavlodar Irtysh Region',
+      tags: ['phenomenon', 'irtysh', 'geography', 'culture'],
+      description: 'A cultural-geographical region located along the mighty Irtysh River in the Pavlodar region. This region has a rich history associated with ancient nomadic cultures, the development of Siberia by the Russian Empire, and the turbulent industrialization of the 20th century. The unique nature of the Irtysh region, with its famous ribbon forests and vast floodplains, is not only a natural phenomenon but also an inexhaustible source of inspiration for many artists and cultural figures.',
+    },
     images: PlaceHolderImages.filter(img => img.id.startsWith('pavlodar-irtyish'))
   },
   {
     id: 'ekibastuz-coal',
     type: 'phenomenon',
-    name: 'Экибастузский угольный бассейн',
-    tags: ['феномен', 'экибастуз', 'промышленность', 'уголь'],
-    description: 'Один из крупнейших угольных бассейнов в мире, расположенный на территории Павлодарской области. Его освоение в XX веке, начавшееся с открытия месторождения Косымом Пшенбаевым, привело к бурному промышленному развитию всего региона. Это повлекло за собой строительство города "горняков" Экибастуза и крупнейших в мире тепловых электростанций (ГРЭС-1 и ГРЭС-2). Бассейн является символом индустриальной мощи и "энергетическим сердцем" Казахстана.',
+    ru: {
+      name: 'Экибастузский угольный бассейн',
+      tags: ['феномен', 'экибастуз', 'промышленность', 'уголь'],
+      description: 'Один из крупнейших угольных бассейнов в мире, расположенный на территории Павлодарской области. Его освоение в XX веке, начавшееся с открытия месторождения Косымом Пшенбаевым, привело к бурному промышленному развитию всего региона. Это повлекло за собой строительство города "горняков" Экибастуза и крупнейших в мире тепловых электростанций (ГРЭС-1 и ГРЭС-2). Бассейн является символом индустриальной мощи и "энергетическим сердцем" Казахстана.',
+    },
+    en: {
+      name: 'Ekibastuz Coal Basin',
+      tags: ['phenomenon', 'ekibastuz', 'industry', 'coal'],
+      description: 'One of the largest coal basins in the world, located in the Pavlodar region. Its development in the 20th century, which began with the discovery of the deposit by Kosym Pshenbayev, led to the rapid industrial development of the entire region. This resulted in the construction of the "miners\'" city of Ekibastuz and the world\'s largest thermal power plants (GRES-1 and GRES-2). The basin is a symbol of industrial power and the "energy heart" of Kazakhstan.',
+    },
     images: PlaceHolderImages.filter(img => img.id.startsWith('ekibastuz-coal'))
   }
 ];

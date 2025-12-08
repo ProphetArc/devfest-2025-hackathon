@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: 'Vector: Павлодар',
-  description: 'Ваш культурный проводник по Павлодару',
+  title: 'Vector: Pavlodar',
+  description: 'Your cultural guide to Pavlodar',
 };
 
 export default function RootLayout({

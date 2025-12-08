@@ -1,19 +1,22 @@
 'use server';
 
 import { expandSearch } from '@/ai/flows/expand-search-with-ai';
-import type { DataItem } from '@/lib/data';
+import type { DataItem, LocalizedContent } from '@/lib/data';
 import { pavlodarData } from '@/lib/data';
+import type { Language } from '@/lib/i18n';
+import { uiTexts } from '@/lib/i18n';
 
-export async function searchAction(query: string): Promise<DataItem[]> {
+export async function searchAction(query: string, lang: Language): Promise<DataItem[]> {
   if (!query) {
     return [];
   }
   const lowerCaseQuery = query.toLowerCase();
   
-  const results = pavlodarData.filter(item => 
-    item.name.toLowerCase().includes(lowerCaseQuery) ||
-    item.tags.some(tag => tag.toLowerCase().includes(lowerCaseQuery))
-  );
+  const results = pavlodarData.filter(item => {
+    const localized = item[lang];
+    return localized.name.toLowerCase().includes(lowerCaseQuery) ||
+           localized.tags.some(tag => tag.toLowerCase().includes(lowerCaseQuery));
+  });
 
   await new Promise(resolve => setTimeout(resolve, 500));
 
@@ -21,17 +24,18 @@ export async function searchAction(query: string): Promise<DataItem[]> {
 }
 
 export async function expandAction(
-  item: DataItem,
-  userInput: string
+  item: LocalizedContent,
+  userInput: string,
+  lang: Language
 ): Promise<string> {
+    const texts = uiTexts[lang];
     if (!userInput) {
-        return "Пожалуйста, задайте вопрос.";
+        return texts.aiInitialMessage;
     }
 
     const searchResults = `
-        Название: ${item.name}
-        Тип: ${item.type}
-        Описание: ${item.description}
+        Name: ${item.name}
+        Description: ${item.description}
     `;
 
     try {
@@ -43,6 +47,6 @@ export async function expandAction(
         return response.expandedContent;
     } catch (error) {
         console.error("AI expansion failed:", error);
-        return "Извините, произошла ошибка при обращении к ИИ. Попробуйте позже.";
+        return texts.expandActionError;
     }
 }

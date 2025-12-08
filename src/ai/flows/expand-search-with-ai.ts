@@ -31,7 +31,7 @@ const prompt = ai.definePrompt({
   name: 'expandSearchPrompt',
   input: {schema: ExpandSearchInputSchema},
   output: {schema: ExpandSearchOutputSchema},
-  prompt: `You are an AI assistant that expands on search results based on user input.
+  prompt: `You are an AI assistant that expands on search results based on user input. Respond in the same language as the user input.
 
   The user has searched for "{{searchTerm}}" and the search results are:
   {{searchResults}}
