@@ -17,19 +17,19 @@
       {
         "id": "satpaeva-street-1",
         "description": "A bustling city street.",
-        "imageUrl": "https://picsum.photos/seed/satpaeva1/800/600",
+        "imageUrl": "/images/satpaeva-street-1.jpg",
         "imageHint": "city street"
       },
       {
         "id": "satpaeva-street-2",
         "description": "Modern architecture in a city.",
-        "imageUrl": "https://picsum.photos/seed/satpaeva2/800/600",
+        "imageUrl": "/images/satpaeva-street-2.jpg",
         "imageHint": "modern architecture"
       },
       {
         "id": "satpaeva-street-3",
         "description": "City street at night.",
-        "imageUrl": "https://picsum.photos/seed/satpaeva3/800/600",
+        "imageUrl": "/images/satpaeva-street-3.jpg",
         "imageHint": "city night"
       }
     ]
@@ -51,19 +51,19 @@
       {
         "id": "lenina-street-1",
         "description": "An old historic city street.",
-        "imageUrl": "https://picsum.photos/seed/lenina1/800/600",
+        "imageUrl": "/images/lenina-street-1.jpg",
         "imageHint": "historic street"
       },
       {
         "id": "lenina-street-2",
         "description": "Facade of an old historic building.",
-        "imageUrl": "https://picsum.photos/seed/lenina2/800/600",
+        "imageUrl": "/images/lenina-street-2.jpg",
         "imageHint": "historic building"
       },
       {
         "id": "lenina-street-3",
         "description": "A quiet european style street.",
-        "imageUrl": "https://picsum.photos/seed/lenina3/800/600",
+        "imageUrl": "/images/lenina-street-3.jpg",
         "imageHint": "european street"
       }
     ]
@@ -85,19 +85,19 @@
       {
         "id": "pavel-vasilyev-1",
         "description": "Portrait of Pavel Vasilyev",
-        "imageUrl": "https://picsum.photos/seed/vasilyev1/800/600",
+        "imageUrl": "/images/pavel-vasilyev-1.jpg",
         "imageHint": "man portrait"
       },
       {
         "id": "pavel-vasilyev-2",
         "description": "Old book of poems",
-        "imageUrl": "https://picsum.photos/seed/vasilyev2/800/600",
+        "imageUrl": "/images/pavel-vasilyev-2.jpg",
         "imageHint": "old book"
       },
       {
         "id": "pavel-vasilyev-3",
         "description": "Writer at his desk",
-        "imageUrl": "https://picsum.photos/seed/vasilyev3/800/600",
+        "imageUrl": "/images/pavel-vasilyev-3.jpg",
         "imageHint": "writer desk"
       }
     ]
@@ -119,19 +119,19 @@
       {
         "id": "isa-baizakov-1",
         "description": "Portrait of Isa Baizakov",
-        "imageUrl": "https://picsum.photos/seed/baizakov1/800/600",
+        "imageUrl": "/images/isa-baizakov-1.jpg",
         "imageHint": "man portrait"
       },
       {
         "id": "isa-baizakov-2",
         "description": "Kazakh musical instrument dombra",
-        "imageUrl": "https://picsum.photos/seed/baizakov2/800/600",
+        "imageUrl": "/images/isa-baizakov-2.jpg",
         "imageHint": "dombra instrument"
       },
       {
         "id": "isa-baizakov-3",
         "description": "Man singing on stage",
-        "imageUrl": "https://picsum.photos/seed/baizakov3/800/600",
+        "imageUrl": "/images/isa-baizakov-3.jpg",
         "imageHint": "singer stage"
       }
     ]
@@ -153,19 +153,19 @@
       {
         "id": "pavlodar-irtyish-1",
         "description": "A wide river flowing through a plain.",
-        "imageUrl": "https://picsum.photos/seed/irtyish1/800/600",
+        "imageUrl": "/images/pavlodar-irtyish-1.jpg",
         "imageHint": "river plain"
       },
       {
         "id": "pavlodar-irtyish-2",
         "description": "Forest along the river bank.",
-        "imageUrl": "https://picsum.photos/seed/irtyish2/800/600",
+        "imageUrl": "/images/pavlodar-irtyish-2.jpg",
         "imageHint": "river bank"
       },
       {
         "id": "pavlodar-irtyish-3",
         "description": "Sunset over the Irtysh river.",
-        "imageUrl": "https://picsum.photos/seed/irtyish3/800/600",
+        "imageUrl": "/images/pavlodar-irtyish-3.jpg",
         "imageHint": "sunset river"
       }
     ]
@@ -187,19 +187,19 @@
       {
         "id": "ekibastuz-coal-1",
         "description": "An open-pit coal mine.",
-        "imageUrl": "https://picsum.photos/seed/ekibastuz1/800/600",
+        "imageUrl": "/images/ekibastuz-coal-1.jpg",
         "imageHint": "coal mine"
       },
       {
         "id": "ekibastuz-coal-2",
         "description": "Heavy machinery in a coal mine.",
-        "imageUrl": "https://picsum.photos/seed/ekibastuz2/800/600",
+        "imageUrl": "/images/ekibastuz-coal-2.jpg",
         "imageHint": "industrial machinery"
       },
       {
         "id": "ekibastuz-coal-3",
         "description": "Power plant with smoking chimneys.",
-        "imageUrl": "https://picsum.photos/seed/ekibastuz3/800/600",
+        "imageUrl": "/images/ekibastuz-coal-3.jpg",
         "imageHint": "power plant"
       }
     ]
@@ -221,19 +221,19 @@
       {
         "id": "mashkhur-zhusup-mosque-1",
         "description": "The grand Mashkhur Zhusup Mosque",
-        "imageUrl": "https://picsum.photos/seed/mosque1/800/600",
+        "imageUrl": "/images/mashkhur-zhusup-mosque-1.jpg",
         "imageHint": "grand mosque"
       },
       {
         "id": "mashkhur-zhusup-mosque-2",
         "description": "Intricate interior of a mosque",
-        "imageUrl": "https://picsum.photos/seed/mosque2/800/600",
+        "imageUrl": "/images/mashkhur-zhusup-mosque-2.jpg",
         "imageHint": "mosque interior"
       },
       {
         "id": "mashkhur-zhusup-mosque-3",
         "description": "Close-up of a minaret",
-        "imageUrl": "https://picsum.photos/seed/mosque3/800/600",
+        "imageUrl": "/images/mashkhur-zhusup-mosque-3.jpg",
         "imageHint": "minaret closeup"
       }
     ]
@@ -255,19 +255,19 @@
       {
         "id": "annunciation-cathedral-1",
         "description": "The Annunciation Cathedral with golden domes",
-        "imageUrl": "https://picsum.photos/seed/cathedral1/800/600",
+        "imageUrl": "/images/annunciation-cathedral-1.jpg",
         "imageHint": "orthodox cathedral"
       },
       {
         "id": "annunciation-cathedral-2",
         "description": "Interior of a cathedral with frescoes",
-        "imageUrl": "https://picsum.photos/seed/cathedral2/800/600",
+        "imageUrl": "/images/annunciation-cathedral-2.jpg",
         "imageHint": "church interior"
       },
       {
         "id": "annunciation-cathedral-3",
         "description": "Golden domes against the sky",
-        "imageUrl": "https://picsum.photos/seed/cathedral3/800/600",
+        "imageUrl": "/images/annunciation-cathedral-3.jpg",
         "imageHint": "golden domes"
       }
     ]
@@ -289,19 +289,19 @@
       {
         "id": "bukhar-zhyrau-museum-1",
         "description": "An old merchant's house, now a museum",
-        "imageUrl": "https://picsum.photos/seed/museum1/800/600",
+        "imageUrl": "/images/bukhar-zhyrau-museum-1.jpg",
         "imageHint": "old house"
       },
       {
         "id": "bukhar-zhyrau-museum-2",
         "description": "A museum exhibit with old manuscripts",
-        "imageUrl": "https://picsum.photos/seed/museum2/800/600",
+        "imageUrl": "/images/bukhar-zhyrau-museum-2.jpg",
         "imageHint": "museum exhibit"
       },
       {
         "id": "bukhar-zhyrau-museum-3",
         "description": "A bust of a famous writer in a library",
-        "imageUrl": "https://picsum.photos/seed/museum3/800/600",
+        "imageUrl": "/images/bukhar-zhyrau-museum-3.jpg",
         "imageHint": "writer bust"
       }
     ]
@@ -323,19 +323,19 @@
       {
         "id": "dmitry-bagayev-1",
         "description": "Vintage photograph of a city",
-        "imageUrl": "https://picsum.photos/seed/bagayev1/800/600",
+        "imageUrl": "/images/dmitry-bagayev-1.jpg",
         "imageHint": "vintage photograph"
       },
       {
         "id": "dmitry-bagayev-2",
         "description": "An old-fashioned camera",
-        "imageUrl": "https://picsum.photos/seed/bagayev2/800/600",
+        "imageUrl": "/images/dmitry-bagayev-2.jpg",
         "imageHint": "vintage camera"
       },
       {
         "id": "dmitry-bagayev-3",
         "description": "A museum dedicated to photography",
-        "imageUrl": "https://picsum.photos/seed/bagayev3/800/600",
+        "imageUrl": "/images/dmitry-bagayev-3.jpg",
         "imageHint": "photography museum"
       }
     ]
@@ -357,19 +357,19 @@
       {
         "id": "slavic-center-1",
         "description": "People in traditional slavic costumes",
-        "imageUrl": "https://picsum.photos/seed/slavic1/800/600",
+        "imageUrl": "/images/slavic-center-1.jpg",
         "imageHint": "traditional costume"
       },
       {
         "id": "slavic-center-2",
         "description": "Folk dance performance",
-        "imageUrl": "https://picsum.photos/seed/slavic2/800/600",
+        "imageUrl": "/images/slavic-center-2.jpg",
         "imageHint": "folk dance"
       },
       {
         "id": "slavic-center-3",
         "description": "A cultural center building",
-        "imageUrl": "https://picsum.photos/seed/slavic3/800/600",
+        "imageUrl": "/images/slavic-center-3.jpg",
         "imageHint": "cultural center"
       }
     ]
