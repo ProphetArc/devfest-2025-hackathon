@@ -31,7 +31,7 @@ type AllTranslations = {
 export const uiTexts: AllTranslations = {
     ru: {
         appSubtitle: 'Культурный гид по Павлодару',
-        footerText: '© {year} Vector. Создано с любовью к Павлодару.',
+        footerText: '© {year} Vector. Сделано командой Святые утки, специально для DevFest 2025 Pavlodar Hackathon',
         discoverTitle: 'Откройте для себя Павлодар',
         discoverSubtitle: 'Улицы, личности, история и культура.',
         searchInputPlaceholder: "Например, 'Улица Сатпаева' или 'Павел Васильев'...",
@@ -53,7 +53,7 @@ export const uiTexts: AllTranslations = {
     },
     en: {
         appSubtitle: 'Cultural guide to Pavlodar',
-        footerText: '© {year} Vector. Created with love for Pavlodar.',
+        footerText: '© {year} Vector. Made by the Holy Ducks team, especially for DevFest 2025 Pavlodar Hackathon',
         discoverTitle: 'Discover Pavlodar',
         discoverSubtitle: 'Streets, figures, history, and culture.',
         searchInputPlaceholder: "e.g., 'Satpayev Street' or 'Pavel Vasilyev'...",
