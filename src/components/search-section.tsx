@@ -20,7 +20,6 @@ export function SearchSection({ onSearch, query, setQuery, isSearching, lang }: 
   
   const handleSuggestionClick = (suggestion: string) => {
     setQuery(suggestion);
-    onSearch(new Event('submit', { cancelable: true }) as unknown as FormEvent<HTMLFormElement>, suggestion);
   };
   
   return (
@@ -34,7 +33,6 @@ export function SearchSection({ onSearch, query, setQuery, isSearching, lang }: 
           className="h-12 w-full rounded-full bg-card pr-14 text-base"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          disabled={isSearching}
         />
         <Button type="submit" size="icon" className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full" disabled={isSearching || !query.trim()}>
           {isSearching ? <Loader2 className="animate-spin" /> : <Search />}

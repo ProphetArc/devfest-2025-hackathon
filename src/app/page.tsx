@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useTransition, type FormEvent, useCallback } from 'react';
+import { useState, useTransition, type FormEvent, useCallback, useEffect } from 'react';
 import { useToast } from '@/hooks/use-toast';
 import { expandAction, searchAction } from '@/app/actions';
 import type { DataItem } from '@/lib/data';
@@ -29,7 +29,11 @@ export default function Home() {
   const handleSearch = useCallback((e: FormEvent<HTMLFormElement>, suggestionQuery?: string) => {
     e.preventDefault();
     const currentQuery = suggestionQuery || query;
-    if (!currentQuery.trim()) return;
+    if (!currentQuery.trim()) {
+      setResults([]);
+      setQuerySubmitted(false);
+      return;
+    };
     
     setSelectedItem(null);
     setResults([]);
@@ -40,9 +44,29 @@ export default function Home() {
     });
   }, [query, lang]);
 
+  useEffect(() => {
+    if (query.trim() === '') {
+      setResults([]);
+      setQuerySubmitted(false);
+    } else {
+        const handler = setTimeout(() => {
+            startSearchTransition(async () => {
+                const searchResults = await searchAction(query, lang);
+                setResults(searchResults);
+                setQuerySubmitted(true);
+            });
+        }, 300); // Debounce time
+
+        return () => {
+            clearTimeout(handler);
+        };
+    }
+}, [query, lang]);
+
+
   const handleSelectResult = (item: DataItem) => {
     setSelectedItem(item);
-    setAiConversation([]);
+    setAiConversation([{role: 'ai', content: uiTexts[lang].aiAskAbout}]);
     setAiInput('');
   };
 
@@ -50,6 +74,10 @@ export default function Home() {
     setSelectedItem(null);
     setAiConversation([]);
     setAiInput('');
+    if(!query) {
+      setResults([]);
+      setQuerySubmitted(false);
+    }
   };
   
   const handleAiQuery = (e: FormEvent<HTMLFormElement>) => {
@@ -59,7 +87,7 @@ export default function Home() {
     const userInput = aiInput;
     const currentLangItem = selectedItem[lang];
 
-    setAiConversation(prev => [...prev, { role: 'user' as const, content: userInput }]);
+    setAiConversation(prev => [...prev.filter(m => m.role !== 'ai' || m.content !== uiTexts[lang].aiAskAbout), { role: 'user' as const, content: userInput }]);
     setAiInput('');
 
     startAiTransition(async () => {
@@ -78,11 +106,23 @@ export default function Home() {
   };
 
   const toggleLanguage = () => {
-    setLang(currentLang => currentLang === 'ru' ? 'en' : 'ru');
-    setResults([]);
-    setSelectedItem(null);
-    setQuerySubmitted(false);
-    setQuery('');
+    const newLang = lang === 'ru' ? 'en' : 'ru';
+    setLang(newLang);
+    // If we are on the details page, update the AI conversation to the new language
+    if(selectedItem) {
+        setAiConversation(prev => {
+            if(prev.length === 1 && prev[0].role === 'ai') {
+                return [{role: 'ai', content: uiTexts[newLang].aiAskAbout}];
+            }
+            return prev;
+        });
+    } else if (query) {
+       // Re-run search in the new language if there was a query
+       startSearchTransition(async () => {
+        const searchResults = await searchAction(query, newLang);
+        setResults(searchResults);
+      });
+    }
   }
 
   return (
@@ -90,9 +130,9 @@ export default function Home() {
       <header className="sticky top-0 z-10 w-full border-b bg-background/80 backdrop-blur-sm">
         <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
           <h1 className="font-headline text-2xl font-bold text-primary sm:text-3xl">Вектор</h1>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2">
             <p className="hidden text-sm text-muted-foreground sm:block">{texts.appSubtitle}</p>
-            <Button variant="ghost" size="icon" onClick={toggleLanguage} aria-label="Switch language">
+            <Button variant="ghost" className="h-auto px-2 py-1" onClick={toggleLanguage} aria-label="Switch language">
                 <Globe className="h-5 w-5"/>
                 <span className="ml-2 font-semibold">{lang.toUpperCase()}</span>
             </Button>

@@ -104,11 +104,6 @@ export function DetailsSection({ item, onBack, aiConversation, onAiQuery, aiInpu
                          </div>
                       </div>
                   )}
-                  {aiConversation.length === 0 && !isThinking && (
-                    <div className="flex items-center justify-center h-full text-muted-foreground text-sm">
-                        {texts.aiAskAbout}
-                    </div>
-                  )}
               </div>
 
               <form onSubmit={onAiQuery} className="relative mt-4">
