@@ -17,7 +17,7 @@
       {
         "id": "satpaeva-street-1",
         "description": "A bustling city street.",
-        "imageUrl": "https://images.unsplash.com/photo-1634123431577-d448e438edb4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjaXR5JTIwc3RyZWV0fGVufDB8fHx8MTc2NTA4MDUzMHww&ixlib=rb-4.1.0&q=80&w=1080",
+        "imageUrl": "/images/satpaeva-1.jpg",
         "imageHint": "city street"
       },
       {
@@ -375,3 +375,5 @@
     ]
   }
 ]
+
+    
