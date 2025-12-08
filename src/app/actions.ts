@@ -1,9 +1,9 @@
-'use client';
-import {runFlow} from '@genkit-ai/next/client';
+'use server';
+
 import type {ExpandSearchInput} from '@/ai/flows/expand-search-with-ai';
-import {expandSearchFlow} from '@/ai/flows/expand-search-with-ai';
+import {expandSearch} from '@/ai/flows/expand-search-with-ai';
 import type {VectorSearchInput} from '@/ai/flows/vector-search-flow';
-import {vectorSearchFlow} from '@/ai/flows/vector-search-flow';
+import {vectorSearch} from '@/ai/flows/vector-search-flow';
 import type {DataItem, LocalizedContent} from '@/lib/data';
 import {pavlodarData} from '@/lib/data';
 import type {Language} from '@/lib/i18n';
@@ -32,7 +32,7 @@ export async function searchAction(query: string, lang: Language): Promise<DataI
   }
 
   try {
-    const searchResults = await runFlow(vectorSearchFlow, {
+    const searchResults = await vectorSearch({
       query: query,
       data: pavlodarData,
       lang: lang,
@@ -81,7 +81,7 @@ export async function expandAction(
     `;
 
   try {
-    const response = await runFlow(expandSearchFlow, {
+    const response = await expandSearch({
       searchTerm: item.name,
       searchResults,
       userInput,

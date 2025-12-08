@@ -13,11 +13,6 @@ export const nextBuildFlow = defineFlow(
     name: 'next-build-flow',
   },
   async () => {
-    await ai.build({
-      // @ts-ignore
-      target: 'nextjs',
-      // @ts-ignore
-      out: './.genkit-nextjs',
-    });
+    // This build step is not needed for the server actions approach
   }
 );

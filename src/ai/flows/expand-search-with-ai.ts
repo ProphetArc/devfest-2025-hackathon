@@ -40,14 +40,7 @@ const prompt = ai.definePrompt({
   `,
 });
 
-export const expandSearchFlow = ai.defineFlow(
-  {
-    name: 'expandSearchFlow',
-    inputSchema: ExpandSearchInputSchema,
-    outputSchema: ExpandSearchOutputSchema,
-  },
-  async input => {
-    const {output} = await prompt(input);
-    return output!;
-  }
-);
+export async function expandSearch(input: ExpandSearchInput): Promise<ExpandSearchOutput> {
+  const {output} = await prompt(input);
+  return output!;
+}

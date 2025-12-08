@@ -30,13 +30,9 @@ const VectorSearchOutputSchema = z.object({
 });
 export type VectorSearchOutput = z.infer<typeof VectorSearchOutputSchema>;
 
-export const vectorSearchFlow = ai.defineFlow(
-  {
-    name: 'vectorSearchFlow',
-    inputSchema: VectorSearchInputSchema,
-    outputSchema: VectorSearchOutputSchema,
-  },
-  async ({query, data, lang}) => {
+export async function vectorSearch(
+  {query, data, lang}: VectorSearchInput
+): Promise<VectorSearchOutput> {
     // 1. Generate embedding for the user's query
     const queryEmbedding = await embed({
       embedder: 'googleai/embedding-001',
@@ -78,5 +74,4 @@ export const vectorSearchFlow = ai.defineFlow(
     return {
       results: relevantResults.map(r => r.id),
     };
-  }
-);
+}
