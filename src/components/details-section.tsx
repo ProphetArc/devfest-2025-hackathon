@@ -1,4 +1,4 @@
-import type { FormEvent } from 'react';
+import { useState, type FormEvent } from 'react';
 import Image from 'next/image';
 import { ArrowLeft, Bot, Loader2, Send, Sparkle, User } from 'lucide-react';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
@@ -10,6 +10,7 @@ import { cn } from '@/lib/utils';
 import { IconForItemType, translateType } from '@/components/icons';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { type Language, uiTexts } from '@/lib/i18n';
+import { Lightbox } from './lightbox';
 
 type DetailsSectionProps = {
   item: DataItem;
@@ -23,10 +24,17 @@ type DetailsSectionProps = {
 };
 
 export function DetailsSection({ item, onBack, aiConversation, onAiQuery, aiInput, setAiInput, isThinking, lang }: DetailsSectionProps) {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
+
   const heroImage = item.images && item.images.length > 0 ? item.images[0] : null;
-  const galleryImages = item.images && item.images.length > 1 ? item.images.slice(0) : [];
   const currentLangItem = item[lang];
   const texts = uiTexts[lang];
+
+  const openLightbox = (index: number) => {
+    setLightboxIndex(index);
+    setLightboxOpen(true);
+  }
 
   return (
     <div className="animate-in fade-in-0 duration-500">
@@ -36,7 +44,7 @@ export function DetailsSection({ item, onBack, aiConversation, onAiQuery, aiInpu
       </Button>
       <Card className="overflow-hidden">
         {heroImage && (
-            <div className="relative h-64 w-full bg-muted">
+            <div className="relative h-64 w-full bg-muted cursor-pointer" onClick={() => openLightbox(0)}>
                 <Image src={heroImage.imageUrl} alt={heroImage.description} fill className="object-cover" data-ai-hint={heroImage.imageHint} sizes="100vw" priority />
             </div>
         )}
@@ -54,20 +62,20 @@ export function DetailsSection({ item, onBack, aiConversation, onAiQuery, aiInpu
         <CardContent>
           <p className="whitespace-pre-wrap text-base leading-relaxed">{currentLangItem.description}</p>
           
-          {galleryImages.length > 0 && (
+          {item.images.length > 0 && (
             <div className="mt-8">
                 <h4 className="font-headline text-xl font-semibold mb-4">{texts.galleryTitle}</h4>
                 <Carousel className="w-full">
                     <CarouselContent>
-                    {galleryImages.map((image, index) => (
+                    {item.images.map((image, index) => (
                         <CarouselItem key={index} className="md:basis-1/2">
-                        <div className="relative h-56 w-full bg-muted rounded-lg overflow-hidden">
+                        <div className="relative h-56 w-full bg-muted rounded-lg overflow-hidden cursor-pointer" onClick={() => openLightbox(index)}>
                             <Image src={image.imageUrl} alt={image.description} fill className="object-cover" data-ai-hint={image.imageHint} sizes="(max-width: 768px) 100vw, 50vw" />
                         </div>
                         </CarouselItem>
                     ))}
                     </CarouselContent>
-                    {galleryImages.length > 1 && (
+                    {item.images.length > 1 && (
                     <>
                         <CarouselPrevious className="absolute left-3 top-1/2 -translate-y-1/2" />
                         <CarouselNext className="absolute right-3 top-1/2 -translate-y-1/2" />
@@ -128,6 +136,13 @@ export function DetailsSection({ item, onBack, aiConversation, onAiQuery, aiInpu
           </div>
         </CardContent>
       </Card>
+      {lightboxOpen && (
+        <Lightbox 
+          images={item.images}
+          startIndex={lightboxIndex}
+          onClose={() => setLightboxOpen(false)}
+        />
+      )}
     </div>
   );
 }
