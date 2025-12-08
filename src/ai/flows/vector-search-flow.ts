@@ -44,8 +44,8 @@ export async function vectorSearch(
     const documents = (data as DataItem[]).map(item => {
       const localized = item[lang];
       const itemType = translateType(item.type, lang);
-      // Combine name, type, and the full knowledge base for a rich semantic representation.
-      const textToEmbed = `Тип: ${itemType}. Название: ${localized.name}. Описание: ${localized.knowledge}`;
+      // Combine name, type, tags and the full knowledge base for a rich semantic representation.
+      const textToEmbed = `Тип: ${itemType}. Название: ${localized.name}. Теги: ${localized.tags.join(', ')}. Описание: ${localized.knowledge}`;
       return {id: item.id, text: textToEmbed};
     });
 
