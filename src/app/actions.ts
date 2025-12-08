@@ -33,9 +33,10 @@ export async function expandAction(
         return texts.aiInitialMessage;
     }
 
+    // Use the detailed 'knowledge' field for the AI context
     const searchResults = `
         Name: ${item.name}
-        Description: ${item.description}
+        Context: ${item.knowledge}
     `;
 
     try {

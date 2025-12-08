@@ -11,6 +11,7 @@ export type LocalizedContent = {
   name: string;
   tags: string[];
   description: string;
+  knowledge: string;
 };
 
 export type DataItem = {
