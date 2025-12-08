@@ -19,7 +19,7 @@ export type LocalizedContent = {
 
 export type DataItem = {
   id: string;
-  type: 'street' | 'figure' | 'phenomenon';
+  type: 'street' | 'figure' | 'phenomenon' | 'industrial';
   ru: LocalizedContent;
   en: LocalizedContent;
   images: ImagePlaceholder[];

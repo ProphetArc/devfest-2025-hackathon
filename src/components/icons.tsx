@@ -1,4 +1,4 @@
-import { Landmark, MapPin, User } from 'lucide-react';
+import { Landmark, MapPin, User, Factory } from 'lucide-react';
 import type { DataItem } from '@/lib/data';
 import { type Language } from '@/lib/i18n';
 
@@ -7,6 +7,7 @@ export const IconForItemType = ({ type, ...props }: { type: DataItem['type']; cl
     case 'street': return <MapPin {...props} />;
     case 'figure': return <User {...props} />;
     case 'phenomenon': return <Landmark {...props} />;
+    case 'industrial': return <Factory {...props} />;
     default: return null;
   }
 };
@@ -15,12 +16,14 @@ const translations = {
     ru: {
         'street': 'Улица',
         'figure': 'Личность',
-        'phenomenon': 'Культурный феномен'
+        'phenomenon': 'Культурный феномен',
+        'industrial': 'Промышленный объект'
     },
     en: {
         'street': 'Street',
         'figure': 'Figure',
-        'phenomenon': 'Cultural Phenomenon'
+        'phenomenon': 'Cultural Phenomenon',
+        'industrial': 'Industrial Site'
     }
 }
 
