@@ -402,15 +402,6 @@
         },
         "imageUrl": "images/Mashkhur_Zhusup_Mosque/Mashkhur_Zhusup_Mosque_2.jpg",
         "imageHint": "mosque interior"
-      },
-      {
-        "id": "mashkhur-zhusup-mosque-3",
-        "description": {
-          "ru": "Минарет крупным планом",
-          "en": "Close-up of a minaret"
-        },
-        "imageUrl": "images/Mashkhur_Zhusup_Mosque/Mashkhur_Zhusup_Mosque_3.jpg",
-        "imageHint": "minaret closeup"
       }
     ]
   },
