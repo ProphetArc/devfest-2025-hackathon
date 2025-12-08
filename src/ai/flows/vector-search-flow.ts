@@ -9,9 +9,8 @@
  */
 
 import {ai} from '@/ai/genkit';
-import {defineFlow} from 'genkit';
-import {z} from 'genkit';
 import {embed} from 'genkit';
+import {z} from 'genkit';
 import {cosineSimilarity} from '../utils';
 import type {DataItem} from '@/lib/data';
 import {translateType} from '@/components/icons';
@@ -31,7 +30,7 @@ const VectorSearchOutputSchema = z.object({
 });
 export type VectorSearchOutput = z.infer<typeof VectorSearchOutputSchema>;
 
-const vectorSearchFlow = ai.flow(
+export const vectorSearchFlow = ai.defineFlow(
   {
     name: 'vectorSearchFlow',
     inputSchema: VectorSearchInputSchema,
@@ -80,13 +79,4 @@ const vectorSearchFlow = ai.flow(
       results: relevantResults.map(r => r.id),
     };
   }
-);
-
-export const vectorSearch = defineFlow(
-  {
-    name: 'vectorSearch',
-    inputSchema: VectorSearchInputSchema,
-    outputSchema: VectorSearchOutputSchema,
-  },
-  vectorSearchFlow
 );

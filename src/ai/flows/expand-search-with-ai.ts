@@ -9,7 +9,6 @@
  */
 
 import {ai} from '@/ai/genkit';
-import {defineFlow} from 'genkit';
 import {z} from 'genkit';
 
 const ExpandSearchInputSchema = z.object({
@@ -41,7 +40,7 @@ const prompt = ai.definePrompt({
   `,
 });
 
-const expandSearchFlow = ai.flow(
+export const expandSearchFlow = ai.defineFlow(
   {
     name: 'expandSearchFlow',
     inputSchema: ExpandSearchInputSchema,
@@ -51,13 +50,4 @@ const expandSearchFlow = ai.flow(
     const {output} = await prompt(input);
     return output!;
   }
-);
-
-export const expandSearch = defineFlow(
-  {
-    name: 'expandSearch',
-    inputSchema: ExpandSearchInputSchema,
-    outputSchema: ExpandSearchOutputSchema,
-  },
-  expandSearchFlow
 );

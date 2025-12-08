@@ -1,20 +1,38 @@
 'use client';
-
 import {runFlow} from '@genkit-ai/next/client';
-import type {expandSearch, ExpandSearchInput} from '@/ai/flows/expand-search-with-ai';
-import type {vectorSearch, VectorSearchInput} from '@/ai/flows/vector-search-flow';
+import type {ExpandSearchInput} from '@/ai/flows/expand-search-with-ai';
+import {expandSearchFlow} from '@/ai/flows/expand-search-with-ai';
+import type {VectorSearchInput} from '@/ai/flows/vector-search-flow';
+import {vectorSearchFlow} from '@/ai/flows/vector-search-flow';
 import type {DataItem, LocalizedContent} from '@/lib/data';
 import {pavlodarData} from '@/lib/data';
 import type {Language} from '@/lib/i18n';
 import {uiTexts} from '@/lib/i18n';
 
+// When building for static export (like GitHub Pages), Server Actions are not supported directly.
+// We add a check to bypass the AI calls during the build process on GitHub Actions.
+const isStaticExportBuild = process.env.GITHUB_ACTIONS === 'true';
+
 export async function searchAction(query: string, lang: Language): Promise<DataItem[]> {
+  if (isStaticExportBuild) {
+    console.log('Skipping vector search during static export build.');
+    // Fallback to simple text search during static build
+    const lowerCaseQuery = query.toLowerCase();
+    return pavlodarData.filter(item => {
+      const localized = item[lang];
+      return (
+        localized.name.toLowerCase().includes(lowerCaseQuery) ||
+        localized.tags.some(tag => tag.toLowerCase().includes(lowerCaseQuery))
+      );
+    });
+  }
+
   if (!query) {
     return [];
   }
 
   try {
-    const searchResults = await runFlow(vectorSearch, {
+    const searchResults = await runFlow(vectorSearchFlow, {
       query: query,
       data: pavlodarData,
       lang: lang,
@@ -46,6 +64,11 @@ export async function expandAction(
   userInput: string,
   lang: Language
 ): Promise<string> {
+   if (isStaticExportBuild) {
+    console.log('Skipping AI expansion during static export build.');
+    return uiTexts[lang].expandActionError;
+  }
+
   const texts = uiTexts[lang];
   if (!userInput) {
     return texts.aiInitialMessage;
@@ -58,7 +81,7 @@ export async function expandAction(
     `;
 
   try {
-    const response = await runFlow(expandSearch, {
+    const response = await runFlow(expandSearchFlow, {
       searchTerm: item.name,
       searchResults,
       userInput,
