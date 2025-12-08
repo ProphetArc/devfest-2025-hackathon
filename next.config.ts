@@ -1,5 +1,5 @@
 import type {NextConfig} from 'next';
-import {instrument} from '@genkit-ai/next/plugin';
+import {next} from '@genkit-ai/next';
 
 const repo = 'devfest-2025-hackathon';
 const isGithubActions = process.env.GITHUB_ACTIONS === 'true';
@@ -42,4 +42,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default instrument(nextConfig);
+export default next(nextConfig);
