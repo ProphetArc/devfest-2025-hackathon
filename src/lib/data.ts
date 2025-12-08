@@ -2,7 +2,10 @@ import pavlodarDataJson from './pavlodar-data.json';
 
 export type ImagePlaceholder = {
   id: string;
-  description: string;
+  description: {
+    ru: string;
+    en: string;
+  };
   imageUrl: string;
   imageHint: string;
 };

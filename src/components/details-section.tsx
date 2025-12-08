@@ -45,7 +45,7 @@ export function DetailsSection({ item, onBack, aiConversation, onAiQuery, aiInpu
       <Card className="overflow-hidden">
         {heroImage && (
             <div className="relative h-64 w-full bg-muted cursor-pointer" onClick={() => openLightbox(0)}>
-                <Image src={heroImage.imageUrl} alt={heroImage.description} fill className="object-cover" data-ai-hint={heroImage.imageHint} sizes="100vw" priority />
+                <Image src={heroImage.imageUrl} alt={heroImage.description[lang]} fill className="object-cover" data-ai-hint={heroImage.imageHint} sizes="100vw" priority />
             </div>
         )}
         <CardHeader>
@@ -70,7 +70,7 @@ export function DetailsSection({ item, onBack, aiConversation, onAiQuery, aiInpu
                     {item.images.map((image, index) => (
                         <CarouselItem key={index} className="md:basis-1/2">
                         <div className="relative h-56 w-full bg-muted rounded-lg overflow-hidden cursor-pointer" onClick={() => openLightbox(index)}>
-                            <Image src={image.imageUrl} alt={image.description} fill className="object-cover" data-ai-hint={image.imageHint} sizes="(max-width: 768px) 100vw, 50vw" />
+                            <Image src={image.imageUrl} alt={image.description[lang]} fill className="object-cover" data-ai-hint={image.imageHint} sizes="(max-width: 768px) 100vw, 50vw" />
                         </div>
                         </CarouselItem>
                     ))}
@@ -141,6 +141,7 @@ export function DetailsSection({ item, onBack, aiConversation, onAiQuery, aiInpu
           images={item.images}
           startIndex={lightboxIndex}
           onClose={() => setLightboxOpen(false)}
+          lang={lang}
         />
       )}
     </div>

@@ -6,14 +6,16 @@ import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import type { ImagePlaceholder } from '@/lib/data';
+import { Language } from '@/lib/i18n';
 
 type LightboxProps = {
   images: ImagePlaceholder[];
   startIndex: number;
   onClose: () => void;
+  lang: Language;
 };
 
-export function Lightbox({ images, startIndex, onClose }: LightboxProps) {
+export function Lightbox({ images, startIndex, onClose, lang }: LightboxProps) {
   const [currentIndex, setCurrentIndex] = useState(startIndex);
 
   const goToNext = useCallback(() => {
@@ -93,7 +95,7 @@ export function Lightbox({ images, startIndex, onClose }: LightboxProps) {
               <Image
                   key={currentImage.id}
                   src={currentImage.imageUrl}
-                  alt={currentImage.description}
+                  alt={currentImage.description[lang]}
                   fill
                   className="object-contain animate-in fade-in"
                   sizes="100vw"
@@ -102,7 +104,7 @@ export function Lightbox({ images, startIndex, onClose }: LightboxProps) {
 
              {/* Description */}
              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 rounded-md bg-black/50 px-4 py-2 text-center text-sm text-white">
-                <p>{currentImage.description}</p>
+                <p>{currentImage.description[lang]}</p>
                 <p className='text-xs opacity-70'>({currentIndex + 1} / {images.length})</p>
              </div>
         </div>
