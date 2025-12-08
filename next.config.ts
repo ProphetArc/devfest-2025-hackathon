@@ -1,11 +1,12 @@
 import type {NextConfig} from 'next';
 
-const repo = 'devfest-2025-hackathon'
-const assetPrefix = `/${repo}/`
-const basePath = `/${repo}`
+const repo = 'devfest-2025-hackathon';
+const isGithubActions = process.env.GITHUB_ACTIONS === 'true';
+
+const assetPrefix = isGithubActions ? `/${repo}/` : undefined;
+const basePath = isGithubActions ? `/${repo}` : undefined;
 
 const nextConfig: NextConfig = {
-  /* config options here */
   output: 'export',
   assetPrefix: assetPrefix,
   basePath: basePath,

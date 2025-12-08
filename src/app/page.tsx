@@ -14,8 +14,6 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { ThemeToggle } from '@/components/theme-toggle';
 
-const basePath = '/devfest-2025-hackathon';
-
 export default function Home() {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<DataItem[]>([]);
@@ -145,7 +143,7 @@ export default function Home() {
     <div className="flex min-h-screen flex-col bg-background text-foreground font-body">
       <header className="sticky top-0 z-10 w-full border-b bg-background/80 backdrop-blur-sm">
         <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
-          <Link href={`${basePath}/`} className="flex items-center gap-3" onClick={handleLogoClick}>
+          <Link href="/" className="flex items-center gap-3" onClick={handleLogoClick}>
             <Compass className="h-7 w-7 text-primary" />
             <h1 className="font-headline text-2xl font-bold text-primary sm:text-3xl">{texts.appTitle}</h1>
           </Link>
