@@ -166,17 +166,17 @@
           "ru": "Портрет Султанмахмута Торайгырова",
           "en": "Portrait of Sultanmakhmut Toraygyrov"
         },
-        "imageUrl": "/images/toraigyrov-1.jpg",
+        "imageUrl": "/images/Sultanmakhmut_Toraighyrov/Sultanmakhmut_Toraighyrov_1.jpg",
         "imageHint": "man portrait"
       },
       {
         "id": "toraigyrov-2",
         "description": {
-          "ru": "Павлодарский государственный университет им. С. Торайгырова",
-          "en": "S. Toraighyrov Pavlodar State University"
+          "ru": "Стихотворение 'Шәкірт ойы'",
+          "en": "Poem 'Shakirt Oiy"
         },
-        "imageUrl": "/images/toraigyrov-2.jpg",
-        "imageHint": "university building"
+        "imageUrl": "/images/Sultanmakhmut_Toraighyrov/Shakirt_oyi.jpg",
+        "imageHint": "poem"
       },
       {
         "id": "toraigyrov-3",
@@ -184,8 +184,53 @@
           "ru": "Памятник Султанмахмуту Торайгырову в Павлодаре",
           "en": "Monument to Sultanmakhmut Toraygyrov in Pavlodar"
         },
-        "imageUrl": "/images/toraigyrov-3.jpg",
+        "imageUrl": "/images/Sultanmakhmut_Toraighyrov/Monument_to_Torayghirov.jpg",
         "imageHint": "monument statue"
+      }
+    ]
+  },
+  {
+    "id": "toraighyrov-university",
+    "type": "phenomenon",
+    "ru": {
+      "name": "Торайгыров Университет",
+      "tags": ["университет", "торайгыров", "образование", "наука", "пгу"],
+      "description": "Ведущий вуз Павлодарской области, носящий имя выдающегося казахского поэта и просветителя Султанмахмута Торайгырова. Является крупным образовательным, научным и культурным центром Северного Казахстана.",
+      "knowledge": "### Общая информация\n- **Полное название:** Некоммерческое акционерное общество «Торайгыров Университет» (Toraighyrov University).\n- **Статус:** Ведущий многопрофильный вуз Павлодарской области.\n- **Расположение:** г. Павлодар, ул. Ломова, 64.\n- **История:** Основан в 1960 году как Павлодарский индустриальный институт. В 1996 году был объединён с Педагогическим институтом и преобразован в Павлодарский государственный университет (ПГУ). В 2020 году получил статус исследовательского университета и был переименован в «Торайгыров Университет».\n\n### Структура и факультеты\n- Университет включает в себя 7 факультетов, охватывающих широкий спектр специальностей: от инженерии и естественных наук до гуманитарных и сельскохозяйственных.\n- **Факультеты:**\n  - Foundation\n  - Факультет инженерии\n  - Факультет компьютерных и естественных наук\n  - Факультет сельскохозяйственных наук\n  - Факультет гуманитарных и социальных наук\n  - Школа бизнеса и права\n  - Факультет образования\n\n### Научная деятельность\n- **Исследовательский университет:** Вуз активно занимается научными исследованиями, особенно в областях, связанных с промышленностью региона (металлургия, энергетика, нефтехимия).\n- **Научные центры:** На базе университета действуют различные научные центры и лаборатории, включая Центр предпринимательства и инноваций «Ertis», научные центры по археологии, биотехнологиям и экологии.\n- **Студенческая наука:** Активно поддерживается научная работа студентов через научные кружки, конференции и стартап-проекты.\n\n### Значение для региона\n- **Кадровый потенциал:** Университет является главным поставщиком квалифицированных кадров для промышленных предприятий и организаций Павлодарской области.\n- **Культурный центр:** Вуз играет важную роль в культурной жизни города, организуя концерты, фестивали, выставки и другие мероприятия.\n- **Международное сотрудничество:** Университет поддерживает партнёрские отношения с вузами и научными центрами из разных стран мира, что способствует академической мобильности студентов и преподавателей."
+    },
+    "en": {
+      "name": "Toraighyrov University",
+      "tags": ["university", "toraighyrov", "education", "science", "psu"],
+      "description": "The leading higher education institution in the Pavlodar region, named after the outstanding Kazakh poet and enlightener Sultanmakhmut Toraighyrov. It is a major educational, scientific, and cultural center of Northern Kazakhstan.",
+      "knowledge": "### General Information\n- **Full Name:** Non-profit joint-stock company \"Toraighyrov University\".\n- **Status:** The leading multidisciplinary higher education institution in the Pavlodar region.\n- **Location:** 64 Lomov St, Pavlodar.\n- **History:** Founded in 1960 as the Pavlodar Industrial Institute. In 1996, it merged with the Pedagogical Institute and was transformed into Pavlodar State University (PSU). In 2020, it received the status of a research university and was renamed \"Toraighyrov University\".\n\n### Structure and Faculties\n- The university includes 7 faculties covering a wide range of specialties: from engineering and natural sciences to humanities and agricultural sciences.\n- **Faculties:**\n  - Foundation\n  - Faculty of Engineering\n  - Faculty of Computer and Natural Sciences\n  - Faculty of Agricultural Sciences\n  - Faculty of Humanities and Social Sciences\n  - School of Business and Law\n  - Faculty of Education\n\n### Scientific Activity\n- **Research University:** The university is actively engaged in scientific research, especially in areas related to the region's industry (metallurgy, energy, petrochemistry).\n- **Scientific Centers:** Various scientific centers and laboratories operate on the basis of the university, including the \"Ertis\" Center for Entrepreneurship and Innovation, and scientific centers for archaeology, biotechnology, and ecology.\n- **Student Science:** Student scientific work is actively supported through scientific circles, conferences, and startup projects.\n\n### Importance for the Region\n- **Human Resources:** The university is the main supplier of qualified personnel for industrial enterprises and organizations in the Pavlodar region.\n- **Cultural Center:** The university plays an important role in the cultural life of the city, organizing concerts, festivals, exhibitions, and other events.\n- **International Cooperation:** The university maintains partnership relations with higher education institutions and scientific centers from different countries, which promotes the academic mobility of students and teachers."
+    },
+    "images": [
+      {
+        "id": "toraighyrov-university-1",
+        "description": {
+          "ru": "Главный корпус Торайгыров Университета",
+          "en": "Main building of Toraighyrov University"
+        },
+        "imageUrl": "/images/toraighyrov-university-1.jpg",
+        "imageHint": "university building"
+      },
+      {
+        "id": "toraighyrov-university-2",
+        "description": {
+          "ru": "Студенты в кампусе университета",
+          "en": "Students on the university campus"
+        },
+        "imageUrl": "/images/toraighyrov-university-2.jpg",
+        "imageHint": "university campus"
+      },
+      {
+        "id": "toraighyrov-university-3",
+        "description": {
+          "ru": "Научная лаборатория в университете",
+          "en": "A science lab at the university"
+        },
+        "imageUrl": "/images/toraighyrov-university-3.jpg",
+        "imageHint": "science lab"
       }
     ]
   },
@@ -466,13 +511,13 @@
       "name": "Дмитрий Багаев",
       "tags": ["фотограф", "история", "багаев", "музей", "краевед", "знаменитость"],
       "description": "Выдающийся фотограф и краевед, посвятивший свою жизнь запечатлению истории Павлодарского Прииртышья. Его коллекция фотографий является бесценной летописью региона.",
-      "knowledge": "### Общая информация\n- **Имя:** Дмитрий Поликарпович Багаев (1884–1958).\n- **Род деятельности:** Фотограф, краевед, основатель и первый директор Павлодарского областного историко-краеведческого музея.\n- **Значение:** Считается летописцем Павлодарского Прииртышья, запечатлевшим на своих снимках историю региона первой половины XX века.\n\n### Вклад в историю и культуру\n- **Фотографическое наследие:** Багаев создал огромную коллекцию фотографий, которая документирует быт, архитектуру, события и людей Павлодара и его окрестностей. Его работы охватывают период от дореволюционной России до советских времен. Это бесценный исторический источник.\n- **Основание музея:** В 1942 году Дмитрий Багаев стал инициатором создания и первым директором Павлодарского областного историко-краеведческого музея им. Г.Н. Потанина. Он передал в фонды музея значительную часть своих коллекций, включая фотографии, негативы и личные вещи.\n- **Краеведческая работа:** Помимо фотографии, Багаев активно занимался сбором этнографических материалов, археологических находок и других предметов, имеющих историческую ценность.\n\n### Дом-музей Дмитрия Багаева\n- **Создание и адрес:** В 2001 году в доме, где фотограф жил и работал с 1905 по 1958 год, был открыт мемориальный дом-музей. Он расположен по адресу: улица Астана, 200.\n- **Экспозиция:** В музее воссоздана обстановка его фотосалона и жилых комнат. Посетители могут увидеть его личные вещи, фотооборудование того времени (фотоаппараты, увеличители), предметы быта конца XIX – начала XX века и, конечно, его знаменитые фотографии.\n- **Уникальный фотопавильон:** В доме сохранился уникальный фотопавильон со стеклянным потолком и северной стеной, который Багаев пристроил в начале XX века для работы с естественным светом. Это одна из главных достопримечательностей музея.\n- **Культурный центр:** Музей является центром фотографической жизни города, где проводятся выставки современных фотографов и образовательные мероприятия."
+      "knowledge": "### Общая информация\n- **Имя:** Дмитрий Поликарпович Багаев (1884–1958).\n- **Род деятельности:** Фотограф, краевед, основатель и первый директор Павлодарского областного историко-краеведческого музея.\n- **Значение:** Считается летописцем Павлодарского Прииртышья, запечатлевшим на своих снимках историю региона первой половины XX века.\n\n### Вклад в историю и культуру\n- **Фотографическое наследие:** Багаев создал огромную коллекцию фотографий, которая документирует быт, архитектуру, события и людей Павлодара и его окрестностей. Его работы охватывают период от дореволюционной России до советских времен. Это бесценный исторический источник.\n- **Основание музея:** В 1942 году Дмитрий Багаев стал инициатором создания и первым директором Павлодарского областного историко-краеведческого музея им. Г.Н. Потанина. Он передал в фонды музея значительную часть своих коллекций, включая фотографии, негативы и личные вещи.\n- **Краеведческая работа:** Помимо фотографии, Багаев активно занимался сбором этнографических материалов, археологических находок и других предметов, имеющих историческую ценность.\n\n### Дом-музей Дмитрия Багаева\n- **Адрес:** Улица Астана, 200, Павлодар, Казахстан. Музей открыт в 2001 году в историческом здании конца XIX века, где Багаев жил и работал с 1905 по 1958 год.\n- **Экспозиция:** В музее воссоздана обстановка его фотосалона и жилых комнат. Посетители могут увидеть его личные вещи, фотооборудование того времени, предметы быта и, конечно, его знаменитые фотографии.\n- **Уникальный фотопавильон:** В доме сохранился уникальный фотопавильон со стеклянным потолком и северной стеной, который Багаев пристроил в начале XX века для работы с естественным светом. Это одна из главных достопримечательностей музея.\n- **Культурный центр:** Музей является центром фотографической жизни города, где проводятся выставки современных фотографов и образовательные мероприятия."
     },
     "en": {
       "name": "Dmitry Bagayev",
       "tags": ["photographer", "history", "bagayev", "museum", "local historian", "celebrity"],
       "description": "An outstanding photographer and local historian who dedicated his life to capturing the history of the Pavlodar Irtysh region. His collection of photographs is an invaluable chronicle of the region.",
-      "knowledge": "### General Information\n- **Name:** Dmitry Polikarpovich Bagayev (1884–1958).\n- **Occupation:** Photographer, local historian, founder and first director of the Pavlodar Regional Museum of Local History.\n- **Significance:** Considered the chronicler of the Pavlodar Irtysh region, having captured the history of the region in the first half of the 20th century in his photographs.\n\n### Contribution to History and Culture\n- **Photographic Legacy:** Bagayev created a vast collection of photographs documenting the life, architecture, events, and people of Pavlodar and its surroundings. His works cover the period from pre-revolutionary Russia to Soviet times. This is an invaluable historical source.\n- **Museum Foundation:** In 1942, Dmitry Bagayev initiated the creation of and became the first director of the G.N. Potanin Pavlodar Regional Museum of Local History. He donated a significant part of his collections to the museum, including photographs, negatives, and personal items.\n- **Local History Work:** In addition to photography, Bagayev was actively involved in collecting ethnographic materials, archaeological finds, and other items of historical value.\n\n### Dmitry Bagayev House-Museum\n- **Creation and Address:** In 2001, a memorial house-museum was opened in the house where the photographer lived and worked from 1905 to 1958. It is located at 200 Astana Street.\n- **Exposition:** The museum recreates the atmosphere of his photo studio and living rooms. Visitors can see his personal belongings, photographic equipment of that time (cameras, enlargers), household items from the late 19th - early 20th century, and, of course, his famous photographs.\n- **Unique Photo Pavilion:** The house preserves a unique photo pavilion with a glass ceiling and a north wall, which Bagayev added in the early 20th century to work with natural light. This is one of the main attractions of the museum.\n- **Cultural Center:** The museum is a center for the city's photographic life, hosting exhibitions of contemporary photographers and educational events."
+      "knowledge": "### General Information\n- **Name:** Dmitry Polikarpovich Bagayev (1884–1958).\n- **Occupation:** Photographer, local historian, founder and first director of the Pavlodar Regional Museum of Local History.\n- **Significance:** Considered the chronicler of the Pavlodar Irtysh region, having captured the history of the region in the first half of the 20th century in his photographs.\n\n### Contribution to History and Culture\n- **Photographic Legacy:** Bagayev created a vast collection of photographs documenting the life, architecture, events, and people of Pavlodar and its surroundings. His works cover the period from pre-revolutionary Russia to Soviet times. This is an invaluable historical source.\n- **Museum Foundation:** In 1942, Dmitry Bagayev initiated the creation of and became the first director of the G.N. Potanin Pavlodar Regional Museum of Local History. He donated a significant part of his collections to the museum, including photographs, negatives, and personal items.\n- **Local History Work:** In addition to photography, Bagayev was actively involved in collecting ethnographic materials, archaeological finds, and other items of historical value.\n\n### Dmitry Bagayev House-Museum\n- **Address:** 200 Astana Street, Pavlodar, Kazakhstan. The museum was opened in 2001 in a historic late 19th-century building where Bagayev lived and worked from 1905 to 1958.\n- **Exposition:** The museum recreates the atmosphere of his photo studio and living rooms. Visitors can see his personal belongings, photographic equipment of that time, household items, and, of course, his famous photographs.\n- **Unique Photo Pavilion:** The house preserves a unique photo pavilion with a glass ceiling and a north wall, which Bagayev added in the early 20th century to work with natural light. This is one of the main attractions of the museum.\n- **Cultural Center:** The museum is a center for the city's photographic life, hosting exhibitions of contemporary photographers and educational events."
     },
     "images": [
       {
@@ -550,5 +595,6 @@
     ]
   }
 ]
+    
 
     
