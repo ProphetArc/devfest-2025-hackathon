@@ -215,13 +215,13 @@
     "type": "phenomenon",
     "ru": {
       "name": "Мечеть имени Машхур Жусупа",
-      "tags": ["мечеть", "архитектура", "религия", "достопримечательность"],
-      "description": "Главная мечеть Павлодара, одна из самых красивых в Казахстане. Её восьмиконечная звезда, голубой купол и высокие минареты видны издалека. Внутри мечеть поражает своим убранством, ажурными решетками и огромной люстрой. Это не только религиозный центр для мусульман региона, но и важный архитектурный памятник, привлекающий туристов своей красотой и величием."
+      "tags": ["мечеть", "архитектура", "религия", "достопримечательность", "Машхур Жусуп"],
+      "description": "Главная мечеть Павлодара и одна из самых красивых в Казахстане, названная в честь выдающегося казахского поэта, историка и философа Машхура Жусупа Копеева (1858–1931). Строительство было завершено в 2001 году. Расположенная в центре города (ул. Каирбаева, 107), мечеть рассчитана на 1500 человек.\n\nАрхитектура мечети полна символизма: здание построено в форме восьмиконечной звезды (48x48 м), купол ярко-голубого цвета возвышается на 43 метра, а четыре минарета достигают высоты 63 метров, что символизирует возраст пророка Мухаммеда. Помимо залов для молитв (включая отдельный женский зал на 300 мест), в здании находятся медресе, библиотека, читальный зал и музей, посвященный истории ислама."
     },
     "en": {
       "name": "Mashkhur Zhusup Mosque",
-      "tags": ["mosque", "architecture", "religion", "landmark"],
-      "description": "The main mosque of Pavlodar, one of the most beautiful in Kazakhstan. Its eight-pointed star, blue dome, and tall minarets are visible from afar. Inside, the mosque impresses with its decoration, ornate grilles, and a huge chandelier. It is not only a religious center for Muslims in the region but also an important architectural monument that attracts tourists with its beauty and grandeur."
+      "tags": ["mosque", "architecture", "religion", "landmark", "Mashkhur Zhusup"],
+      "description": "The main mosque of Pavlodar and one of the most beautiful in Kazakhstan, named after the outstanding Kazakh poet, historian, and philosopher Mashkhur Zhusup Kopeev (1858–1931). Construction was completed in 2001. Located in the city center (107 Kairbayev St.), the mosque has a capacity of 1,500 people.\n\nThe mosque's architecture is full of symbolism: the building is in the shape of an eight-pointed star (48x48 m), the bright blue dome is 43 meters high, and the four minarets reach a height of 63 meters, symbolizing the age of the Prophet Muhammad. In addition to prayer halls (including a separate women's hall for 300), the building houses a madrasah, a library, a reading room, and a museum dedicated to the history of Islam."
     },
     "images": [
       {
