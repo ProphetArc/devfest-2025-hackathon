@@ -9,6 +9,7 @@ import type { DataItem } from '@/lib/data';
 import { cn } from '@/lib/utils';
 import { IconForItemType, translateType } from '@/components/icons';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import { Separator } from './ui/separator';
 
 type DetailsSectionProps = {
   item: DataItem;
@@ -21,6 +22,9 @@ type DetailsSectionProps = {
 };
 
 export function DetailsSection({ item, onBack, aiConversation, onAiQuery, aiInput, setAiInput, isThinking }: DetailsSectionProps) {
+  const heroImage = item.images && item.images.length > 0 ? item.images[0] : null;
+  const galleryImages = item.images && item.images.length > 1 ? item.images.slice(0) : [];
+
   return (
     <div className="animate-in fade-in-0 duration-500">
       <Button variant="ghost" onClick={onBack} className="mb-4">
@@ -28,24 +32,10 @@ export function DetailsSection({ item, onBack, aiConversation, onAiQuery, aiInpu
         Назад к результатам
       </Button>
       <Card className="overflow-hidden">
-        {item.images && item.images.length > 0 && (
-          <Carousel className="w-full">
-            <CarouselContent>
-              {item.images.map((image, index) => (
-                <CarouselItem key={index}>
-                  <div className="relative h-64 w-full bg-muted">
-                    <Image src={image.imageUrl} alt={image.description} fill className="object-cover" data-ai-hint={image.imageHint} sizes="100vw" />
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            {item.images.length > 1 && (
-              <>
-                <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2" />
-                <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2" />
-              </>
-            )}
-          </Carousel>
+        {heroImage && (
+            <div className="relative h-64 w-full bg-muted">
+                <Image src={heroImage.imageUrl} alt={heroImage.description} fill className="object-cover" data-ai-hint={heroImage.imageHint} sizes="100vw" priority />
+            </div>
         )}
         <CardHeader>
           <div className="flex items-start gap-4">
@@ -60,6 +50,29 @@ export function DetailsSection({ item, onBack, aiConversation, onAiQuery, aiInpu
         </CardHeader>
         <CardContent>
           <p className="whitespace-pre-wrap text-base leading-relaxed">{item.description}</p>
+          
+          {galleryImages.length > 0 && (
+            <div className="mt-8">
+                <h4 className="font-headline text-xl font-semibold mb-4">Галерея</h4>
+                <Carousel className="w-full">
+                    <CarouselContent>
+                    {galleryImages.map((image, index) => (
+                        <CarouselItem key={index} className="md:basis-1/2">
+                        <div className="relative h-56 w-full bg-muted rounded-lg overflow-hidden">
+                            <Image src={image.imageUrl} alt={image.description} fill className="object-cover" data-ai-hint={image.imageHint} sizes="(max-width: 768px) 100vw, 50vw" />
+                        </div>
+                        </CarouselItem>
+                    ))}
+                    </CarouselContent>
+                    {galleryImages.length > 1 && (
+                    <>
+                        <CarouselPrevious className="absolute left-3 top-1/2 -translate-y-1/2" />
+                        <CarouselNext className="absolute right-3 top-1/2 -translate-y-1/2" />
+                    </>
+                    )}
+                </Carousel>
+            </div>
+          )}
           
           <div className="mt-8 pt-8 border-t">
               <h4 className="flex items-center font-headline text-2xl font-semibold mb-4">
