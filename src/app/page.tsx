@@ -11,6 +11,7 @@ import { Button } from '@/components/ui/button';
 import { Compass, Globe } from 'lucide-react';
 import { uiTexts, type Language } from '@/lib/i18n';
 import Link from 'next/link';
+import { cn } from '@/lib/utils';
 
 export default function Home() {
   const [query, setQuery] = useState('');
@@ -155,8 +156,11 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="container mx-auto flex-1 px-4 py-8 md:px-6 md:py-12">
-        <div className={`mx-auto max-w-3xl ${centerSearch ? 'flex h-full flex-col justify-center' : ''}`}>
+      <main className={cn(
+          "container mx-auto flex-1 px-4 py-8 md:px-6 md:py-12 flex",
+          centerSearch ? 'items-center justify-center' : 'flex-col'
+      )}>
+        <div className={cn("mx-auto w-full max-w-3xl", centerSearch && "pb-24")}>
           {selectedItem ? (
             <DetailsSection
               item={selectedItem}
@@ -169,10 +173,10 @@ export default function Home() {
               lang={lang}
             />
           ) : (
-            <div className={`${centerSearch ? 'pb-24' : ''}`}>
+            <>
               <SearchSection onSearch={handleSearch} query={query} setQuery={setQuery} isSearching={isSearching} lang={lang} />
               <ResultsSection results={results} onSelect={handleSelectResult} isSearching={isSearching} querySubmitted={querySubmitted} lang={lang} />
-            </div>
+            </>
           )}
         </div>
       </main>
