@@ -13,6 +13,7 @@ import { z } from 'genkit';
 import { embed } from 'genkit';
 import { cosineSimilarity } from '../utils';
 import type { DataItem } from '@/lib/data';
+import { translateType } from '@/components/icons';
 
 // Define the structure for a single item, which can be complex
 const DataItemSchema = z.any();
@@ -48,12 +49,13 @@ const vectorSearchFlow = ai.defineFlow(
         content: query,
     });
 
-    // 2. Generate embeddings for each item in the dataset
-    // For each item, we create a text representation to be embedded.
+    // 2. Generate embeddings for each item in the dataset.
+    // For each item, we create a rich text representation to be embedded.
     const documents = (data as DataItem[]).map(item => {
         const localized = item[lang];
-        // Combine name, tags, and description for a richer representation
-        const textToEmbed = `Name: ${localized.name}. Tags: ${localized.tags.join(', ')}. Description: ${localized.description}`;
+        const itemType = translateType(item.type, lang);
+        // Combine name, type, and the full knowledge base for a rich semantic representation.
+        const textToEmbed = `Тип: ${itemType}. Название: ${localized.name}. Описание: ${localized.knowledge}`;
         return { id: item.id, text: textToEmbed };
     });
 
@@ -76,8 +78,8 @@ const vectorSearchFlow = ai.defineFlow(
     // 4. Sort documents by similarity in descending order
     similarities.sort((a, b) => b.similarity - a.similarity);
 
-    // 5. Filter out results with low similarity (optional, but good practice)
-    const relevantResults = similarities.filter(s => s.similarity > 0.7);
+    // 5. Filter out results with low similarity
+    const relevantResults = similarities.filter(s => s.similarity > 0.75);
 
     return {
         results: relevantResults.map(r => r.id),
