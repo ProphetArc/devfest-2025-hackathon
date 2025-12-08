@@ -1,4 +1,4 @@
-import { PlaceHolderImages } from './placeholder-images';
+import { PlaceHolderImages, type ImagePlaceholder } from './placeholder-images';
 
 export type DataItem = {
   id: string;
@@ -6,20 +6,8 @@ export type DataItem = {
   name: string;
   tags: string[];
   description: string;
-  image?: {
-    src: string;
-    alt: string;
-    aiHint: string;
-  };
+  images: ImagePlaceholder[];
 };
-
-const pavelVasilyevImage = PlaceHolderImages.find(img => img.id === 'pavel-vasilyev');
-const isaBaizakovImage = PlaceHolderImages.find(img => img.id === 'isa-baizakov');
-const satpaevaStreetImage = PlaceHolderImages.find(img => img.id === 'satpaeva-street');
-const leninaStreetImage = PlaceHolderImages.find(img => img.id === 'lenina-street');
-const pavlodarIrtyishImage = PlaceHolderImages.find(img => img.id === 'pavlodar-irtyish');
-const ekibastuzCoalImage = PlaceHolderImages.find(img => img.id === 'ekibastuz-coal');
-
 
 export const pavlodarData: DataItem[] = [
   {
@@ -27,47 +15,47 @@ export const pavlodarData: DataItem[] = [
     type: 'street',
     name: 'Улица Сатпаева',
     tags: ['улица', 'сатпаев', 'сатпаева'],
-    description: 'Одна из центральных улиц Павлодара, названная в честь выдающегося казахского ученого-геолога Каныша Сатпаева. Улица проходит через исторический и современный центр города, на ней расположены важные административные здания, культурные объекты и жилые дома. Является важной транспортной артерией города.',
-    image: satpaevaStreetImage ? { src: satpaevaStreetImage.imageUrl, alt: satpaevaStreetImage.description, aiHint: satpaevaStreetImage.imageHint } : undefined
+    description: 'Одна из центральных и самых протяженных улиц Павлодара, названная в честь выдающегося казахского ученого-геолога, первого президента Академии наук Казахской ССР Каныша Имантаевича Сатпаева. Улица проходит через исторический и современный центр города, на ней расположены важные административные здания, такие как областной акимат, культурные объекты (драматический театр им. А.П. Чехова), торговые центры и жилые дома. Является ключевой транспортной артерией, связывающей разные части города.',
+    images: PlaceHolderImages.filter(img => img.id.startsWith('satpaeva-street'))
   },
   {
     id: 'lenina-street',
     type: 'street',
     name: 'Улица Астана (бывш. Ленина)',
     tags: ['улица', 'ленина', 'астана', 'центральная'],
-    description: 'Исторически одна из главных улиц города, ранее носившая имя Ленина. Сегодня улица Астана является важной частью делового и культурного центра Павлодара. Вдоль улицы сохранились здания исторической застройки конца XIX - начала XX веков, соседствующие с современными бизнес-центрами и магазинами.',
-    image: leninaStreetImage ? { src: leninaStreetImage.imageUrl, alt: leninaStreetImage.description, aiHint: leninaStreetImage.imageHint } : undefined
+    description: 'Исторически одна из главных улиц города, ранее носившая имя Ленина, а ныне — Астана. Эта улица — живая история Павлодара. Вдоль неё сохранились купеческие дома конца XIX - начала XX веков, являющиеся памятниками архитектуры. Они соседствуют с современными бизнес-центрами и магазинами, создавая уникальный архитектурный контраст. Улица всегда была центром общественной и торговой жизни города.',
+    images: PlaceHolderImages.filter(img => img.id.startsWith('lenina-street'))
   },
   {
     id: 'pavel-vasilyev',
     type: 'figure',
     name: 'Павел Васильев',
     tags: ['поэт', 'васильев', 'литература', 'знаменитость'],
-    description: 'Выдающийся русский поэт, родившийся в Зайсане, но тесно связанный с Павлодаром, который считал своей духовной родиной. Его творчество пронизано мотивами казахской степи, истории и быта. В Павлодаре существует дом-музей Павла Васильева, посвященный его жизни и творчеству.',
-    image: pavelVasilyevImage ? { src: pavelVasilyevImage.imageUrl, alt: pavelVasilyevImage.description, aiHint: pavelVasilyevImage.imageHint } : undefined
+    description: 'Выдающийся русский поэт XX века, родившийся в Зайсане, но тесно связанный с Павлодаром, который он считал своей духовной родиной и "поэтическим материком". Его яркая, бунтарская поэзия пронизана мотивами казахской степи, истории казачества и быта. Творчество Васильева отличается эпическим размахом и самобытным языком. В Павлодаре существует дом-музей Павла Васильева, бережно хранящий память о жизни и творчестве поэта.',
+    images: PlaceHolderImages.filter(img => img.id.startsWith('pavel-vasilyev'))
   },
   {
     id: 'isa-baizakov',
     type: 'figure',
     name: 'Иса Байзаков',
     tags: ['акын', 'композитор', 'байзаков', 'музыка', 'знаменитость'],
-    description: 'Казахский советский акын, певец, композитор и актер. Родился в Павлодарской области. Иса Байзаков является одним из основоположников казахской советской эстрады. Его песни и поэмы, такие как "Куралай Сулу", пользуются народной любовью. Его имя носит Павлодарская областная филармония.',
-    image: isaBaizakovImage ? { src: isaBaizakovImage.imageUrl, alt: isaBaizakovImage.description, aiHint: isaBaizakovImage.imageHint } : undefined
+    description: 'Казахский советский акын, певец-импровизатор, композитор и актер. Родился в Иртышском районе Павлодарской области. Иса Байзаков является одним из основоположников казахского профессионального театрального искусства и эстрады. Его песни и поэмы, такие как "Куралай Сулу", глубоко укоренились в народной культуре и пользуются любовью по сей день. Его имя с гордостью носит Павлодарская областная филармония.',
+    images: PlaceHolderImages.filter(img => img.id.startsWith('isa-baizakov'))
   },
   {
     id: 'pavlodar-irtyish',
     type: 'phenomenon',
     name: 'Павлодарское Прииртышье',
     tags: ['феномен', 'прииртышье', 'география', 'культура'],
-    description: 'Культурно-географический регион, расположенный вдоль реки Иртыш на территории Павлодарской области. Этот регион имеет богатую историю, связанную с кочевыми культурами, освоением Сибири, и индустриализацией. Природа Прииртышья, с ее ленточными борами и пойменными лугами, является уникальным природным феноменом и источником вдохновения для многих деятелей искусства.',
-    image: pavlodarIrtyishImage ? { src: pavlodarIrtyishImage.imageUrl, alt: pavlodarIrtyishImage.description, aiHint: pavlodarIrtyishImage.imageHint } : undefined
+    description: 'Культурно-географический регион, расположенный вдоль могучей реки Иртыш на территории Павлодарской области. Этот регион имеет богатейшую историю, связанную с древними кочевыми культурами, освоением Сибири Российской империей, и бурной индустриализацией XX века. Уникальная природа Прииртышья, с ее знаменитыми ленточными борами и обширными пойменными лугами, является не только природным феноменом, но и неиссякаемым источником вдохновения для многих деятелей искусства и культуры.',
+    images: PlaceHolderImages.filter(img => img.id.startsWith('pavlodar-irtyish'))
   },
   {
     id: 'ekibastuz-coal',
     type: 'phenomenon',
     name: 'Экибастузский угольный бассейн',
     tags: ['феномен', 'экибастуз', 'промышленность', 'уголь'],
-    description: 'Один из крупнейших угольных бассейнов в мире, расположенный на территории Павлодарской области. Его освоение в XX веке привело к бурному промышленному развитию региона, строительству города Экибастуз и крупнейших в мире тепловых электростанций. Является символом индустриальной мощи Казахстана.',
-    image: ekibastuzCoalImage ? { src: ekibastuzCoalImage.imageUrl, alt: ekibastuzCoalImage.description, aiHint: ekibastuzCoalImage.imageHint } : undefined
+    description: 'Один из крупнейших угольных бассейнов в мире, расположенный на территории Павлодарской области. Его освоение в XX веке, начавшееся с открытия месторождения Косымом Пшенбаевым, привело к бурному промышленному развитию всего региона. Это повлекло за собой строительство города "горняков" Экибастуза и крупнейших в мире тепловых электростанций (ГРЭС-1 и ГРЭС-2). Бассейн является символом индустриальной мощи и "энергетическим сердцем" Казахстана.',
+    images: PlaceHolderImages.filter(img => img.id.startsWith('ekibastuz-coal'))
   }
 ];

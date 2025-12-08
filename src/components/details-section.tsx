@@ -8,6 +8,7 @@ import { Textarea } from '@/components/ui/textarea';
 import type { DataItem } from '@/lib/data';
 import { cn } from '@/lib/utils';
 import { IconForItemType, translateType } from '@/components/icons';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 type DetailsSectionProps = {
   item: DataItem;
@@ -27,10 +28,24 @@ export function DetailsSection({ item, onBack, aiConversation, onAiQuery, aiInpu
         Назад к результатам
       </Button>
       <Card className="overflow-hidden">
-        {item.image && (
-          <div className="relative h-64 w-full bg-muted">
-            <Image src={item.image.src} alt={item.image.alt} fill className="object-cover" data-ai-hint={item.image.aiHint} sizes="100vw" />
-          </div>
+        {item.images && item.images.length > 0 && (
+          <Carousel className="w-full">
+            <CarouselContent>
+              {item.images.map((image, index) => (
+                <CarouselItem key={index}>
+                  <div className="relative h-64 w-full bg-muted">
+                    <Image src={image.imageUrl} alt={image.description} fill className="object-cover" data-ai-hint={image.imageHint} sizes="100vw" />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            {item.images.length > 1 && (
+              <>
+                <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2" />
+                <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2" />
+              </>
+            )}
+          </Carousel>
         )}
         <CardHeader>
           <div className="flex items-start gap-4">
