@@ -90,15 +90,21 @@
       },
       {
         "id": "pavel-vasilyev-2",
-        "description": "Old book of poems",
+        "description": "Portrait of Pavel Vasilyev",
         "imageUrl": "/images/Pavel_Vasilyev/Pavel_Vasilyev_2.jpg",
-        "imageHint": "old book"
+        "imageHint": "man portrait"
       },
       {
         "id": "pavel-vasilyev-3",
-        "description": "Writer at his desk",
+        "description": "Portraits of Pavel Vasilyev",
         "imageUrl": "/images/Pavel_Vasilyev/Pavel_Vasilyev_3.webp",
-        "imageHint": "writer desk"
+        "imageHint": "man portraits, side and front"
+      },
+      {
+        "id": "pavel-vasilyev-4",
+        "description": "Solyanoy Bunt Book",
+        "imageUrl": "/images/Pavel_Vasilyev/Solyanoy_Bunt_Book.jpeg",
+        "imageHint": "book"
       }
     ]
   },
@@ -221,19 +227,19 @@
       {
         "id": "mashkhur-zhusup-mosque-1",
         "description": "The grand Mashkhur Zhusup Mosque",
-        "imageUrl": "/images/mashkhur-zhusup-mosque-1.jpg",
+        "imageUrl": "/images/Mashkhur_Zhusup_Mosque/Mashkhur_Zhusup_Mosque_1.webp",
         "imageHint": "grand mosque"
       },
       {
         "id": "mashkhur-zhusup-mosque-2",
         "description": "Intricate interior of a mosque",
-        "imageUrl": "/images/mashkhur-zhusup-mosque-2.jpg",
+        "imageUrl": "/images/Mashkhur_Zhusup_Mosque/Mashkhur_Zhusup_Mosque_2.jpg",
         "imageHint": "mosque interior"
       },
       {
         "id": "mashkhur-zhusup-mosque-3",
         "description": "Close-up of a minaret",
-        "imageUrl": "/images/mashkhur-zhusup-mosque-3.jpg",
+        "imageUrl": "/images/Mashkhur_Zhusup_Mosque/Mashkhur_Zhusup_Mosque_3.jpg",
         "imageHint": "minaret closeup"
       }
     ]

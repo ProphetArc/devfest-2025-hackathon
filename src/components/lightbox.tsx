@@ -49,7 +49,7 @@ export function Lightbox({ images, startIndex, onClose }: LightboxProps) {
 
   return (
     <Dialog open={true} onOpenChange={(open) => !open && onClose()}>
-      <DialogContent className="h-screen w-screen max-w-none border-0 bg-black/80 p-0 backdrop-blur-sm">
+      <DialogContent className="h-screen w-screen max-w-none border-0 bg-black/80 p-0 backdrop-blur-sm" hideCloseButton>
         <div className="relative flex h-full w-full items-center justify-center">
             {/* Close Button */}
             <Button
