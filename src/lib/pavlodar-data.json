@@ -614,20 +614,20 @@
       {
         "id": "aimautov-theatre-1",
         "description": {
-          "ru": "Здание театра имени Аймаутова днём.",
-          "en": "The Aimautov Theater building during the day."
+          "ru": "Сцена и зрительный зал театра.",
+          "en": "The stage and auditorium of the theater."
         },
-        "imageUrl": "/images/aimautov-theatre-1.jpg",
-        "imageHint": "theatre building"
+        "imageUrl": "/images/Aimautov_Theater/Aimautov_Theater_1.webp",
+        "imageHint": "theatre stage"
       },
       {
         "id": "aimautov-theatre-2",
         "description": {
-          "ru": "Сцена и зрительный зал театра.",
-          "en": "The stage and auditorium of the theater."
+          "ru": "Здание театра имени Аймаутова днём.",
+          "en": "The Aimautov Theater building during the day."
         },
-        "imageUrl": "/images/aimautov-theatre-2.jpg",
-        "imageHint": "theatre stage"
+        "imageUrl": "/images/Aimautov_Theater/Aimautov_Theater_2.webp",
+        "imageHint": "theatre building"
       },
       {
         "id": "aimautov-theatre-3",

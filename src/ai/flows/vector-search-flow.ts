@@ -1,0 +1,86 @@
+'use server';
+
+/**
+ * @fileOverview An AI agent that performs semantic search using vector embeddings.
+ *
+ * - vectorSearch - A function that finds relevant items from a dataset based on a query.
+ * - VectorSearchInput - The input type for the vectorSearch function.
+ * - VectorSearchOutput - The return type for the vectorSearch function.
+ */
+
+import { ai } from '@/ai/genkit';
+import { z } from 'genkit';
+import { embed } from 'genkit';
+import { cosineSimilarity } from '../utils';
+import type { DataItem } from '@/lib/data';
+
+// Define the structure for a single item, which can be complex
+const DataItemSchema = z.any();
+
+const VectorSearchInputSchema = z.object({
+  query: z.string().describe('The user\'s search query.'),
+  data: z.array(DataItemSchema).describe('The dataset to search through.'),
+  lang: z.enum(['ru', 'en']).describe('The language of the query and data.'),
+});
+export type VectorSearchInput = z.infer<typeof VectorSearchInputSchema>;
+
+const VectorSearchOutputSchema = z.object({
+  results: z.array(z.string()).describe('An array of item IDs, sorted by relevance.'),
+});
+export type VectorSearchOutput = z.infer<typeof VectorSearchOutputSchema>;
+
+
+export async function vectorSearch(input: VectorSearchInput): Promise<VectorSearchOutput> {
+  return vectorSearchFlow(input);
+}
+
+
+const vectorSearchFlow = ai.defineFlow(
+  {
+    name: 'vectorSearchFlow',
+    inputSchema: VectorSearchInputSchema,
+    outputSchema: VectorSearchOutputSchema,
+  },
+  async ({ query, data, lang }) => {
+    // 1. Generate embedding for the user's query
+    const queryEmbedding = await embed({
+        embedder: 'googleai/embedding-001',
+        content: query,
+    });
+
+    // 2. Generate embeddings for each item in the dataset
+    // For each item, we create a text representation to be embedded.
+    const documents = (data as DataItem[]).map(item => {
+        const localized = item[lang];
+        // Combine name, tags, and description for a richer representation
+        const textToEmbed = `Name: ${localized.name}. Tags: ${localized.tags.join(', ')}. Description: ${localized.description}`;
+        return { id: item.id, text: textToEmbed };
+    });
+
+    const documentEmbeddings = await Promise.all(
+        documents.map(async (doc) => {
+            const embedding = await embed({
+                embedder: 'googleai/embedding-001',
+                content: doc.text,
+            });
+            return { id: doc.id, embedding };
+        })
+    );
+
+    // 3. Calculate cosine similarity between the query and each document
+    const similarities = documentEmbeddings.map(docEmb => ({
+        id: docEmb.id,
+        similarity: cosineSimilarity(queryEmbedding, docEmb.embedding),
+    }));
+
+    // 4. Sort documents by similarity in descending order
+    similarities.sort((a, b) => b.similarity - a.similarity);
+
+    // 5. Filter out results with low similarity (optional, but good practice)
+    const relevantResults = similarities.filter(s => s.similarity > 0.7);
+
+    return {
+        results: relevantResults.map(r => r.id),
+    };
+  }
+);

@@ -1,6 +1,7 @@
 'use server';
 
 import { expandSearch } from '@/ai/flows/expand-search-with-ai';
+import { vectorSearch } from '@/ai/flows/vector-search-flow';
 import type { DataItem, LocalizedContent } from '@/lib/data';
 import { pavlodarData } from '@/lib/data';
 import type { Language } from '@/lib/i18n';
@@ -10,17 +11,32 @@ export async function searchAction(query: string, lang: Language): Promise<DataI
   if (!query) {
     return [];
   }
-  const lowerCaseQuery = query.toLowerCase();
   
-  const results = pavlodarData.filter(item => {
-    const localized = item[lang];
-    return localized.name.toLowerCase().includes(lowerCaseQuery) ||
-           localized.tags.some(tag => tag.toLowerCase().includes(lowerCaseQuery));
-  });
+  try {
+    const searchResults = await vectorSearch({
+      query: query,
+      data: pavlodarData,
+      lang: lang
+    });
+    
+    // The flow returns sorted IDs. We need to map them back to the original data items
+    // while preserving the order.
+    const resultsMap = new Map(pavlodarData.map(item => [item.id, item]));
+    const orderedResults = searchResults.results.map(id => resultsMap.get(id)).filter(Boolean) as DataItem[];
 
-  await new Promise(resolve => setTimeout(resolve, 500));
+    return orderedResults;
 
-  return results;
+  } catch(error) {
+    console.error("Vector search failed, falling back to simple search:", error);
+    // Fallback to simple text search if AI search fails
+    const lowerCaseQuery = query.toLowerCase();
+    const results = pavlodarData.filter(item => {
+      const localized = item[lang];
+      return localized.name.toLowerCase().includes(lowerCaseQuery) ||
+             localized.tags.some(tag => tag.toLowerCase().includes(lowerCaseQuery));
+    });
+    return results;
+  }
 }
 
 export async function expandAction(
