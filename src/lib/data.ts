@@ -15,6 +15,11 @@ export type DataItem = {
 
 const pavelVasilyevImage = PlaceHolderImages.find(img => img.id === 'pavel-vasilyev');
 const isaBaizakovImage = PlaceHolderImages.find(img => img.id === 'isa-baizakov');
+const satpaevaStreetImage = PlaceHolderImages.find(img => img.id === 'satpaeva-street');
+const leninaStreetImage = PlaceHolderImages.find(img => img.id === 'lenina-street');
+const pavlodarIrtyishImage = PlaceHolderImages.find(img => img.id === 'pavlodar-irtyish');
+const ekibastuzCoalImage = PlaceHolderImages.find(img => img.id === 'ekibastuz-coal');
+
 
 export const pavlodarData: DataItem[] = [
   {
@@ -22,14 +27,16 @@ export const pavlodarData: DataItem[] = [
     type: 'street',
     name: 'Улица Сатпаева',
     tags: ['улица', 'сатпаев', 'сатпаева'],
-    description: 'Одна из центральных улиц Павлодара, названная в честь выдающегося казахского ученого-геолога Каныша Сатпаева. Улица проходит через исторический и современный центр города, на ней расположены важные административные здания, культурные объекты и жилые дома. Является важной транспортной артерией города.'
+    description: 'Одна из центральных улиц Павлодара, названная в честь выдающегося казахского ученого-геолога Каныша Сатпаева. Улица проходит через исторический и современный центр города, на ней расположены важные административные здания, культурные объекты и жилые дома. Является важной транспортной артерией города.',
+    image: satpaevaStreetImage ? { src: satpaevaStreetImage.imageUrl, alt: satpaevaStreetImage.description, aiHint: satpaevaStreetImage.imageHint } : undefined
   },
   {
     id: 'lenina-street',
     type: 'street',
     name: 'Улица Астана (бывш. Ленина)',
     tags: ['улица', 'ленина', 'астана', 'центральная'],
-    description: 'Исторически одна из главных улиц города, ранее носившая имя Ленина. Сегодня улица Астана является важной частью делового и культурного центра Павлодара. Вдоль улицы сохранились здания исторической застройки конца XIX - начала XX веков, соседствующие с современными бизнес-центрами и магазинами.'
+    description: 'Исторически одна из главных улиц города, ранее носившая имя Ленина. Сегодня улица Астана является важной частью делового и культурного центра Павлодара. Вдоль улицы сохранились здания исторической застройки конца XIX - начала XX веков, соседствующие с современными бизнес-центрами и магазинами.',
+    image: leninaStreetImage ? { src: leninaStreetImage.imageUrl, alt: leninaStreetImage.description, aiHint: leninaStreetImage.imageHint } : undefined
   },
   {
     id: 'pavel-vasilyev',
@@ -52,13 +59,15 @@ export const pavlodarData: DataItem[] = [
     type: 'phenomenon',
     name: 'Павлодарское Прииртышье',
     tags: ['феномен', 'прииртышье', 'география', 'культура'],
-    description: 'Культурно-географический регион, расположенный вдоль реки Иртыш на территории Павлодарской области. Этот регион имеет богатую историю, связанную с кочевыми культурами, освоением Сибири, и индустриализацией. Природа Прииртышья, с ее ленточными борами и пойменными лугами, является уникальным природным феноменом и источником вдохновения для многих деятелей искусства.'
+    description: 'Культурно-географический регион, расположенный вдоль реки Иртыш на территории Павлодарской области. Этот регион имеет богатую историю, связанную с кочевыми культурами, освоением Сибири, и индустриализацией. Природа Прииртышья, с ее ленточными борами и пойменными лугами, является уникальным природным феноменом и источником вдохновения для многих деятелей искусства.',
+    image: pavlodarIrtyishImage ? { src: pavlodarIrtyishImage.imageUrl, alt: pavlodarIrtyishImage.description, aiHint: pavlodarIrtyishImage.imageHint } : undefined
   },
   {
     id: 'ekibastuz-coal',
     type: 'phenomenon',
     name: 'Экибастузский угольный бассейн',
     tags: ['феномен', 'экибастуз', 'промышленность', 'уголь'],
-    description: 'Один из крупнейших угольных бассейнов в мире, расположенный на территории Павлодарской области. Его освоение в XX веке привело к бурному промышленному развитию региона, строительству города Экибастуз и крупнейших в мире тепловых электростанций. Является символом индустриальной мощи Казахстана.'
+    description: 'Один из крупнейших угольных бассейнов в мире, расположенный на территории Павлодарской области. Его освоение в XX веке привело к бурному промышленному развитию региона, строительству города Экибастуз и крупнейших в мире тепловых электростанций. Является символом индустриальной мощи Казахстана.',
+    image: ekibastuzCoalImage ? { src: ekibastuzCoalImage.imageUrl, alt: ekibastuzCoalImage.description, aiHint: ekibastuzCoalImage.imageHint } : undefined
   }
 ];

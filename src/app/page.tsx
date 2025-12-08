@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useTransition, type FormEvent } from 'react';
+import { useState, useTransition, type FormEvent, useCallback } from 'react';
 import { useToast } from '@/hooks/use-toast';
 import { expandAction, searchAction } from '@/app/actions';
 import type { DataItem } from '@/lib/data';
@@ -21,18 +21,19 @@ export default function Home() {
 
   const { toast } = useToast();
 
-  const handleSearch = (e: FormEvent<HTMLFormElement>) => {
+  const handleSearch = useCallback((e: FormEvent<HTMLFormElement>, suggestionQuery?: string) => {
     e.preventDefault();
-    if (!query.trim()) return;
+    const currentQuery = suggestionQuery || query;
+    if (!currentQuery.trim()) return;
     
     setSelectedItem(null);
     setResults([]);
     setQuerySubmitted(true);
     startSearchTransition(async () => {
-      const searchResults = await searchAction(query);
+      const searchResults = await searchAction(currentQuery);
       setResults(searchResults);
     });
-  };
+  }, [query]);
 
   const handleSelectResult = (item: DataItem) => {
     setSelectedItem(item);
