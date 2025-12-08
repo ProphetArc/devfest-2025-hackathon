@@ -1,7 +1,14 @@
 import type {NextConfig} from 'next';
 
+const repo = 'devfest-2025-hackathon'
+const assetPrefix = `/${repo}/`
+const basePath = `/${repo}`
+
 const nextConfig: NextConfig = {
   /* config options here */
+  output: 'export',
+  assetPrefix: assetPrefix,
+  basePath: basePath,
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -9,6 +16,7 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -23,7 +31,7 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
       {
-        protocol: 'https',
+        protocol: 'https://',
         hostname: 'picsum.photos',
         port: '',
         pathname: '/**',

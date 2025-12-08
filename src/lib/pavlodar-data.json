@@ -1,18 +1,17 @@
 
-      
 [
   {
     "id": "satpaeva-street",
     "type": "street",
     "ru": {
       "name": "Улица Сатпаева",
-      "tags": ["улица", "сатпаев", "сатпаева", "каныш сатпаев", "акимат", "театр чехова"],
+      "tags": ["улица", "сатпаев", "сатпаева", "каныш сатпаев", "акимат", "театр чехова", "центральная улица", "проспект"],
       "description": "Одна из центральных и самых протяженных улиц Павлодара, названная в честь выдающегося казахского ученого-геолога Каныша Сатпаева. Улица является ключевой транспортной артерией, связывающей разные части города.",
       "knowledge": "### Общая информация\n- **Название:** Улица Сатпаева.\n- **Названа в честь:** Каныша Имантаевича Сатпаева (1899–1964), выдающегося советского и казахского ученого-геолога, доктора геолого-минералогических наук, профессора, первого президента Академии наук Казахской ССР.\n- **Расположение:** Является одной из центральных и самых протяженных улиц Павлодара, проходящей через несколько районов города.\n\n### Историческое значение и развитие\n- **Советский период:** Улица получила своё имя в советское время, чтобы увековечить память о человеке, внёсшем огромный вклад в индустриализацию Казахстана. Каныш Сатпаев был первооткрывателем Джезказганского медного месторождения и основателем казахстанской школы металлогении.\n- **Современность:** Сегодня улица Сатпаева — это важная транспортная артерия, на которой расположены как жилые массивы, так и важные городские объекты. Она символизирует научный и индустриальный потенциал региона.\n\n### Значимые объекты на улице\n- **Павлодарский областной акимат:** Главное административное здание региона.\n- **Драматический театр им. А.П. Чехова:** Один из старейших театров Казахстана, культурный центр города.\n- **Торговые центры и бизнес-объекты:** На улице сосредоточена деловая и коммерческая активность.\n- **Памятники и скверы:** Вдоль улицы расположены зелёные зоны и памятники, посвящённые различным событиям и личностям.\n\n### Связь Каныша Сатпаева с Павлодарским регионом\n- **Место рождения:** Каныш Сатпаев родился в ауле вблизи Баянаула, который сейчас является частью Павлодарской области. Таким образом, он является уроженцем этого края.\n- **Вклад в регион:** Хотя основная его деятельность была связана с Центральным Казахстаном, его научные изыскания и организационная работа оказали влияние на развитие всей республики, включая Павлодарскую область, известную своими богатыми месторождениями угля и других полезных ископаемых."
     },
     "en": {
       "name": "Satpayev Street",
-      "tags": ["street", "satpayev", "kanysh satpayev", "akimat", "chekhov theater"],
+      "tags": ["street", "satpayev", "kanysh satpayev", "akimat", "chekhov theater", "main street", "avenue"],
       "description": "One of the central and longest streets in Pavlodar, named after the outstanding Kazakh geologist Kanysh Satpayev. The street is a key transport artery connecting different parts of the city.",
       "knowledge": "### General Information\n- **Name:** Satpayev Street.\n- **Named After:** Kanysh Imantayevich Satpayev (1899–1964), an outstanding Soviet and Kazakh geologist, Doctor of Geological and Mineralogical Sciences, professor, and the first President of the Academy of Sciences of the Kazakh SSR.\n- **Location:** It is one of the central and longest streets in Pavlodar, passing through several districts of the city.\n\n### Historical Significance and Development\n- **Soviet Period:** The street was named during the Soviet era to commemorate a man who made a huge contribution to the industrialization of Kazakhstan. Kanysh Satpayev was the discoverer of the Jezkazgan copper deposit and the founder of the Kazakhstan school of metallogeny.\n- **Modern Era:** Today, Satpayev Street is a vital transport artery, home to both residential areas and important city facilities. It symbolizes the scientific and industrial potential of the region.\n\n### Significant Objects on the Street\n- **Pavlodar Regional Akimat:** The main administrative building of the region.\n- **A.P. Chekhov Drama Theater:** One of the oldest theaters in Kazakhstan, a cultural center of the city.\n- **Shopping and Business Centers:** Business and commercial activities are concentrated on the street.\n- **Monuments and Parks:** Green areas and monuments dedicated to various events and personalities are located along the street.\n\n### Kanysh Satpayev's Connection to the Pavlodar Region\n- **Place of Birth:** Kanysh Satpayev was born in an aul near Bayanaul, which is now part of the Pavlodar region. Thus, he is a native of this land.\n- **Contribution to the Region:** Although his main activities were related to Central Kazakhstan, his scientific research and organizational work influenced the development of the entire republic, including the Pavlodar region, known for its rich deposits of coal and other minerals."
     },
@@ -23,7 +22,7 @@
           "ru": "Оживленная городская улица.",
           "en": "A bustling city street."
         },
-        "imageUrl": "/images/satpaeva-street-1.jpg",
+        "imageUrl": "images/satpaeva-street-1.jpg",
         "imageHint": "city street"
       },
       {
@@ -32,7 +31,7 @@
           "ru": "Современная архитектура в городе.",
           "en": "Modern architecture in a city."
         },
-        "imageUrl": "/images/satpaeva-street-2.jpg",
+        "imageUrl": "images/satpaeva-street-2.jpg",
         "imageHint": "modern architecture"
       },
       {
@@ -41,7 +40,7 @@
           "ru": "Городская улица ночью.",
           "en": "City street at night."
         },
-        "imageUrl": "/images/satpaeva-street-3.jpg",
+        "imageUrl": "images/satpaeva-street-3.jpg",
         "imageHint": "city night"
       }
     ]
@@ -68,7 +67,7 @@
           "ru": "Старая историческая городская улица.",
           "en": "An old historic city street."
         },
-        "imageUrl": "/images/lenina-street-1.jpg",
+        "imageUrl": "images/lenina-street-1.jpg",
         "imageHint": "historic street"
       },
       {
@@ -77,7 +76,7 @@
           "ru": "Фасад старого исторического здания.",
           "en": "Facade of an old historic building."
         },
-        "imageUrl": "/images/lenina-street-2.jpg",
+        "imageUrl": "images/lenina-street-2.jpg",
         "imageHint": "historic building"
       },
       {
@@ -86,7 +85,7 @@
           "ru": "Тихая улица в европейском стиле.",
           "en": "A quiet european style street."
         },
-        "imageUrl": "/images/lenina-street-3.jpg",
+        "imageUrl": "images/lenina-street-3.jpg",
         "imageHint": "european street"
       }
     ]
@@ -96,13 +95,13 @@
     "type": "figure",
     "ru": {
       "name": "Павел Васильев",
-      "tags": ["поэт", "васильев", "литература", "знаменитость", "сибирский есенин", "соляной бунт"],
+      "tags": ["поэт", "васильев", "литература", "знаменитость", "сибирский есенин", "соляной бунт", "дом-музей васильева"],
       "description": "Выдающийся русский советский поэт (1910–1937), которого часто называют \"сибирским Есениным\". Его детство и юность прошли в Павлодаре, который он считал своей духовной родиной. Образы Иртыша и степи стали центральными в его творчестве.",
       "knowledge": "### Биография и Связь с Павлодаром\n- **Годы жизни:** 1910–1937 (прожил всего 27 лет).\n- **Место рождения:** Город Зайсан, Восточный Казахстан.\n- **Связь с Павлодаром:** С детства жил в Павлодаре. Его отец, Николай Корнилович, был учителем и работал в Павлодаре, где Павел провёл своё детство и юность. Образы реки Иртыш, степного быта, казачества и природы Казахстана стали центральными в его творчестве.\n- **Образование:** Учился во Владивостоке, затем переехал в Москву, где поступил на Высшие государственные литературные курсы.\n- **Трагическая судьба:** Был арестован в 1937 году по ложному обвинению в участии в \"контрреволюционной террористической организации\" и расстрелян в том же году. Реабилитирован посмертно в 1956 году.\n\n### Основные Произведения и Тематика\nТворчество Павла Васильева насыщено эпической силой, яркой метафоричностью и глубоким знанием казахского и русского народного быта.\n- **Поэма «Соляной бунт» (1933):** Одно из самых значительных произведений, описывающее восстание крестьян и казаков в Прииртышье.\n- **Поэма «Песня о гибели казачьего войска» (1927–1932):** Эпическое произведение о гражданской войне и трагической судьбе казачества.\n- **Центральная Тематика:** Казахстан и Степь. Васильев был одним из первых русских поэтов, который так глубоко и ярко воспел природу, культуру и людей Казахстана. Его поэзия гармонично сочетает русские и азиатские мотивы.\n\n### Личная жизнь\nПавел Васильев был женат дважды.\n- **Галина Анучина:** Первая жена (брак летом 1930 г., распался в 1932 г.). От этого брака родилась дочь Наталья.\n- **Елена Вялова:** Вторая жена (с конца 1932 г. до его гибели). Она была его опорой и после его реабилитации сыграла ключевую роль в сборе и издании его литературного наследия.\n\n### Память в Павлодаре\n- **Дом-музей Павла Васильева:** Здесь сохранилась обстановка, в которой жил поэт, и собраны его личные вещи, рукописи и фотографии.\n- **Улица:** Его именем названа улица в городе."
     },
     "en": {
       "name": "Pavel Vasilyev",
-      "tags": ["poet", "vasilyev", "literature", "celebrity", "siberian yesenin", "salt riot"],
+      "tags": ["poet", "vasilyev", "literature", "celebrity", "siberian yesenin", "salt riot", "vasilyev house-museum"],
       "description": "An outstanding Soviet Russian poet (1910–1937), often called the \"Siberian Yesenin.\" He spent his childhood and youth in Pavlodar, which he considered his spiritual homeland. The imagery of the Irtysh River and the steppe became central to his work.",
       "knowledge": "### Biography and Connection to Pavlodar\n- **Years of life:** 1910–1937 (lived only 27 years).\n- **Place of birth:** Zaysan city, Eastern Kazakhstan.\n- **Connection to Pavlodar:** Lived in Pavlodar since childhood. His father, Nikolai Kornilovich, was a teacher and worked in Pavlodar, where Pavel spent his childhood and youth. The images of the Irtysh River, steppe life, Cossacks, and the nature of Kazakhstan became central to his work.\n- **Education:** Studied in Vladivostok, then moved to Moscow, where he entered the Higher State Literary Courses.\n- **Tragic fate:** Arrested in 1937 on false charges of participating in a \"counter-revolutionary terrorist organization\" and executed the same year. Posthumously rehabilitated in 1956.\n\n### Major Works and Themes\nPavel Vasilyev's work is saturated with epic power, vivid metaphor, and a deep knowledge of Kazakh and Russian folk life.\n- **Poem \"The Salt Riot\" (1933):** One of his most significant works, describing the uprising of peasants and Cossacks in the Irtysh region.\n- **Poem \"The Song of the Doom of the Cossack Host\" (1927–1932):** An epic work about the civil war and the tragic fate of the Cossacks.\n- **Central Theme:** Kazakhstan and the Steppe. Vasilyev was one of the first Russian poets to so deeply and vividly praise the nature, culture, and people of Kazakhstan. His poetry harmoniously combines Russian and Asian motifs.\n\n### Personal Life\nPavel Vasilyev was married twice.\n- **Galina Anuchina:** First wife (married in the summer of 1930, separated in 1932). They had a daughter, Natalya.\n- **Elena Vyalova:** Second wife (from late 1932 until his death). She was his support and, after his rehabilitation, played a key role in collecting and publishing his literary heritage.\n\n### Memory in Pavlodar\n- **Pavel Vasilyev House-Museum:** The environment in which the poet lived is preserved here, along with his personal belongings, manuscripts, and photographs.\n- **Street:** A street in the city is named after him."
     },
@@ -113,7 +112,7 @@
           "ru": "Портрет Павла Васильева",
           "en": "Portrait of Pavel Vasilyev"
         },
-        "imageUrl": "/images/Pavel_Vasilyev/Pavel_Vasilyev_1.jpg",
+        "imageUrl": "images/Pavel_Vasilyev/Pavel_Vasilyev_1.jpg",
         "imageHint": "man portrait"
       },
       {
@@ -122,7 +121,7 @@
           "ru": "Портрет Павла Васильева",
           "en": "Portrait of Pavel Vasilyev"
         },
-        "imageUrl": "/images/Pavel_Vasilyev/Pavel_Vasilyev_2.jpg",
+        "imageUrl": "images/Pavel_Vasilyev/Pavel_Vasilyev_2.jpg",
         "imageHint": "man portrait"
       },
       {
@@ -131,7 +130,7 @@
           "ru": "Портреты Павла Васильева",
           "en": "Portraits of Pavel Vasilyev"
         },
-        "imageUrl": "/images/Pavel_Vasilyev/Pavel_Vasilyev_3.webp",
+        "imageUrl": "images/Pavel_Vasilyev/Pavel_Vasilyev_3.webp",
         "imageHint": "man portraits, side and front"
       },
       {
@@ -140,7 +139,7 @@
           "ru": "Книга 'Соляной бунт'",
           "en": "Solyanoy Bunt Book"
         },
-        "imageUrl": "/images/Pavel_Vasilyev/Solyanoy_Bunt_Book.jpeg",
+        "imageUrl": "images/Pavel_Vasilyev/Solyanoy_Bunt_Book.jpeg",
         "imageHint": "Solyanoy Bunt Book"
       }
     ]
@@ -150,13 +149,13 @@
     "type": "figure",
     "ru": {
       "name": "Султанмахмут Торайгыров",
-      "tags": ["поэт", "торайгыров", "просветитель", "литература", "знаменитость", "камар сулу"],
+      "tags": ["поэт", "торайгыров", "просветитель", "литература", "знаменитость", "камар сулу", "памятник торайгырову", "университет торайгырова"],
       "description": "Выдающийся казахский поэт-демократ, писатель и просветитель (1893–1920). Один из основоположников казахской письменной литературы. Его творчество пронизано идеями просвещения и социальной справедливости.",
       "knowledge": "### Биография и Связь с Павлодарским регионом\n- **Годы жизни:** 1893–1920 (прожил всего 26 лет).\n- **Место рождения:** Урочище Кзыл-Тау, ныне Баянаульский район Павлодарской области. Его жизнь и творчество неразрывно связаны с этим регионом.\n- **Ранние годы:** Рано лишился матери. Получил начальное образование у аульного муллы, проявив незаурядные способности к учёбе. Самостоятельно изучал русскую литературу и язык.\n- **Просветительская деятельность:** Работал учителем в ауле, стремился нести знания народу. В своих произведениях призывал к просвещению, критиковал отсталость и социальное неравенство.\n- **Трагическая судьба:** Умер в возрасте 26 лет от туберкулеза в родных краях.\n\n### Основные Произведения и Тематика\nСултанмахмут Торайгыров считается одним из самых ярких представителей казахской литературы начала XX века.\n- **Роман «Камар Сулу» (Красавица Камар):** Один из первых казахских романов. В нём автор поднимает проблему трагической судьбы женщины в старом казахском обществе, выступая против устаревших феодальных устоев.\n- **Роман в стихах «Кто виноват?»:** Философское произведение, в котором поэт размышляет о социальных проблемах, несправедливости и путях развития общества.\n- **Центральная Тематика:** Главными темами его творчества были просвещение, социальное равенство, критика невежества и несправедливости, а также воспевание родной земли. Он верил, что знание — это ключ к светлому будущему народа.\n\n### Память в Павлодаре и регионе\n- **Павлодарский государственный университет:** Главный вуз региона с гордостью носит имя Султанмахмута Торайгырова.\n- **Мавзолей:** В Баянаульском районе на месте захоронения поэта в 1993 году был воздвигнут величественный мавзолей.\n- **Памятники и улицы:** В Павлодаре установлен памятник поэту, его именем названа одна из центральных улиц."
     },
     "en": {
       "name": "Sultanmakhmut Toraygyrov",
-      "tags": ["poet", "toraygyrov", "educator", "literature", "celebrity", "kamar sulu"],
+      "tags": ["poet", "toraygyrov", "educator", "literature", "celebrity", "kamar sulu", "toraygyrov monument", "toraighyrov university"],
       "description": "An outstanding Kazakh democratic poet, writer, and educator (1893–1920). One of the founders of Kazakh written literature. His work is imbued with the ideas of enlightenment and social justice.",
       "knowledge": "### Biography and Connection to the Pavlodar Region\n- **Years of life:** 1893–1920 (lived only 26 years).\n- **Place of birth:** Kyzyl-Tau area, now Bayanaul district of the Pavlodar region. His life and work are inextricably linked with this region.\n- **Early years:** Lost his mother early. Received his initial education from a village mullah, showing remarkable aptitude for learning. He independently studied Russian literature and language.\n- **Enlightenment activities:** Worked as a teacher in his village, striving to bring knowledge to the people. In his works, he called for enlightenment and criticized backwardness and social inequality.\n- **Tragic fate:** Died at the age of 26 from tuberculosis in his native land.\n\n### Major Works and Themes\nSultanmakhmut Toraygyrov is considered one of the brightest representatives of Kazakh literature of the early 20th century.\n- **Novel \"Kamar Sulu\" (Beautiful Kamar):** One of the first Kazakh novels. In it, the author raises the problem of the tragic fate of women in old Kazakh society, opposing outdated feudal customs.\n- **Novel in verse \"Who is to Blame?\":** A philosophical work in which the poet reflects on social problems, injustice, and the ways of society's development.\n- **Central Theme:** The main themes of his work were enlightenment, social equality, criticism of ignorance and injustice, as well as the celebration of his native land. He believed that knowledge was the key to a bright future for the people.\n\n### Memory in Pavlodar and the Region\n- **Pavlodar State University:** The main university of the region is proudly named after Sultanmakhmut Toraygyrov.\n- **Mausoleum:** A majestic mausoleum was erected in 1993 at the poet's burial site in the Bayanaul district.\n- **Monuments and Streets:** A monument to the poet has been installed in Pavlodar, and one of the central streets is named after him."
     },
@@ -167,7 +166,7 @@
           "ru": "Портрет Султанмахмута Торайгырова",
           "en": "Portrait of Sultanmakhmut Toraygyrov"
         },
-        "imageUrl": "/images/Sultanmakhmut_Toraighyrov/Sultanmakhmut_Toraighyrov_1.jpg",
+        "imageUrl": "images/Sultanmakhmut_Toraighyrov/Sultanmakhmut_Toraighyrov_1.jpg",
         "imageHint": "man portrait"
       },
       {
@@ -176,7 +175,7 @@
           "ru": "Стихотворение 'Шәкірт ойы'",
           "en": "Poem 'Shakirt Oiy"
         },
-        "imageUrl": "/images/Sultanmakhmut_Toraighyrov/Shakirt_oyi.jpg",
+        "imageUrl": "images/Sultanmakhmut_Toraighyrov/Shakirt_oyi.jpg",
         "imageHint": "poem"
       },
       {
@@ -185,7 +184,7 @@
           "ru": "Памятник Султанмахмуту Торайгырову в Павлодаре",
           "en": "Monument to Sultanmakhmut Torayghyrov in Pavlodar"
         },
-        "imageUrl": "/images/Sultanmakhmut_Toraighyrov/Monument_to_Torayghirov.jpg",
+        "imageUrl": "images/Sultanmakhmut_Toraighyrov/Monument_to_Torayghirov.jpg",
         "imageHint": "monument statue"
       }
     ]
@@ -195,13 +194,13 @@
     "type": "institution",
     "ru": {
       "name": "Торайгыров Университет",
-      "tags": ["университет", "торайгыров", "образование", "наука", "пгу", "индустриальный институт", "Toraighyrov University"],
+      "tags": ["университет", "торайгыров", "образование", "наука", "пгу", "индустриальный институт", "Toraighyrov University", "вуз"],
       "description": "Ведущий вуз Павлодарской области, носящий имя выдающегося казахского поэта и просветителя Султанмахмута Торайгырова. Является крупным образовательным, научным и культурным центром Северного Казахстана.",
       "knowledge": "### Общая информация\n- **Полное название:** Некоммерческое акционерное общество «Торайгыров Университет» (Toraighyrov University).\n- **Статус:** Ведущий многопрофильный вуз Павлодарской области.\n- **Расположение:** г. Павлодар, ул. Ломова, 64.\n- **История:** Основан в 1960 году как Павлодарский индустриальный институт. В 1996 году был объединён с Педагогическим институтом и преобразован в Павлодарский государственный университет (ПГУ). В 2020 году получил статус исследовательского университета и был переименован в «Торайгыров Университет».\n\n### Структура и факультеты\n- Университет включает в себя 7 факультетов, охватывающих широкий спектр специальностей: от инженерии и естественных наук до гуманитарных и сельскохозяйственных.\n- **Факультеты:**\n  - Foundation\n  - Факультет инженерии\n  - Факультет компьютерных и естественных наук\n  - Факультет сельскохозяйственных наук\n  - Факультет гуманитарных и социальных наук\n  - Школа бизнеса и права\n  - Факультет образования\n\n### Научная деятельность\n- **Исследовательский университет:** Вуз активно занимается научными исследованиями, особенно в областях, связанных с промышленностью региона (металлургия, энергетика, нефтехимия).\n- **Научные центры:** На базе университета действуют различные научные центры и лаборатории, включая Центр предпринимательства и инноваций «Ertis», научные центры по археологии, биотехнологиям и экологии.\n- **Студенческая наука:** Активно поддерживается научная работа студентов через научные кружки, конференции и стартап-проекты.\n\n### Значение для региона\n- **Кадровый потенциал:** Университет является главным поставщиком квалифицированных кадров для промышленных предприятий и организаций Павлодарской области.\n- **Культурный центр:** Вуз играет важную роль в культурной жизни города, организуя концерты, фестивали, выставки и другие мероприятия.\n- **Международное сотрудничество:** Университет поддерживает партнёрские отношения с вузами и научными центрами из разных стран мира, что способствует академической мобильности студентов и преподавателей."
     },
     "en": {
       "name": "Toraighyrov University",
-      "tags": ["university", "toraighyrov", "education", "science", "psu", "industrial institute", "Toraighyrov University"],
+      "tags": ["university", "toraighyrov", "education", "science", "psu", "industrial institute", "Toraighyrov University", "higher education"],
       "description": "The leading higher education institution in the Pavlodar region, named after the outstanding Kazakh poet and enlightener Sultanmakhmut Toraighyrov. It is a major educational, scientific, and cultural center of Northern Kazakhstan.",
       "knowledge": "### General Information\n- **Full Name:** Non-profit joint-stock company \"Toraighyrov University\".\n- **Status:** The leading multidisciplinary higher education institution in the Pavlodar region.\n- **Location:** 64 Lomov St, Pavlodar.\n- **History:** Founded in 1960 as the Pavlodar Industrial Institute. In 1996, it merged with the Pedagogical Institute and was transformed into Pavlodar State University (PSU). In 2020, it received the status of a research university and was renamed \"Toraighyrov University\".\n\n### Structure and Faculties\n- The university includes 7 faculties covering a wide range of specialties: from engineering and natural sciences to humanities and agricultural sciences.\n- **Faculties:**\n  - Foundation\n  - Faculty of Engineering\n  - Faculty of Computer and Natural Sciences\n  - Faculty of Agricultural Sciences\n  - Faculty of Humanities and Social Sciences\n  - School of Business and Law\n  - Faculty of Education\n\n### Scientific Activity\n- **Research University:** The university is actively engaged in scientific research, especially in areas related to the region's industry (metallurgy, energy, petrochemistry).\n- **Scientific Centers:** Various scientific centers and laboratories operate on the basis of the university, including the \"Ertis\" Center for Entrepreneurship and Innovation, and scientific centers for archaeology, biotechnology, and ecology.\n- **Student Science:** Student scientific work is actively supported through scientific circles, conferences, and startup projects.\n\n### Importance for the Region\n- **Human Resources:** The university is the main supplier of qualified personnel for industrial enterprises and organizations in the Pavlodar region.\n- **Cultural Center:** The university plays an important role in the cultural life of the city, organizing concerts, festivals, exhibitions, and other events.\n- **International Cooperation:** The university maintains partnership relations with higher education institutions and scientific centers from different countries, which promotes the academic mobility of students and teachers."
     },
@@ -212,7 +211,7 @@
           "ru": "Главный корпус Торайгыров Университета",
           "en": "Main building of Toraighyrov University"
         },
-        "imageUrl": "/images/Toraighyrov_University/Toraighyrov_University_1.webp",
+        "imageUrl": "images/Toraighyrov_University/Toraighyrov_University_1.webp",
         "imageHint": "university building"
       },
       {
@@ -221,7 +220,7 @@
           "ru": "Студенты в кампусе университета",
           "en": "Students on the university campus"
         },
-        "imageUrl": "/images/Toraighyrov_University/Toraighyrov_University_2.jpg",
+        "imageUrl": "images/Toraighyrov_University/Toraighyrov_University_2.jpg",
         "imageHint": "university campus"
       },
       {
@@ -230,7 +229,7 @@
           "ru": "Актовый зал",
           "en": "Assembly Hall"
         },
-        "imageUrl": "/images/Toraighyrov_University/Toraighyrov_University_3.jpg",
+        "imageUrl": "images/Toraighyrov_University/Toraighyrov_University_3.jpg",
         "imageHint": "assembly hall"
       }
     ]
@@ -257,7 +256,7 @@
           "ru": "Портрет Исы Байзакова",
           "en": "Portrait of Isa Baizakov"
         },
-        "imageUrl": "/images/isa-baizakov-1.jpg",
+        "imageUrl": "images/isa-baizakov-1.jpg",
         "imageHint": "man portrait"
       },
       {
@@ -266,7 +265,7 @@
           "ru": "Казахский музыкальный инструмент домбра",
           "en": "Kazakh musical instrument dombra"
         },
-        "imageUrl": "/images/isa-baizakov-2.jpg",
+        "imageUrl": "images/isa-baizakov-2.jpg",
         "imageHint": "dombra instrument"
       },
       {
@@ -275,7 +274,7 @@
           "ru": "Мужчина поет на сцене",
           "en": "Man singing on stage"
         },
-        "imageUrl": "/images/isa-baizakov-3.jpg",
+        "imageUrl": "images/isa-baizakov-3.jpg",
         "imageHint": "singer stage"
       }
     ]
@@ -285,13 +284,13 @@
     "type": "phenomenon",
     "ru": {
       "name": "Павлодарское Прииртышье",
-      "tags": ["феномен", "прииртышье", "география", "культура", "природа", "иртыш", "баянаул", "ленточные боры"],
+      "tags": ["феномен", "прииртышье", "география", "культура", "природа", "иртыш", "баянаул", "ленточные боры", "река"],
       "description": "Культурно-географический регион вдоль реки Иртыш с богатейшей историей, связанной с кочевыми культурами, освоением Сибири и индустриализацией. Уникальная природа региона является источником вдохновения для деятелей искусства.",
       "knowledge": "### Общая характеристика\n- **Определение:** Павлодарское Прииртышье — это обширная территория, прилегающая к реке Иртыш в пределах Павлодарской области. Это не просто географическое понятие, а историко-культурный регион со своей уникальной идентичностью.\n- **Река Иртыш:** Является стержнем региона, его главной транспортной артерией, источником жизни и вдохновения.\n\n### Природные особенности\n- **Ленточные боры:** Уникальное природное явление, представляющее собой сосновые леса, растущие узкими полосами (лентами) вдоль древних русел рек. Это реликтовые леса, сохранившиеся с ледникового периода.\n- **Баянаульский национальный парк:** Жемчужина региона, горно-лесной оазис посреди степи с причудливыми скалами, чистейшими озёрами (Жасыбай, Торайгыр) и богатой флорой и фауной.\n- **Пойма Иртыша:** Обширные пойменные луга, являющиеся важными сельскохозяйственными угодьями и местом обитания множества видов птиц.\n\n### Историческое и культурное значение\n- **Древняя история:** На территории Прииртышья найдены многочисленные археологические памятники, относящиеся к эпохе бронзы и раннего железного века, свидетельствующие о древних кочевых культурах.\n- **Освоение Сибири:** В XVII-XVIII веках регион стал частью Российской империи. Здесь была построена Иртышская укреплённая линия (включая Коряковский форпост, будущий Павлодар) для защиты от набегов.\n- **Индустриализация:** В XX веке регион стал одним из крупнейших промышленных центров Казахстана благодаря освоению Экибастузского угольного бассейна и строительству крупных предприятий (алюминиевый, нефтеперерабатывающий заводы).\n- **Источник вдохновения:** Природа и история Прииртышья вдохновляли многих писателей, поэтов и художников, включая Павла Васильева, Ису Байзакова и многих других."
     },
     "en": {
       "name": "Pavlodar Irtysh Region",
-      "tags": ["phenomenon", "irtysh", "geography", "culture", "nature", "bayan-aul", "ribbon forests"],
+      "tags": ["phenomenon", "irtysh", "geography", "culture", "nature", "bayan-aul", "ribbon forests", "river"],
       "description": "A cultural-geographical region along the Irtysh River with a rich history of nomadic cultures, Siberian development, and industrialization. The unique nature of the region is a source of inspiration for artists.",
       "knowledge": "### General Characteristics\n- **Definition:** The Pavlodar Irtysh Region is a vast territory adjacent to the Irtysh River within the Pavlodar Oblast. It is not just a geographical concept but a historical and cultural region with its own unique identity.\n- **Irtysh River:** It is the backbone of the region, its main transport artery, source of life, and inspiration.\n\n### Natural Features\n- **Ribbon Forests:** A unique natural phenomenon of pine forests growing in narrow strips (ribbons) along ancient riverbeds. These are relict forests preserved from the Ice Age.\n- **Bayan-Aul National Park:** The pearl of the region, a mountain-forest oasis in the middle of the steppe with bizarre rock formations, pristine lakes (Zhasybay, Toraigyr), and rich flora and fauna.\n- **Irtysh Floodplain:** Extensive flood meadows that are important agricultural lands and habitats for numerous bird species.\n\n### Historical and Cultural Significance\n- **Ancient History:** Numerous archaeological sites dating back to the Bronze and Early Iron Ages have been found in the Irtysh region, testifying to ancient nomadic cultures.\n- **Development of Siberia:** In the 17th-18th centuries, the region became part of the Russian Empire. The Irtysh fortified line (including the Koryakovsky outpost, the future Pavlodar) was built here to protect against raids.\n- **Industrialization:** In the 20th century, the region became one of the largest industrial centers in Kazakhstan due to the development of the Ekibastuz coal basin and the construction of large enterprises (aluminum, oil refining plants).\n- **Source of Inspiration:** The nature and history of the Irtysh region have inspired many writers, poets, and artists, including Pavel Vasilyev, Isa Baizakov, and many others."
     },
@@ -302,7 +301,7 @@
           "ru": "Широкая река, протекающая через равнину.",
           "en": "A wide river flowing through a plain."
         },
-        "imageUrl": "/images/pavlodar-irtyish-1.jpg",
+        "imageUrl": "images/pavlodar-irtyish-1.jpg",
         "imageHint": "river plain"
       },
       {
@@ -311,7 +310,7 @@
           "ru": "Лес вдоль берега реки.",
           "en": "Forest along the river bank."
         },
-        "imageUrl": "/images/pavlodar-irtyish-2.jpg",
+        "imageUrl": "images/pavlodar-irtyish-2.jpg",
         "imageHint": "river bank"
       },
       {
@@ -320,7 +319,7 @@
           "ru": "Закат над рекой Иртыш.",
           "en": "Sunset over the Irtysh river."
         },
-        "imageUrl": "/images/pavlodar-irtyish-3.jpg",
+        "imageUrl": "images/pavlodar-irtyish-3.jpg",
         "imageHint": "sunset river"
       }
     ]
@@ -330,13 +329,13 @@
     "type": "industrial",
     "ru": {
       "name": "Экибастузский угольный бассейн",
-      "tags": ["феномен", "экибастуз", "промышленность", "уголь", "энергетика", "грэс", "богатырь"],
+      "tags": ["феномен", "экибастуз", "промышленность", "уголь", "энергетика", "грэс", "богатырь", "шахта", "разрез"],
       "description": "Один из крупнейших угольных бассейнов в мире, расположенный в Павлодарской области. Его освоение привело к строительству города Экибастуза и крупнейших ГРЭС, что делает его 'энергетическим сердцем' Казахстана.",
       "knowledge": "### Общая информация\n- **Статус:** Один из крупнейших угольных бассейнов в мире по запасам и один из самых значимых в Казахстане.\n- **Расположение:** Находится на территории Павлодарской области, основной центр — город Экибастуз.\n- **Тип угля:** Каменный уголь, который используется в основном для производства электроэнергии.\n\n### История открытия и освоения\n- **Открытие:** Первые сведения об угле в этом районе связаны с именем казахского геолога-самоучки Косыма Пшенбаева, который в конце XIX века нашёл куски угля и показал их русским инженерам. Название «Екі басты тұз» (каз. «две головы соли») происходит от двух глыб соли, найденных у озера.\n- **Начало добычи:** Промышленная добыча началась в XX веке и особенно активно развивалась в советский период, когда бассейн стал ключевым элементом топливно-энергетического комплекса СССР.\n- **Способ добычи:** Уголь добывается открытым способом, что делает его себестоимость одной из самых низких в мире. Разрезы «Богатырь» и «Северный» являются одними из крупнейших в мире.\n\n### Значение для энергетики\n- **«Энергетическое сердце Казахстана»:** Бассейн обеспечивает углём крупнейшие тепловые электростанции (ГРЭС) страны.\n- **ГРЭС-1 и ГРЭС-2:** Экибастузские ГРЭС (государственные районные электростанции) являются одними из самых мощных в мире. Дымовая труба ГРЭС-2 высотой 420 метров является самой высокой в мире и занесена в Книгу рекордов Гиннесса.\n- **Экспорт:** Уголь из Экибастуза экспортируется в Россию и другие страны.\n\n### Город Экибастуз\n- **Моногород:** Город Экибастуз был основан и вырос благодаря угольному бассейну. Его экономика и жизнь населения тесно связаны с добычей угля и производством энергии."
     },
     "en": {
       "name": "Ekibastuz Coal Basin",
-      "tags": ["phenomenon", "ekibastuz", "industry", "coal", "energy", "gres", "bogatyr"],
+      "tags": ["phenomenon", "ekibastuz", "industry", "coal", "energy", "gres", "bogatyr", "mine", "open-pit"],
       "description": "One of the largest coal basins in the world, located in the Pavlodar region. Its development led to the construction of the city of Ekibastuz and the largest GRES power plants, making it the 'energy heart' of Kazakhstan.",
       "knowledge": "### General Information\n- **Status:** One of the largest coal basins in the world by reserves and one of the most significant in Kazakhstan.\n- **Location:** Located in the Pavlodar region, with the main center being the city of Ekibastuz.\n- **Type of Coal:** Hard coal, mainly used for electricity generation.\n\n### History of Discovery and Development\n- **Discovery:** The first information about coal in this area is associated with the name of the self-taught Kazakh geologist Kosym Pshenbayev, who found pieces of coal in the late 19th century and showed them to Russian engineers. The name \"Ekibastuz\" (Kazakh for \"two heads of salt\") comes from two salt boulders found near a lake.\n- **Start of Mining:** Industrial mining began in the 20th century and was especially active during the Soviet period, when the basin became a key element of the fuel and energy complex of the USSR.\n- **Mining Method:** Coal is mined using the open-pit method, which makes its cost one of the lowest in the world. The \"Bogatyr\" and \"Severny\" open-pit mines are among the largest in the world.\n\n### Importance for Energy\n- **\"Energy Heart of Kazakhstan\":** The basin supplies coal to the country's largest thermal power plants (GRES).\n- **GRES-1 and GRES-2:** The Ekibastuz GRES (State District Power Plants) are among the most powerful in the world. The chimney of GRES-2, at 420 meters, is the tallest in the world and is listed in the Guinness Book of Records.\n- **Export:** Coal from Ekibastuz is exported to Russia and other countries.\n\n### City of Ekibastuz\n- **Monocity:** The city of Ekibastuz was founded and grew thanks to the coal basin. Its economy and the life of its population are closely linked to coal mining and energy production."
     },
@@ -347,7 +346,7 @@
           "ru": "Угольный карьер открытого типа.",
           "en": "An open-pit coal mine."
         },
-        "imageUrl": "/images/Ekibastuz_Coal_Basin/Ekibastuz_Coal_Basin_1.jpg",
+        "imageUrl": "images/Ekibastuz_Coal_Basin/Ekibastuz_Coal_Basin_1.jpg",
         "imageHint": "coal mine"
       },
       {
@@ -356,7 +355,7 @@
           "ru": "Экибастузский угольный бассейн.",
           "en": "Heavy machinery in a coal mine."
         },
-        "imageUrl": "/images/Ekibastuz_Coal_Basin/Ekibastuz_Coal_Basin_2.jpg",
+        "imageUrl": "images/Ekibastuz_Coal_Basin/Ekibastuz_Coal_Basin_2.jpg",
         "imageHint": "industrial machinery"
       },
       {
@@ -365,7 +364,7 @@
           "ru": "Электростанция с дымящими трубами.",
           "en": "Power plant with smoking chimneys."
         },
-        "imageUrl": "/images/ekibastuz-coal-3.jpg",
+        "imageUrl": "images/ekibastuz-coal-3.jpg",
         "imageHint": "power plant"
       }
     ]
@@ -375,13 +374,13 @@
     "type": "phenomenon",
     "ru": {
       "name": "Мечеть имени Машхур Жусупа",
-      "tags": ["мечеть", "архитектура", "религия", "достопримечательность", "Машхур Жусуп", "ислам"],
+      "tags": ["мечеть", "архитектура", "религия", "достопримечательность", "Машхур Жусуп", "ислам", "храм"],
       "description": "Главная мечеть Павлодара, построенная в 2001 году. Здание в форме восьмиконечной звезды с ярко-голубым куполом и четырьмя 63-метровыми минаретами является не только культовым, но и культурно-просветительским центром.",
       "knowledge": "### Общая информация\n- **Имя:** Мечеть названа в честь выдающегося казахского поэта, историка и философа Машхур Жусупа Копеева (1858–1931).\n- **Дата постройки:** Строительство началось в 1999 году и было завершено в 2001 году.\n- **Адрес:** г. Павлодар, пересечение улиц Кутузова, Кривенко и Каирбаева.\n- **Вместимость:** Рассчитана на 1500 молящихся одновременно.\n\n### Архитектурные Особенности\n- **Форма здания:** Здание построено в форме восьмиконечной звезды размером 48x48 метров. В исламской символике восьмиконечная звезда (руб аль-хизб) является знаком благословения и бесконечности.\n- **Купол:** Главный купол небесно-голубого цвета имеет высоту 54 метра. Он выполнен в форме шанырака — символа домашнего очага и единства у тюркских народов.\n- **Минареты:** Вокруг мечети расположены четыре минарета, высота каждого составляет 63 метра. Эта высота символизирует возраст пророка Мухаммеда, в котором он покинул этот мир.\n- **Залы:** Мужской зал на 1200 мест и женский зал на 300 мест расположены на разных уровнях.\n\n### Внутреннее Устройство и Функции\n- **Культурно-просветительский центр:** Мечеть является не только местом для молитв, но и важным культурным центром.\n- **Медресе:** В здании функционирует исламское медресе (школа).\n- **Библиотека:** Обширная библиотека с исламской литературой.\n- **Музей:** В мечети есть небольшой музей, посвященный исламской культуре и истории региона.\n- **Столовая и зал для бракосочетаний:** Предусмотрены помещения для проведения обрядов и общественных мероприятий."
     },
     "en": {
       "name": "Mashkhur Zhusup Mosque",
-      "tags": ["mosque", "architecture", "religion", "landmark", "Mashkhur Zhusup", "islam"],
+      "tags": ["mosque", "architecture", "religion", "landmark", "Mashkhur Zhusup", "islam", "temple"],
       "description": "The main mosque of Pavlodar, built in 2001. The building, in the shape of an eight-pointed star with a bright blue dome and four 63-meter minarets, is not only a religious but also a cultural and educational center.",
       "knowledge": "### General Information\n- **Name:** The mosque is named after the outstanding Kazakh poet, historian, and philosopher Mashkhur Zhusup Kopeev (1858–1931).\n- **Date of construction:** Construction began in 1999 and was completed in 2001.\n- **Address:** Pavlodar, at the intersection of Kutuzov, Krivenko, and Kairbayev streets.\n- **Capacity:** Designed to accommodate 1500 worshipers simultaneously.\n\n### Architectural Features\n- **Building shape:** The building is constructed in the form of an eight-pointed star measuring 48x48 meters. In Islamic symbolism, the eight-pointed star (rub el hizb) is a sign of blessing and infinity.\n- **Dome:** The main sky-blue dome is 54 meters high. It is shaped like a shanyrak—a symbol of home and unity among Turkic peoples.\n- **Minarets:** There are four minarets around the mosque, each 63 meters high. This height symbolizes the age of the Prophet Muhammad when he passed away.\n- **Halls:** The men's hall for 1200 people and the women's hall for 300 people are located on different levels.\n\n### Internal Structure and Functions\n- **Cultural and Educational Center:** The mosque is not only a place for prayer but also an important cultural center.\n- **Madrasah:** An Islamic madrasah (school) operates within the building.\n- **Library:** An extensive library with Islamic literature.\n- **Museum:** The mosque has a small museum dedicated to Islamic culture and the history of the region.\n- **Dining Hall and Wedding Hall:** There are facilities for ceremonies and public events."
     },
@@ -392,7 +391,7 @@
           "ru": "Величественная мечеть Машхур Жусупа",
           "en": "The grand Mashkhur Zhusup Mosque"
         },
-        "imageUrl": "/images/Mashkhur_Zhusup_Mosque/Mashkhur_Zhusup_Mosque_1.webp",
+        "imageUrl": "images/Mashkhur_Zhusup_Mosque/Mashkhur_Zhusup_Mosque_1.webp",
         "imageHint": "grand mosque"
       },
       {
@@ -401,7 +400,7 @@
           "ru": "Богато украшенный интерьер мечети",
           "en": "Intricate interior of a mosque"
         },
-        "imageUrl": "/images/Mashkhur_Zhusup_Mosque/Mashkhur_Zhusup_Mosque_2.jpg",
+        "imageUrl": "images/Mashkhur_Zhusup_Mosque/Mashkhur_Zhusup_Mosque_2.jpg",
         "imageHint": "mosque interior"
       },
       {
@@ -410,7 +409,7 @@
           "ru": "Минарет крупным планом",
           "en": "Close-up of a minaret"
         },
-        "imageUrl": "/images/Mashkhur_Zhusup_Mosque/Mashkhur_Zhusup_Mosque_3.jpg",
+        "imageUrl": "images/Mashkhur_Zhusup_Mosque/Mashkhur_Zhusup_Mosque_3.jpg",
         "imageHint": "minaret closeup"
       }
     ]
@@ -420,13 +419,13 @@
     "type": "phenomenon",
     "ru": {
       "name": "Благовещенский собор",
-      "tags": ["собор", "православие", "архитектура", "религия", "достопримечательность", "церковь", "храм"],
+      "tags": ["собор", "православие", "архитектура", "религия", "достопримечательность", "церковь", "храм", "христианство"],
       "description": "Главный православный храм Павлодара (1999 г.) в классическом стиле русского церковного зодчества. Расположен на набережной Иртыша, является важной частью городского пейзажа и духовным центром.",
-      "knowledge": "### Общая информация\n- **Статус:** Кафедральный собор Павлодарской и Экибастузской епархии Русской Православной Церкви.\n- **Дата постройки:** Строительство велось с 1990 по 1999 год. Освящён в 1999 году.\n- **Расположение:** г. Павлодар, на набережной реки Иртыш, что делает его заметной доминантой городского пейзажа.\n\n### Архитектура и убранство\n- **Стиль:** Построен в классическом стиле русского церковного зодчества, с элементами, характерными для храмов северо-западной Руси.\n- **Купола:** Собор увенчан семью золотыми куполами, символизирующими семь таинств Церкви.\n- **Колокольня:** Включает в себя высокую колокольню, звон колоколов которой разносится по всему городу.\n- **Внутреннее убранство:** Интерьер богато украшен настенными росписями (фресками), изображающими библейские сюжеты и святых. Центральное место занимает резной позолоченный иконостас.\n\n### Духовное и культурное значение\n- **Духовный центр:** Является главным местом для богослужений и духовной жизни православной общины Павлодара и всей области.\n- **Святыни:** В соборе хранятся частицы мощей святых, привлекающие паломников.\n- **Просветительская деятельность:** При соборе действует воскресная школа для детей и взрослых, библиотека духовной литературы и проводятся просветительские лекции и беседы."
+      "knowledge": "### Общая информация\n- **Статус:** Кафедральный собор Павлоdarской и Экибастузской епархии Русской Православной Церкви.\n- **Дата постройки:** Строительство велось с 1990 по 1999 год. Освящён в 1999 году.\n- **Расположение:** г. Павлодар, на набережной реки Иртыш, что делает его заметной доминантой городского пейзажа.\n\n### Архитектура и убранство\n- **Стиль:** Построен в классическом стиле русского церковного зодчества, с элементами, характерными для храмов северо-западной Руси.\n- **Купола:** Собор увенчан семью золотыми куполами, символизирующими семь таинств Церкви.\n- **Колокольня:** Включает в себя высокую колокольню, звон колоколов которой разносится по всему городу.\n- **Внутреннее убранство:** Интерьер богато украшен настенными росписями (фресками), изображающими библейские сюжеты и святых. Центральное место занимает резной позолоченный иконостас.\n\n### Духовное и культурное значение\n- **Духовный центр:** Является главным местом для богослужений и духовной жизни православной общины Павлодара и всей области.\n- **Святыни:** В соборе хранятся частицы мощей святых, привлекающие паломников.\n- **Просветительская деятельность:** При соборе действует воскресная школа для детей и взрослых, библиотека духовной литературы и проводятся просветительские лекции и беседы."
     },
     "en": {
       "name": "Annunciation Cathedral",
-      "tags": ["cathedral", "orthodoxy", "architecture", "religion", "landmark", "church", "temple"],
+      "tags": ["cathedral", "orthodoxy", "architecture", "religion", "landmark", "church", "temple", "christianity"],
       "description": "The main Orthodox cathedral of Pavlodar (1999) in the classical style of Russian church architecture. Located on the Irtysh embankment, it is an important part of the cityscape and a spiritual center.",
       "knowledge": "### General Information\n- **Status:** The Cathedral of the Pavlodar and Ekibastuz Diocese of the Russian Orthodox Church.\n- **Date of construction:** Built from 1990 to 1999. Consecrated in 1999.\n- **Location:** Pavlodar, on the embankment of the Irtysh River, making it a prominent landmark in the city's landscape.\n\n### Architecture and Decoration\n- **Style:** Built in the classical style of Russian church architecture, with elements characteristic of the temples of northwestern Rus'.\n- **Domes:** The cathedral is crowned with seven golden domes, symbolizing the seven sacraments of the Church.\n- **Bell Tower:** Includes a tall bell tower, whose chimes can be heard throughout the city.\n- **Interior Decoration:** The interior is richly decorated with wall paintings (frescoes) depicting biblical scenes and saints. The central feature is a carved, gilded iconostasis.\n\n### Spiritual and Cultural Significance\n- **Spiritual Center:** It is the main place for worship and the spiritual life of the Orthodox community of Pavlodar and the entire region.\n- **Relics:** The cathedral houses particles of saints' relics, attracting pilgrims.\n- **Educational Activities:** The cathedral operates a Sunday school for children and adults, a library of spiritual literature, and hosts educational lectures and talks."
     },
@@ -437,7 +436,7 @@
           "ru": "Благовещенский собор с золотыми куполами",
           "en": "The Annunciation Cathedral with golden domes"
         },
-        "imageUrl": "/images/annunciation-cathedral-1.jpg",
+        "imageUrl": "images/annunciation-cathedral-1.jpg",
         "imageHint": "orthodox cathedral"
       },
       {
@@ -446,7 +445,7 @@
           "ru": "Интерьер собора с фресками",
           "en": "Interior of a cathedral with frescoes"
         },
-        "imageUrl": "/images/annunciation-cathedral-2.jpg",
+        "imageUrl": "images/annunciation-cathedral-2.jpg",
         "imageHint": "church interior"
       },
       {
@@ -455,7 +454,7 @@
           "ru": "Золотые купола на фоне неба",
           "en": "Golden domes against the sky"
         },
-        "imageUrl": "/images/annunciation-cathedral-3.jpg",
+        "imageUrl": "images/annunciation-cathedral-3.jpg",
         "imageHint": "golden domes"
       }
     ]
@@ -465,13 +464,13 @@
     "type": "phenomenon",
     "ru": {
       "name": "Музей литературы и искусства им. Бухар Жырау",
-      "tags": ["музей", "культура", "искусство", "литература", "бухар жырау", "дом зайцева"],
+      "tags": ["музей", "культура", "искусство", "литература", "бухар жырау", "дом зайцева", "купеческий дом"],
       "description": "Центр культурной жизни Павлодара, расположенный в историческом доме купца Зайцева. Экспозиции посвящены творчеству известных литераторов, связанных с регионом.",
       "knowledge": "### Общая информация\n- **Название:** Павлодарский областной музей литературы и искусства имени Бухар Жырау.\n- **Расположение:** Находится в одном из красивейших исторических зданий Павлодара — бывшем доме купца Фёдора Зайцева, построенном в 1897 году.\n- **Статус:** Важный культурный и научный центр, занимающийся сбором, хранением и популяризацией литературного и художественного наследия Павлодарского Прииртышья.\n\n### Экспозиции\n- **Основная экспозиция:** Посвящена жизни и творчеству выдающихся акынов, поэтов и писателей, чья судьба была связана с регионом. Центральное место занимает зал, посвящённый Бухар Жырау Калкаманулы (XVIII в.), знаменитому поэту и советнику Абылай хана.\n- **Другие залы:** Отдельные залы посвящены творчеству Исы Байзакова, Павла Васильева, Всеволода Иванова, Дмитрия Багаева и других деятелей культуры.\n- **Экспонаты:** В фондах музея хранятся уникальные рукописи, личные вещи писателей, редкие книги, фотографии и произведения искусства.\n\n### Деятельность\n- **Выставки:** Музей регулярно проводит временные выставки, посвящённые современным художникам, фотографам и писателям.\n- **Мероприятия:** Является площадкой для проведения литературных вечеров, презентаций книг, встреч с деятелями искусства и научных конференций.\n- **Культурная роль:** Музей играет ключевую роль в сохранении культурной памяти региона и воспитании у молодого поколения интереса к истории и литературе родного края."
     },
     "en": {
       "name": "Bukhar Zhyrau Museum of Literature and Art",
-      "tags": ["museum", "culture", "art", "literature", "bukhar zhyrau", "zaitsev house"],
+      "tags": ["museum", "culture", "art", "literature", "bukhar zhyrau", "zaitsev house", "merchant house"],
       "description": "The center of Pavlodar's cultural life, located in the historic house of the merchant Zaitsev. The exhibits are dedicated to the work of famous writers associated with the region.",
       "knowledge": "### General Information\n- **Name:** Pavlodar Regional Museum of Literature and Art named after Bukhar Zhyrau.\n- **Location:** Housed in one of the most beautiful historic buildings in Pavlodar—the former house of merchant Fyodor Zaitsev, built in 1897.\n- **Status:** An important cultural and scientific center engaged in collecting, preserving, and popularizing the literary and artistic heritage of the Pavlodar Irtysh region.\n\n### Expositions\n- **Main Exposition:** Dedicated to the life and work of outstanding akyns, poets, and writers whose destinies were connected with the region. The central hall is dedicated to Bukhar Zhyrau Kalkamanuly (18th century), a famous poet and advisor to Abylai Khan.\n- **Other Halls:** Separate halls are dedicated to the works of Isa Baizakov, Pavel Vasilyev, Vsevolod Ivanov, Dmitry Bagayev, and other cultural figures.\n- **Exhibits:** The museum's collections include unique manuscripts, personal belongings of writers, rare books, photographs, and works of art.\n\n### Activities\n- **Exhibitions:** The museum regularly holds temporary exhibitions dedicated to contemporary artists, photographers, and writers.\n- **Events:** It serves as a venue for literary evenings, book presentations, meetings with cultural figures, and scientific conferences.\n- **Cultural Role:** The museum plays a key role in preserving the cultural memory of the region and fostering interest in the history and literature of the native land among the younger generation."
     },
@@ -482,7 +481,7 @@
           "ru": "Старинный купеческий дом, ныне музей",
           "en": "An old merchant's house, now a museum"
         },
-        "imageUrl": "/images/bukhar-zhyrau-museum-1.jpg",
+        "imageUrl": "images/bukhar-zhyrau-museum-1.jpg",
         "imageHint": "old house"
       },
       {
@@ -491,7 +490,7 @@
           "ru": "Музейный экспонат со старинными рукописями",
           "en": "A museum exhibit with old manuscripts"
         },
-        "imageUrl": "/images/bukhar-zhyrau-museum-2.jpg",
+        "imageUrl": "images/bukhar-zhyrau-museum-2.jpg",
         "imageHint": "museum exhibit"
       },
       {
@@ -500,7 +499,7 @@
           "ru": "Бюст известного писателя в библиотеке",
           "en": "A bust of a famous writer in a library"
         },
-        "imageUrl": "/images/bukhar-zhyrau-museum-3.jpg",
+        "imageUrl": "images/bukhar-zhyrau-museum-3.jpg",
         "imageHint": "writer bust"
       }
     ]
@@ -510,13 +509,13 @@
     "type": "figure",
     "ru": {
       "name": "Дмитрий Багаев",
-      "tags": ["фотограф", "история", "багаев", "музей", "краевед", "знаменитость", "летописец"],
+      "tags": ["фотограф", "история", "багаев", "музей", "краевед", "знаменитость", "летописец", "дом-музей багаева"],
       "description": "Выдающийся фотограф и краевед, посвятивший свою жизнь запечатлению истории Павлодарского Прииртышья. Его коллекция фотографий является бесценной летописью региона.",
       "knowledge": "### Общая информация\n- **Имя:** Дмитрий Поликарпович Багаев (1884–1958).\n- **Род деятельности:** Фотограф, краевед, основатель и первый директор Павлодарского областного историко-краеведческого музея.\n- **Значение:** Считается летописцем Павлодарского Прииртышья, запечатлевшим на своих снимках историю региона первой половины XX века.\n\n### Вклад в историю и культуру\n- **Фотографическое наследие:** Багаев создал огромную коллекцию фотографий, которая документирует быт, архитектуру, события и людей Павлодара и его окрестностей. Его работы охватывают период от дореволюционной России до советских времен. Это бесценный исторический источник.\n- **Основание музея:** В 1942 году Дмитрий Багаев стал инициатором создания и первым директором Павлодарского областного историко-краеведческого музея им. Г.Н. Потанина. Он передал в фонды музея значительную часть своих коллекций, включая фотографии, негативы и личные вещи.\n- **Краеведческая работа:** Помимо фотографии, Багаев активно занимался сбором этнографических материалов, археологических находок и других предметов, имеющих историческую ценность.\n\n### Дом-музей Дмитрия Багаева\n- **Адрес:** Улица Астана, 200, Павлодар, Казахстан. \n- **О музее:** Музей открыт в 2001 году и является филиалом Павлодарского областного историко-краеведческого музея им. Г.Н. Потанина. Он расположен в историческом здании конца XIX века, где сам Багаев жил и работал с 1905 года до своей смерти в 1958 году.\n- **Экспозиция:** В доме сохранились три комнаты и уникальный фотопавильон с стеклянным потолком и северной стеной, который Багаев пристроил в начале XX века для работы с естественным светом. Посетители могут увидеть фотографии и архивные материалы, созданные Багаевым, предметы быта и интерьер конца XIX – начала XX века, а также фотопавильон, где мастер создавал свои знаменитые снимки.\n- **Культурный центр:** Музей является центром фотографической жизни города, где проводятся выставки современных фотографов и образовательные мероприятия."
     },
     "en": {
       "name": "Dmitry Bagayev",
-      "tags": ["photographer", "history", "bagayev", "museum", "local historian", "celebrity", "chronicler"],
+      "tags": ["photographer", "history", "bagayev", "museum", "local historian", "celebrity", "chronicler", "bagayev house-museum"],
       "description": "An outstanding photographer and local historian who dedicated his life to capturing the history of the Pavlodar Irtysh region. His collection of photographs is an invaluable chronicle of the region.",
       "knowledge": "### General Information\n- **Name:** Dmitry Polikarpovich Bagayev (1884–1958).\n- **Occupation:** Photographer, local historian, founder and first director of the Pavlodar Regional Museum of Local History.\n- **Significance:** Considered the chronicler of the Pavlodar Irtysh region, having captured the history of the region in the first half of the 20th century in his photographs.\n\n### Contribution to History and Culture\n- **Photographic Legacy:** Bagayev created a vast collection of photographs documenting the life, architecture, events, and people of Pavlodar and its surroundings. His works cover the period from pre-revolutionary Russia to Soviet times. This is an invaluable historical source.\n- **Museum Foundation:** In 1942, Dmitry Bagayev initiated the creation of and became the first director of the G.N. Potanin Pavlodar Regional Museum of Local History. He donated a significant part of his collections to the museum, including photographs, negatives, and personal items.\n- **Local History Work:** In addition to photography, Bagayev was actively involved in collecting ethnographic materials, archaeological finds, and other items of historical value.\n\n### Dmitry Bagayev House-Museum\n- **Address:** 200 Astana Street, Pavlodar, Kazakhstan.\n- **About the museum:** The museum opened in 2001 and is a branch of the G.N. Potanin Pavlodar Regional Museum of Local History. It is located in a historic late 19th-century building where Bagayev himself lived and worked from 1905 until his death in 1958.\n- **Exposition:** Three rooms and a unique photo pavilion with a glass ceiling and a north wall, which Bagayev added in the early 20th century to work with natural light, are preserved in the house. Visitors can see photographs and archival materials created by Bagayev, household items and interiors from the late 19th and early 20th centuries, and the photo pavilion where the master created his famous shots.\n- **Cultural Center:** The museum is a center for the city's photographic life, hosting exhibitions of contemporary photographers and educational events."
     },
@@ -527,7 +526,7 @@
           "ru": "Портрет Багаева",
           "en": "Portrait of Bagaev"
         },
-        "imageUrl": "/images/Dmitry_Bagaev/Dmitry_Bagaev_1.jpg",
+        "imageUrl": "images/Dmitry_Bagaev/Dmitry_Bagaev_1.jpg",
         "imageHint": "Portrait of Bagaev"
       },
       {
@@ -536,7 +535,7 @@
           "ru": "Портрет Багаева",
           "en": "Portrait of Bagaev"
         },
-        "imageUrl": "/images/Dmitry_Bagaev/Dmitry_Bagaev_2.jpg",
+        "imageUrl": "images/Dmitry_Bagaev/Dmitry_Bagaev_2.jpg",
         "imageHint": "Portrait of Bagaev"
       },
       {
@@ -545,7 +544,7 @@
           "ru": "Дом-музей Багаева",
           "en": "A museum dedicated to photography"
         },
-        "imageUrl": "/images/Dmitry_Bagaev/House-Museum.webp",
+        "imageUrl": "images/Dmitry_Bagaev/House-Museum.webp",
         "imageHint": "house museum"
       }
     ]
@@ -555,13 +554,13 @@
     "type": "phenomenon",
     "ru": {
       "name": "Славянский культурный центр",
-      "tags": ["культура", "центр", "славянский", "традиции", "дружба", "масленица", "дом дружбы"],
+      "tags": ["культура", "центр", "славянский", "традиции", "дружба", "масленица", "дом дружбы", "этнос"],
       "description": "Один из старейших этнокультурных центров в Казахстане. Центр играет ключевую роль в сохранении и развитии славянской культуры, языка и традиций в регионе.",
       "knowledge": "### Общая информация\n- **Полное название:** Общественное объединение «Славянский культурный центр».\n- **Год основания:** 1996 год.\n- **Статус:** Один из старейших и наиболее активных этнокультурных объединений в Казахстане, входит в состав Ассамблеи народа Казахстана.\n- **Руководитель:** Татьяна Ивановна Кузина.\n\n### Цели и задачи\n- **Сохранение культуры:** Основная цель — сохранение, возрождение и развитие культуры, языков, традиций и обычаев славянских этносов (русских, украинцев, белорусов и др.), проживающих в Павлодарской области.\n- **Гармонизация отношений:** Содействие укреплению межэтнического согласия, дружбы и взаимопонимания между представителями всех национальностей, проживающих в Казахстане.\n- **Образование:** Изучение родных языков, истории и литературы.\n\n### Основные направления деятельности\n- **Творческие коллективы:** При центре действуют многочисленные ансамбли песни и танца, хоровые коллективы, театральные студии, которые являются лауреатами многих республиканских и международных фестивалей.\n- **Праздники и фестивали:** Центр является организатором и активным участником празднования таких праздников, как Масленица, День славянской письменности и культуры, Рождество, Пасха.\n- **Молодёжное крыло:** Активно работает молодёжное объединение, которое занимается волонтёрской деятельностью, организацией мероприятий и продвижением идей центра среди молодёжи.\n- **Воскресные школы:** Функционируют школы, где дети изучают русский, украинский, белорусский языки, а также историю и традиции своих народов.\n- **Дом Дружбы:** Центр располагается в павлодарском Доме Дружby, который является штаб-квартирой для многих этнокультурных объединений региона."
     },
     "en": {
       "name": "Slavic Cultural Center",
-      "tags": ["culture", "center", "slavic", "traditions", "friendship", "maslenitsa", "house of friendship"],
+      "tags": ["culture", "center", "slavic", "traditions", "friendship", "maslenitsa", "house of friendship", "ethnos"],
       "description": "One of the oldest ethnocultural centers in Kazakhstan. The center plays a key role in preserving and developing Slavic culture, language, and traditions in the region.",
       "knowledge": "### General Information\n- **Full Name:** Public Association \"Slavic Cultural Center\".\n- **Year of Foundation:** 1996.\n- **Status:** One of the oldest and most active ethnocultural associations in Kazakhstan, part of the Assembly of People of Kazakhstan.\n- **Leader:** Tatyana Ivanovna Kuzina.\n\n### Aims and Objectives\n- **Preservation of Culture:** The main goal is the preservation, revival, and development of the culture, languages, traditions, and customs of Slavic ethnic groups (Russians, Ukrainians, Belarusians, etc.) living in the Pavlodar region.\n- **Harmonization of Relations:** Promoting the strengthening of inter-ethnic harmony, friendship, and mutual understanding among representatives of all nationalities living in Kazakhstan.\n- **Education:** Studying native languages, history, and literature.\n\n### Main Activities\n- **Creative Groups:** The center has numerous song and dance ensembles, choir groups, and theater studios that are laureates of many national and international festivals.\n- **Holidays and Festivals:** The center is the organizer and an active participant in the celebration of holidays such as Maslenitsa, Day of Slavic Writing and Culture, Christmas, and Easter.\n- **Youth Wing:** An active youth association is involved in volunteer work, organizing events, and promoting the center's ideas among young people.\n- **Sunday Schools:** Schools operate where children study Russian, Ukrainian, and Belarusian languages, as well as the history and traditions of their peoples.\n- **House of Friendship:** The center is located in the Pavlodar House of Friendship, which is the headquarters for many ethnocultural associations in the region."
     },
@@ -572,7 +571,7 @@
           "ru": "Люди в традиционных славянских костюмах",
           "en": "People in traditional slavic costumes"
         },
-        "imageUrl": "/images/slavic-center-1.jpg",
+        "imageUrl": "images/slavic-center-1.jpg",
         "imageHint": "traditional costume"
       },
       {
@@ -581,7 +580,7 @@
           "ru": "Выступление народного танца",
           "en": "Folk dance performance"
         },
-        "imageUrl": "/images/slavic-center-2.jpg",
+        "imageUrl": "images/slavic-center-2.jpg",
         "imageHint": "folk dance"
       },
       {
@@ -590,7 +589,7 @@
           "ru": "Здание культурного центра",
           "en": "A cultural center building"
         },
-        "imageUrl": "/images/slavic-center-3.jpg",
+        "imageUrl": "images/slavic-center-3.jpg",
         "imageHint": "cultural center"
       }
     ]
@@ -617,7 +616,7 @@
           "ru": "Сцена и зрительный зал театра.",
           "en": "The stage and auditorium of the theater."
         },
-        "imageUrl": "/images/Aimautov_Theater/Aimautov_Theater_1.webp",
+        "imageUrl": "images/Aimautov_Theater/Aimautov_Theater_1.webp",
         "imageHint": "theatre stage"
       },
       {
@@ -626,7 +625,7 @@
           "ru": "Здание театра имени Аймаутова днём.",
           "en": "The Aimautov Theater building during the day."
         },
-        "imageUrl": "/images/Aimautov_Theater/Aimautov_Theater_2.webp",
+        "imageUrl": "images/Aimautov_Theater/Aimautov_Theater_2.webp",
         "imageHint": "theatre building"
       },
       {
@@ -635,11 +634,9 @@
           "ru": "Вечерний вид на театр с подсветкой.",
           "en": "Evening view of the illuminated theater."
         },
-        "imageUrl": "/images/aimautov-theatre-3.jpg",
+        "imageUrl": "images/aimautov-theatre-3.jpg",
         "imageHint": "theater night"
       }
     ]
   }
 ]
-
-    
