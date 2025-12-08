@@ -1,3 +1,4 @@
+
 export type Language = 'ru' | 'en';
 
 type UITranslations = {
@@ -36,7 +37,7 @@ export const uiTexts: AllTranslations = {
         searchInputPlaceholder: "Например, 'Улица Сатпаева' или 'Павел Васильев'...",
         searchButtonLabel: 'Поиск',
         suggestionsLabel: 'Или попробуйте:',
-        suggestions: ['Павел Васильев', 'Улица Сатпаева', 'Экибастуз'],
+        suggestions: ['Мечеть', 'Павел Васильев', 'Экибастуз', 'Дмитрий Багаев'],
         noResults: 'Ничего не найдено. Попробуйте другой запрос.',
         backToResults: 'Назад к результатам',
         galleryTitle: 'Галерея',
@@ -58,7 +59,7 @@ export const uiTexts: AllTranslations = {
         searchInputPlaceholder: "e.g., 'Satpayev Street' or 'Pavel Vasilyev'...",
         searchButtonLabel: 'Search',
         suggestionsLabel: 'Or try:',
-        suggestions: ['Pavel Vasilyev', 'Satpayev Street', 'Ekibastuz'],
+        suggestions: ['Mosque', 'Pavel Vasilyev', 'Ekibastuz', 'Dmitry Bagayev'],
         noResults: 'Nothing found. Try a different query.',
         backToResults: 'Back to results',
         galleryTitle: 'Gallery',
@@ -73,4 +74,3 @@ export const uiTexts: AllTranslations = {
         expandActionError: "Sorry, there was an error contacting the AI. Please try again later.",
     }
 };
-

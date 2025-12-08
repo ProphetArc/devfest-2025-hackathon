@@ -107,6 +107,96 @@
       "description": "Power plant with smoking chimneys.",
       "imageUrl": "https://images.unsplash.com/photo-1543634209-4c194a2b2a6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3dlciUyMHBsYW50fGVufDB8fHx8MTc2NTI5MjQxNnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "power plant"
+    },
+    {
+      "id": "mashkhur-zhusup-mosque-1",
+      "description": "The grand Mashkhur Zhusup Mosque",
+      "imageUrl": "https://images.unsplash.com/photo-1610212855215-5556209c13e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3NxdWV8ZW58MHx8fHwxNzY1MzAwMjE5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "grand mosque"
+    },
+    {
+      "id": "mashkhur-zhusup-mosque-2",
+      "description": "Intricate interior of a mosque",
+      "imageUrl": "https://images.unsplash.com/photo-1562762332-155b41ea313f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3NxdWUlMjBpbnRlcmlvcnxlbnwwfHx8fDE3NjUzMDAyMTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mosque interior"
+    },
+    {
+      "id": "mashkhur-zhusup-mosque-3",
+      "description": "Close-up of a minaret",
+      "imageUrl": "https://images.unsplash.com/photo-1588868472853-3dc4232c7b4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtaW5hcmV0fGVufDB8fHx8MTc2NTMwMDIxOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "minaret closeup"
+    },
+    {
+      "id": "annunciation-cathedral-1",
+      "description": "The Annunciation Cathedral with golden domes",
+      "imageUrl": "https://images.unsplash.com/photo-1579810344169-02949c869595?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvcnRob2RveCUyMGNhdGhlZHJhbHxlbnwwfHx8fDE3NjUzMDAzMzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "orthodox cathedral"
+    },
+    {
+      "id": "annunciation-cathedral-2",
+      "description": "Interior of a cathedral with frescoes",
+      "imageUrl": "https://images.unsplash.com/photo-1582138943997-889410972333?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaHVyY2glMjBpbnRlcmlvcnxlbnwwfHx8fDE3NjUzMDAzMzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "church interior"
+    },
+    {
+      "id": "annunciation-cathedral-3",
+      "description": "Golden domes against the sky",
+      "imageUrl": "https://images.unsplash.com/photo-1615529182903-12c8b0b83b8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnb2xkZW4lMjBkb21lc3xlbnwwfHx8fDE3NjUzMDAzMzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "golden domes"
+    },
+    {
+      "id": "bukhar-zhyrau-museum-1",
+      "description": "An old merchant's house, now a museum",
+      "imageUrl": "https://images.unsplash.com/photo-1583594420835-95f03a62886c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvbGQlMjBtZXJjaGFudCUyMGhvdXNlfGVufDB8fHx8MTc2NTMwMDQyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "old house"
+    },
+    {
+      "id": "bukhar-zhyrau-museum-2",
+      "description": "A museum exhibit with old manuscripts",
+      "imageUrl": "https://images.unsplash.com/photo-1618335914800-7cf1a82b92a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtdXNldW0lMjBleGhpYml0fGVufDB8fHx8MTc2NTMwMDQyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "museum exhibit"
+    },
+    {
+      "id": "bukhar-zhyrau-museum-3",
+      "description": "A bust of a famous writer in a library",
+      "imageUrl": "https://images.unsplash.com/photo-1629986348123-e5557df63952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3cml0ZXIlMjBidXN0fGVufDB8fHx8MTc2NTMwMDQyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "writer bust"
+    },
+    {
+      "id": "dmitry-bagayev-1",
+      "description": "Vintage photograph of a city",
+      "imageUrl": "https://images.unsplash.com/photo-1517546059244-a324b8e6224d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx2aW50YWdlJTIwcGhvdG9ncmFwaHxlbnwwfHx8fDE3NjUzMDA1MDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "vintage photograph"
+    },
+    {
+      "id": "dmitry-bagayev-2",
+      "description": "An old-fashioned camera",
+      "imageUrl": "https://images.unsplash.com/photo-1510127034890-ba27088e25b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx2aW50YWdlJTIwY2FtZXJhfGVufDB8fHx8MTc2NTMwMDUwNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "vintage camera"
+    },
+    {
+      "id": "dmitry-bagayev-3",
+      "description": "A museum dedicated to photography",
+      "imageUrl": "https://images.unsplash.com/photo-1520338250084-6019391d3c33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwaG90b2dyYXBoeSUyMG11c2V1bXxlbnwwfHx8fDE3NjUzMDA1MDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "photography museum"
+    },
+    {
+      "id": "slavic-center-1",
+      "description": "People in traditional slavic costumes",
+      "imageUrl": "https://images.unsplash.com/photo-1620405106720-4175314643b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxz%2BdHJhZGl0aW9uYWwlMjBzbGF2aWMlMjBjb3N0dW1lfGVufDB8fHx8MTc2NTMwMDY0OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "traditional costume"
+    },
+    {
+      "id": "slavic-center-2",
+      "description": "Folk dance performance",
+      "imageUrl": "https://images.unsplash.com/photo-1594998993043-f145520e4e5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb2xrJTIwZGFuY2V8ZW58MHx8fHwxNzY1MzAwNjQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "folk dance"
+    },
+    {
+      "id": "slavic-center-3",
+      "description": "A cultural center building",
+      "imageUrl": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjdWx0dXJhbCUyMGNlbnRlcnxlbnwwfHx8fDE3NjUzMDA2NDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cultural center"
     }
   ]
 }
