@@ -2,6 +2,7 @@
 export type Language = 'ru' | 'en';
 
 type UITranslations = {
+    appTitle: string;
     appSubtitle: string;
     footerText: string;
     discoverTitle: string;
@@ -30,6 +31,7 @@ type AllTranslations = {
 
 export const uiTexts: AllTranslations = {
     ru: {
+        appTitle: 'Вектор',
         appSubtitle: 'Культурный гид по Павлодару',
         footerText: '© {year} Vector. Сделано командой Святые утки, специально для DevFest 2025 Pavlodar Hackathon',
         discoverTitle: 'Откройте для себя Павлодар',
@@ -52,6 +54,7 @@ export const uiTexts: AllTranslations = {
         expandActionError: "Извините, произошла ошибка при обращении к ИИ. Попробуйте позже.",
     },
     en: {
+        appTitle: 'Vector',
         appSubtitle: 'Cultural guide to Pavlodar',
         footerText: '© {year} Vector. Made by the Holy Ducks team, especially for DevFest 2025 Pavlodar Hackathon',
         discoverTitle: 'Discover Pavlodar',
@@ -67,7 +70,7 @@ export const uiTexts: AllTranslations = {
         aiPlaceholder: 'Ask something about "{itemName}"...',
         aiSend: 'Send',
         aiAskAbout: 'Ask a question about this item.',
-        aiInitialMessage: "Please ask a question.",
+aiInitialMessage: "Please ask a question.",
         aiErrorTitle: "AI Error",
         aiErrorDescription: "Failed to get a response. Please try again.",
         searchActionError: "An error occurred during search.",
