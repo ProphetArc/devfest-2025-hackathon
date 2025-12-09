@@ -51,25 +51,28 @@ export default function Home() {
     if (query.trim() === '') {
       setResults([]);
       setQuerySubmitted(false);
+      setSelectedItem(null);
+      setAiConversation([]);
     } else {
-        const handler = setTimeout(() => {
-            startSearchTransition(async () => {
-                const searchResults = await searchAction(query, lang);
-                setResults(searchResults);
-                setQuerySubmitted(true);
-            });
-        }, 300); // Debounce time
-
-        return () => {
-            clearTimeout(handler);
-        };
+      const handler = setTimeout(() => {
+        startSearchTransition(async () => {
+          const searchResults = await searchAction(query, lang);
+          setResults(searchResults);
+          setQuerySubmitted(true);
+          setSelectedItem(null);
+          setAiConversation([]);
+        });
+      }, 300);
+      return () => {
+        clearTimeout(handler);
+      };
     }
-}, [query, lang]);
+  }, [query, lang, startSearchTransition]);
 
 
   const handleSelectResult = (item: DataItem) => {
     setSelectedItem(item);
-    setAiConversation([{role: 'ai', content: uiTexts[lang].aiAskAbout}]);
+    setAiConversation([]);
     setAiInput('');
   };
 
@@ -119,13 +122,9 @@ export default function Home() {
     const newLang = lang === 'ru' ? 'en' : 'ru';
     setLang(newLang);
     // If we are on the details page, update the AI conversation to the new language
-    if(selectedItem) {
-        setAiConversation(prev => {
-            if(prev.length === 1 && prev[0].role === 'ai') {
-                return [{role: 'ai', content: uiTexts[newLang].aiAskAbout}];
-            }
-            return prev;
-        });
+    if (selectedItem) {
+      // Keep existing conversation; language switch will affect future answers
+      setAiConversation(prev => prev);
     } else if (query) {
        // Re-run search in the new language if there was a query
        startSearchTransition(async () => {

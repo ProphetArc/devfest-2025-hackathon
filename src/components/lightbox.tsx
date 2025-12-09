@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
-import { Dialog, DialogContent } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import type { ImagePlaceholder } from '@/lib/data';
@@ -52,6 +52,7 @@ export function Lightbox({ images, startIndex, onClose, lang }: LightboxProps) {
   return (
     <Dialog open={true} onOpenChange={(open) => !open && onClose()}>
       <DialogContent className="h-screen w-screen max-w-none border-0 bg-black/80 p-0 backdrop-blur-sm" hideCloseButton>
+        <DialogTitle className="sr-only">Галерея изображений</DialogTitle>
         <div className="relative flex h-full w-full items-center justify-center">
             {/* Close Button */}
             <Button
