@@ -67,7 +67,7 @@
           "ru": "Старая историческая городская улица.",
           "en": "An old historic city street."
         },
-        "imageUrl": "images/lenina-street-1.jpg",
+        "imageUrl": "images/Astana_street/astana_street_itself.jpeg",
         "imageHint": "historic street"
       },
       {
@@ -76,7 +76,7 @@
           "ru": "Фасад старого исторического здания.",
           "en": "Facade of an old historic building."
         },
-        "imageUrl": "images/lenina-street-2.jpg",
+        "imageUrl": "images/Astana_street/building_facade.jpg",
         "imageHint": "historic building"
       },
       {
@@ -256,7 +256,7 @@
           "ru": "Портрет Исы Байзакова",
           "en": "Portrait of Isa Baizakov"
         },
-        "imageUrl": "images/isa-baizakov-1.jpg",
+        "imageUrl": "images/Isa_Bayzakov/Isa_bayzakov.jpg",
         "imageHint": "man portrait"
       },
       {
@@ -265,7 +265,7 @@
           "ru": "Казахский музыкальный инструмент домбра",
           "en": "Kazakh musical instrument dombra"
         },
-        "imageUrl": "images/isa-baizakov-2.jpg",
+        "imageUrl": "images/Isa_Bayzakov/dombra.jpg",
         "imageHint": "dombra instrument"
       },
       {
@@ -427,7 +427,7 @@
           "ru": "Благовещенский собор с золотыми куполами",
           "en": "The Annunciation Cathedral with golden domes"
         },
-        "imageUrl": "images/annunciation-cathedral-1.jpg",
+        "imageUrl": "images/Sobor/Blagoveschenskij_sobor.JPG",
         "imageHint": "orthodox cathedral"
       },
       {
@@ -436,7 +436,7 @@
           "ru": "Интерьер собора с фресками",
           "en": "Interior of a cathedral with frescoes"
         },
-        "imageUrl": "images/annunciation-cathedral-2.jpg",
+        "imageUrl": "images/Sobor/interier.jpg",
         "imageHint": "church interior"
       },
       {
@@ -472,7 +472,7 @@
           "ru": "Старинный купеческий дом, ныне музей",
           "en": "An old merchant's house, now a museum"
         },
-        "imageUrl": "images/bukhar-zhyrau-museum-1.jpg",
+        "imageUrl": "images/Buhar_Zhyrau_Museum/museum.jpg",
         "imageHint": "old house"
       },
       {
@@ -481,7 +481,7 @@
           "ru": "Музейный экспонат со старинными рукописями",
           "en": "A museum exhibit with old manuscripts"
         },
-        "imageUrl": "images/bukhar-zhyrau-museum-2.jpg",
+        "imageUrl": "images/Buhar_Zhyrau_Museum/old_book.jpg",
         "imageHint": "museum exhibit"
       },
       {
@@ -562,7 +562,7 @@
           "ru": "Люди в традиционных славянских костюмах",
           "en": "People in traditional slavic costumes"
         },
-        "imageUrl": "images/slavic-center-1.jpg",
+        "imageUrl": "images/Slavic_Cultural_Center/slavyan_costumes.jpg",
         "imageHint": "traditional costume"
       },
       {
@@ -571,7 +571,7 @@
           "ru": "Выступление народного танца",
           "en": "Folk dance performance"
         },
-        "imageUrl": "images/slavic-center-2.jpg",
+        "imageUrl": "images/Slavic_Cultural_Center/slavyan_show.jpg",
         "imageHint": "folk dance"
       },
       {
@@ -580,7 +580,7 @@
           "ru": "Здание культурного центра",
           "en": "A cultural center building"
         },
-        "imageUrl": "images/slavic-center-3.jpg",
+        "imageUrl": "images/Slavic_Cultural_Center/Slavic_cultural_center.jpeg",
         "imageHint": "cultural center"
       }
     ]
