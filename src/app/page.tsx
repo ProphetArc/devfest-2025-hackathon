@@ -9,9 +9,8 @@ import { ResultsSection } from '@/components/results-section';
 import { DetailsSection } from '@/components/details-section';
 import { Button } from '@/components/ui/button';
 import { Globe } from 'lucide-react';
-import Image from 'next/image';
 import { uiTexts, type Language } from '@/lib/i18n';
-import Link from 'public/images/logo.svg';
+import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { ThemeToggle } from '@/components/theme-toggle';
 
@@ -144,7 +143,7 @@ export default function Home() {
       <header className="sticky top-0 z-10 w-full border-b bg-background/80 backdrop-blur-sm">
         <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
           <Link href="/" className="flex items-center gap-3" onClick={handleLogoClick}>
-            <Image src="/favicon.ico" alt="Logo" width={28} height={28} className="h-7 w-7" />
+            <img src="/favicon.ico" alt="Logo" width={48} height={48} className="h-10 w-10 sm:h-12 sm:w-12" />
             <h1 className="font-headline text-2xl font-bold text-primary sm:text-3xl">{texts.appTitle}</h1>
           </Link>
           <div className="flex items-center gap-2">
